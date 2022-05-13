@@ -3,12 +3,12 @@ lab:
   title: 02 - 使用租户属性
   learning path: "01"
   module: Module 01 - Implement an Identity Management Solution
-ms.openlocfilehash: de8e11bfc7042577bcf8e5411cac1f4149101bdb
-ms.sourcegitcommit: 448f935ad266989a6f0086019e0c0e0785ad162b
+ms.openlocfilehash: 36c7cdf2641017f0d9a15cfc2118f2d0bbeb1548
+ms.sourcegitcommit: a60b8d48791d600c44fa5fa617b6a9b2c0edaa71
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "138421441"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "141368853"
 ---
 # <a name="lab-02-working-with-tenant-properties"></a>实验室 02：使用租户属性
 
@@ -101,9 +101,9 @@ Microsoft 强烈建议添加全局隐私联系人和组织的隐私声明，以�
 
      此时会自动打开一个新的浏览器标签页。
 
-4. 在“设置和隐私”卡中选择“查看设置和隐私 >” 。
+4. 在左侧菜单中，选择“设置和隐私”。
 5. 选择“隐私”。
-6. 用户“组织的通知”，单击 Contoso 市场营销组织隐私声明旁边的“查看”项 。
+6. 在“组织的通知”下，选择 Contoso 市场营销组织隐私声明旁边的“查看”项 。
 
      此时将打开一个新的浏览器标签页，其中显示链接指向的隐私 PDF 文件。
 

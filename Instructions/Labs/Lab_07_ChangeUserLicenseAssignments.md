@@ -3,12 +3,12 @@ lab:
   title: 07 - 更改用户帐户许可证分配
   learning path: "01"
   module: Module 01 - Implement an identity management solution
-ms.openlocfilehash: 5926db4909933fe31574632ff625a45717bfa9ee
-ms.sourcegitcommit: 448f935ad266989a6f0086019e0c0e0785ad162b
+ms.openlocfilehash: ec8653774b6dce9624e517c939d6a783bae58390
+ms.sourcegitcommit: a2dd8d3f669d7b7f1c97c87a5b01afd61eb36380
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "138421372"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "141368732"
 ---
 # <a name="lab-07-change-user-account-license-assignments"></a>实验室 07：更改用户帐户许可证分配
 
@@ -34,7 +34,7 @@ ms.locfileid: "138421372"
     警告 - 若要将许可证分配给某个用户，该用户必须分配有使用位置。
 
 6. 单击左侧菜单中的“许可证”菜单项。
-7. 确保 Rual 的状态为“未找到许可证分配”。
+7. 确保 Raul 的状态为“未找到许可证分配”。
 
 #### <a name="task-2---update-user-license-assignments"></a>任务 2 - 更新用户许可证分配
 
@@ -48,7 +48,7 @@ ms.locfileid: "138421372"
 
 5. 选择“+ 分配”按钮。 
 
-6. 在“更新许可证分配”边栏选项卡上，选中“Windows 10 企业版 E3”许可证复选框。
+6. 在“更新许可证分配”边栏选项卡上，选中“Windows 10/11 企业版 E3”许可证复选框。
 
     ![显示“更新许可证分配”页的屏幕图像，其中突出显示许可证选项](./media/lp1-mod2-assign-user-license-options.png)
 

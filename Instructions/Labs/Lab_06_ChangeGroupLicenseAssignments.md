@@ -3,12 +3,12 @@ lab:
   title: 06 - 更改组许可证分配
   learning path: "01"
   module: Module 01 - Implement an identity management solution
-ms.openlocfilehash: 43274c8456dd760022efd09fc7cbb0efcac1037f
-ms.sourcegitcommit: 533d012d39c31518af43d4a1d4bc091ea485d27c
+ms.openlocfilehash: a76182eb79197a26a692c5bab7bfcde1080a97c2
+ms.sourcegitcommit: a60b8d48791d600c44fa5fa617b6a9b2c0edaa71
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "138690104"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "141368856"
 ---
 # <a name="lab-06-change-group-license-assignments"></a>实验室 6：更改组许可证分配
 
@@ -34,7 +34,7 @@ ms.locfileid: "138690104"
 
     ![显示组许可证选项处于选中状态的屏幕图像，其中突出显示当前许可证和“分配”菜单选项](./media/lp1-mod2-change-group-license.png)
 
-6. 在“更新许可证分配”边栏选项卡上，单独或组合使用以下操作：选择“Windows 10 企业版 E3”许可证、取消选择现有许可证、添加或删除许可证选项。
+6. 在“更新许可证分配”边栏选项卡上，单独或组合使用以下操作：选择“Windows 10/11 企业版 E3”许可证、取消选择现有许可证、添加或删除许可证选项。
 
 7. 完成后选择“保存”。
 

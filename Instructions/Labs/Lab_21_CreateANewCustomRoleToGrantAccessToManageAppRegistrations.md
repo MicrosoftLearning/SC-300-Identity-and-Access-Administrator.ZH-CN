@@ -3,12 +3,12 @@ lab:
   title: 21 - 创建新的自定义角色以授予管理应用注册的访问权限
   learning path: "03"
   module: Module 03 - Implement Access Management for Apps
-ms.openlocfilehash: a33acee3b79aeb2324777e68c64fd5bdea830753
-ms.sourcegitcommit: 448f935ad266989a6f0086019e0c0e0785ad162b
+ms.openlocfilehash: a80b99071c24eb4efac616c45c4a8468a33d21bd
+ms.sourcegitcommit: a2dd8d3f669d7b7f1c97c87a5b01afd61eb36380
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "138421327"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "141368735"
 ---
 # <a name="lab-21---create-a-custom-role-to-manage-app-registration"></a>实验室 21 - 创建用于管理应用注册的自定义角色
 
@@ -49,6 +49,6 @@ ms.locfileid: "138421327"
 
     ![新建自定义角色的“权限”选项卡的屏幕图像，其中突出显示了用于搜索和管理权限的部分以及“下一步”按钮](./media/lp3-mod1-custom-role-permissions.png)
 
-    为什么选择这两项：对于应用程序预配来说，这两项是为正在创建的应用程序或服务主体启用和强制执行单一登录，并且能够将企业应用程序分配给一组用户或组所需的最低权限。  也可以授予其他权限。  可在以下位置获取完整的可用权限列表：`https://docs.microsoft.com/azure/active-directory/roles/custom-enterprise-app-permissions`。
+    **为什么选择这两项**：对于应用程序预配来说，这两项是为正在创建的应用程序或服务主体启用和强制执行单一登录，并且能够将企业应用程序分配给一组用户或组所需的最低权限。  也可以授予其他权限。  可在以下位置获取完整的可用权限列表：`https://docs.microsoft.com/azure/active-directory/roles/custom-enterprise-app-permissions`。
 
 10. 查看更改，然后选择“创建”。

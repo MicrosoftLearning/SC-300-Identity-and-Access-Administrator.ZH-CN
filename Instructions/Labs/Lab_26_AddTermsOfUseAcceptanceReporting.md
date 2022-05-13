@@ -3,12 +3,12 @@ lab:
   title: 26 - 添加使用条款和接受报告
   learning path: "04"
   module: Module 04 - Plan and Implement and Identity Governance Strategy
-ms.openlocfilehash: bb8be227870d16d1743a23206ef94fd24b5a7ef2
-ms.sourcegitcommit: 448f935ad266989a6f0086019e0c0e0785ad162b
+ms.openlocfilehash: 2fc11e4fc38cbde5b7e517486450b16b0cea6195
+ms.sourcegitcommit: a2dd8d3f669d7b7f1c97c87a5b01afd61eb36380
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "138421387"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "141368741"
 ---
 # <a name="lab-26-add-terms-of-use-and-acceptance-reporting"></a>实验室 26：添加使用条款和接受报告 
 
@@ -161,13 +161,9 @@ ms.locfileid: "138421387"
 
     ![列出已接受条款的用户的使用条款同意窗格](./media/accepted-tou.png)
 
-4. 若要查看单个用户的历史记录，请选择“用户名”右侧的省略号，然后选择“查看历史记录”。
+4. 在“使用条款同意状态”页面上，选择“下载”下载同意状态报表 。
 
-    ![用户的“查看历史记录”上下文菜单](./media/view-history-menu.png)
-
-5. 在“查看历史记录”窗格中，可以看到所有接受、拒绝和过期操作状态的历史记录。
-
-    ![“查看历史记录”窗格列出了用户接受、拒绝和过期操作状态的历史记录](./media/view-history-pane.png)
+5. 在“标识治理 | 使用条款”页面，突出显示“测试使用条款”并选择“查看选定的审核日志”，以查看审核日志活动  。
 
 #### <a name="task-4---what-terms-of-use-looks-like-for-users"></a>任务 4 - 呈现给用户的使用条款外观
 
@@ -189,7 +185,7 @@ ms.locfileid: "138421387"
 
 1. 浏览到 [https://myapps.microsoft.com](https://myapps.microsoft.com/)，然后使用用户帐户登录。
 
-2. 在“概述”页上，选择“查看设置和隐私”。
+2. 选择用户个人资料照片，然后选择“查看帐户”。 在“概述”页上，选择“查看设置和隐私”。
 
     ![显示“查看设置和隐私”的弹出窗口的屏幕图像](./media/lp4-mod1-myaccount-setting-and-privacy.png)
 

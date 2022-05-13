@@ -3,12 +3,12 @@ lab:
   title: （可选）30 - 在 Privileged Identity Management 中分配 Azure 资源角色
   learning path: "04"
   module: Module 04 - Plan and Implement and Identity Governance Strategy
-ms.openlocfilehash: ee85cbac686207499a2cb08c24a645f0e89a60b4
-ms.sourcegitcommit: 9b012e1ac4c54de05b1071142dd5a8e418133c0f
+ms.openlocfilehash: 3baeb4982316d86e2717ca5c1f8cb8079c423585
+ms.sourcegitcommit: a2dd8d3f669d7b7f1c97c87a5b01afd61eb36380
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "138476444"
+ms.lasthandoff: 04/04/2022
+ms.locfileid: "141368738"
 ---
 # <a name="lab-30---optional-assign-azure-resource-roles-in-privileged-identity-management"></a>实验室 30（可选）：在 Privileged Identity Management 中分配 Azure 资源角色
 
@@ -49,7 +49,7 @@ Azure Active Directory (Azure AD) Privileged Identity Management (PIM) 可以管
 
 7. 加入完成后，关闭“Azure 资源 - 发现”边栏选项卡。
 
-8. 在“Azure 资源”边栏选项卡中，选择刚添加的资源。
+8. 在 Azure 资源边栏选项卡中，选择订阅。
 
     ![显示最近添加的 Azure 资源的屏幕图像](./media/lp4-mod3-pim-az-resource-overview.png)
 
@@ -85,7 +85,7 @@ Azure Active Directory (Azure AD) Privileged Identity Management (PIM) 可以管
 
 2. 选择“Azure 资源” 。
 
-3. 选择要管理的资源以打开其概览页。
+3. 选择要管理的订阅，打开其概述页。
 
 4. 在“管理”下选择“分配” 。
 
