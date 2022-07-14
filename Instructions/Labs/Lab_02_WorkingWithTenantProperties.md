@@ -3,12 +3,12 @@ lab:
   title: 02 - 使用租户属性
   learning path: "01"
   module: Module 01 - Implement an Identity Management Solution
-ms.openlocfilehash: 36c7cdf2641017f0d9a15cfc2118f2d0bbeb1548
-ms.sourcegitcommit: a60b8d48791d600c44fa5fa617b6a9b2c0edaa71
+ms.openlocfilehash: f43e996adefddcf01f7feb5e01056582faab35eb
+ms.sourcegitcommit: bc5c47a39782e94c249ec4bce01ba0da9249ec61
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "141368853"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "146822630"
 ---
 # <a name="lab-02-working-with-tenant-properties"></a>实验室 02：使用租户属性
 
@@ -16,54 +16,71 @@ ms.locfileid: "141368853"
 
 你需要标识和更新与你的租户关联的不同属性。
 
-#### <a name="estimated-time-10-minutes"></a>预计用时：10 分钟
+#### <a name="estimated-time-15-minutes"></a>预计用时：15 分钟
 
-### <a name="exercise-1---changing-the-tenant-display-name"></a>练习 1 - 更改租户显示名称
+### <a name="exercise-1---create-a-custom-subdomains"></a>练习 1 - 创建自定义子域 
 
-#### <a name="task-1---set-the-tenant-name-and-technical-contact"></a>任务 1 - 设置租户名称和技术联系人
+#### <a name="task-1---create-a-custom-subdomain-name"></a>任务 1 - 创建自定义子域名称
 
 1. 浏览到 [https://portal.azure.com](https://portal.azure.com)，使用目录的全局管理员帐户登录。
 
-2. 选择“显示门户菜单”汉堡图标，然后选择“Azure Active Directory”。
+1. 选择“显示门户菜单”汉堡图标，然后选择“Azure Active Directory”。
 
     ![Azure 门户菜单，其中选择了“Azure Active Directory”](./media/azure-portal-menu-aad.png)
 
-3. 在左侧导航栏的“管理”部分中，选择“属性”。
+1. 在 Azure AD 的“管理”部分中，选择“自定义域名”  。
 
-4. 在对话框中更改“姓名”和“技术联系人”的租户属性 。
+1. 选择“添加自定义域”。
 
-| 设置 | **值** |
-| :--- | :--- |
-| 名称 | Contoso 市场营销 |
-| 技术联系人 | `your Global admin account` |
+1. 在“自定义域名”字段中，通过将 sales 放在 onmicrosoft.com 域名前面，为实验室租户创建一个自定义子域  。  格式如下所示：
 
-5. 选择“保存”以更新租户属性。
+    ```
+    sales.labtenant.onmicrosoft.com
+    ```
+
+1. 选择“添加域”以添加子域。
+
+
+### <a name="exercise-2---changing-the-tenant-display-name"></a>练习 2 - 更改租户显示名称
+
+#### <a name="task-1---set-the-tenant-name-and-technical-contact"></a>任务 1 - 设置租户名称和技术联系人
+
+1. 在 Azure Active Directory 中，在左侧导航栏的“管理”部分中，选择“属性” 。
+
+1. 在对话框中更改“姓名”和“技术联系人”的租户属性 。
+
+    | 设置 | **值** |
+    | :--- | :--- |
+    | 名称 | Contoso 市场营销 |
+    | 技术联系人 | `your Global admin account` |
+
+1. 选择“保存”以更新租户属性。
 
    保存完成后，你会立即发现名称已更改。
 
 #### <a name="task-2---review-the-country-or-region-and-other-values-associated-with-your-tenant"></a>任务 2 - 查看国家或地区以及与租户相关的其他值
 
-1. 在“Azure Active Directory”边栏选项卡的“管理”部分中，选择“属性”。
+1. 在“Azure Active Directory”页的“管理”部分中，选择“属性” 。
 
 2. 在“租户属性”下，找到“国家或地区”，查看相关信息。
 
     重要提示 - 创建租户时将指定国家或地区。 稍后将无法更改此设置。
 
-3. 在“属性”边栏选项卡中的“租户属性”下，找到“位置”并查看相关信息。
+3. 在“属性”页的“租户属性”下，找到“位置”并查看相关信息  。
 
-    ![显示 Azure Active Directory“属性”边栏选项卡的屏幕图像，其中突出显示了“国家或地区”和“位置”设置](./media/azure-active-directory-properties-country-location.png)
+    ![Azure Active Directory“属性”页的屏幕图像，其中突出显示了“国家或地区”以及“位置”设置](./media/azure-active-directory-properties-country-location.png)
 
 #### <a name="task-3---finding-the-tenant-id"></a>任务 3 - 查找租户 ID
 
 Azure 订阅与 Azure Active Directory (Azure AD) 之间存在信任关系。 订阅信任 Azure AD 对用户、服务和设备执行身份验证。 每个订阅都有一个与之关联的租户 ID，可以通过几种方法查找订阅的租户 ID。
 
-1. 在“Azure Active Directory”边栏选项卡的“管理”部分中，选择“属性”。
+1. 在“Azure Active Directory”页的“管理”部分中，选择“属性” 。
 
 2. 在“租户属性”下，找到“租户 ID”。 这是你的唯一租户标识符。
 
     ![显示“租户属性”页的屏幕图像，其中突出显示了“租户 ID”框](./media/portal-tenant-id.png)
 
-### <a name="exercise-2---setting-your-privacy-information"></a>练习 2 - 设置隐私信息
+### <a name="exercise-3---setting-your-privacy-information"></a>练习 3 - 设置隐私信息
 
 #### <a name="task-1---adding-your-privacy-info-on-azure-ad-including-global-privacy-contact-and-privacy-statement-url"></a>任务 1 - 在 Azure AD 上添加隐私信息，包括全局隐私联系人和隐私声明 URL
 
@@ -73,7 +90,7 @@ Microsoft 强烈建议添加全局隐私联系人和组织的隐私声明，以�
 
 可以在 Azure AD 的“属性”区域中添加组织的隐私信息。 访问“属性”区域并添加隐私信息：
 
-1. 在“Azure Active Directory”边栏选项卡的“管理”部分中，选择“属性”。
+1. 在“Azure Active Directory”页的“管理”部分中，选择“属性” 。
 
     ![显示租户属性的屏幕图像，其中突出显示了“技术联系人”、“全局联系人”和“隐私声明”框](./media/properties-area.png)
 
@@ -83,7 +100,8 @@ Microsoft 强烈建议添加全局隐私联系人和组织的隐私声明，以�
      - Allan Deyoung 是 Azure 实验室租户中的内置用户，担任 IT 管理员，我们将其作为隐私联系人。
      - 如果存在数据安全漏洞，此人同时也是 Microsoft 联系人。 如果此处未列出任何人，Microsoft 将联系全局管理员。
 
-- 隐私声明 URL -  `https://github.com/R-C-Stewart/SC-300-Identity-and-Access-Administrator/blob/master/Allfiles/Labs/Lab2/SC-300-Lab_ContosoPrivacySample.pdf`
+- 隐私声明 URL -  <https://github.com/MicrosoftLearning/SC-300-Identity-and-Access-Administrator/blob/master/Allfiles/Labs/Lab2/SC-300-Lab_ContosoPrivacySample.pdf>
+
      - 实验室目录中提供了示例隐私 PDF 文件。
      - 键入指向组织的文档的链接，该文档用于描述组织如何处理内部和外部来宾的数据隐私。
 
@@ -96,7 +114,7 @@ Microsoft 强烈建议添加全局隐私联系人和组织的隐私声明，以�
 #### <a name="task-2---check-your-privacy-statement"></a>任务 2 - 检查隐私声明
 
 1. 返回 Azure 主屏幕 - 仪表板。
-2. 在 UI 的右上角，单击你的用户名。
+2. 在 UI 的右上角，选择你的用户名。
 3. 从下拉菜单中选择“查看帐户”。
 
      此时会自动打开一个新的浏览器标签页。
