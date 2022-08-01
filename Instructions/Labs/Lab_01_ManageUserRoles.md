@@ -3,12 +3,12 @@ lab:
   title: 01 - 管理用户角色
   learning path: "01"
   module: Module 01 - Implement an Identity Management Solution
-ms.openlocfilehash: 2f0c349fe65316fd9a3166d81603b2b88af20a8f
-ms.sourcegitcommit: bc5c47a39782e94c249ec4bce01ba0da9249ec61
+ms.openlocfilehash: 9af8166d7b06f48ab62579c82dd6769a3bd89704
+ms.sourcegitcommit: 6a016964eb4dcdad3685cc303453389197cd8233
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "146822633"
+ms.lasthandoff: 07/22/2022
+ms.locfileid: "147400403"
 ---
 # <a name="lab-01-manage-user-roles"></a>实验室 01：管理用户角色
 
@@ -147,7 +147,19 @@ ms.locfileid: "146822633"
 
     ![使用 csv 文件条目批量导入](./media/bulkimportexample.png)
 
-6. 填充后，保存更改并上传以添加用户。
+    可修改此文件以批量添加用户。  请注意，无需填写所有字段。  根据提供的示例数据，你主要需要添加名称和用户名信息。
+
+6. Allfiles/Lab1 文件夹中提供了一个示例 CSV -- SC300BulkUser.csv。
+   1. 打开记事本。
+   2. 打开 SC300BulkUser.csv 文件
+   3. 将“输入域名”更改为 Azure 实验室环境的域。
+   4. 保存该文件。
+
+7. 在“批量创建用户”对话框中，选择步骤 3
+
+8. “Allfiles/Lab1 文件夹路径”上的文件夹图标，然后选择 SC300BulkUser.csv 文件。
+
+9. 选择“打开”  。
 
 7. 系统会通知你已成功上传文件。  选择“提交”以添加用户。 
 
