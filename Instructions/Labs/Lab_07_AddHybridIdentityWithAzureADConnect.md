@@ -3,16 +3,20 @@ lab:
   title: 07 - 使用 Azure AD Connect 添加混合标识
   learning path: "01"
   module: Module 01 - Implement an identity management solution
-ms.openlocfilehash: 9c612bb17543a7bc6535a5ba923f205999cfaa45
-ms.sourcegitcommit: 80c5c0ef60c1d74fcc58c034fe6be67623013cc0
+ms.openlocfilehash: dfb0bbb4416be0984784f159833f1873dfa5ff0d
+ms.sourcegitcommit: 3125be5da88aa4b5fee51cf653c13bc9ee0bb799
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "146823193"
+ms.lasthandoff: 08/15/2022
+ms.locfileid: "147573426"
 ---
 # <a name="lab-07-add-hybrid-identity-with-azure-ad-connect"></a>实验室 07：使用 Azure AD Connect 添加混合标识
 
 注意 - 此实验室需要 Azure Pass。 有关说明，请参阅实验室 00。
+
+注意 2 - 如果以前使用过 Azure AD Connect，此实验室应被视为可选。  此实验室至少需要 30 分钟的设置时间才能使用脚本部署和配置域控制程序。  如果要执行实验室，建议启动脚本，并在它在后台运行时处理其他活动。
+
+
 
 ## <a name="lab-scenario"></a>实验室方案
 
