@@ -2,13 +2,8 @@
 title: 联机托管说明
 permalink: index.html
 layout: home
-ms.openlocfilehash: 3f1d9eb9d23b41f212641797985d518792859159
-ms.sourcegitcommit: 317faec6fdf204c92dfe1461d4a30f5b8d8ea950
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "138357269"
 ---
+
 # <a name="content-directory"></a>内容目录
 
 可在[此处下载](https://github.com/MicrosoftLearning/SC-300-Identity-and-Access-Administrator/archive/master.zip)所需的实验室文件

@@ -10,7 +10,7 @@
 
 - 你是 MCT 吗？
 
-## <a name="how-should-i-use-these-files-relative-to-the-released-moc-files"></a>相对于已发布的 MOC 文件，应如何使用这些文件？
+## <a name="how-should-i-use-these-files-relative-to-the-released-moc-files"></a>我应该如何使用与已发布 MOC 文件相关的这些文件？
 
 - 讲师手册和 PowerPoint 仍将是教授课程内容的主要来源。
 
