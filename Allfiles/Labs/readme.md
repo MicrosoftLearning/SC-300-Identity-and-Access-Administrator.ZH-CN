@@ -1,1 +1,1 @@
-使用此文件夹存储本课程中支持演示所需的任何补充实验室文件。
+Use this folder to store any supplemental lab files needed to support demos in this course.
