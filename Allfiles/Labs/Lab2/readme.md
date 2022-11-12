@@ -1,1 +1,1 @@
-SC-300 lab-2 的占位符文件
+Placeholder file for the SC-300 lab-2
