@@ -1,1 +1,1 @@
-使用此文件夹存储提供的实验室或演示的补充文件。
+Use this folder to store supplemental files for the labs or demos provided.
