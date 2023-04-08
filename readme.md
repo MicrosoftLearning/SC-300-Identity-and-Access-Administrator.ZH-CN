@@ -1,7 +1,7 @@
 # <a name="sc-300-identity-and-access-administrator"></a>SC-300：标识和访问管理员
 
-- [实验室的链接（HTML 格式）](https://microsoftlearning.github.io/SC-300-Identity-and-Access-Administrator.ZH-CN/)
-- 你是 MCT 吗？ - 查看 [MCT GitHub 用户指南](https://microsoftlearning.github.io/MCT-User-Guide-ZH/)
+- [实验室的链接（HTML 格式）](https://microsoftlearning.github.io/SC-300-Identity-and-Access-Administrator/)
+- 你是 MCT 吗？ - 查看 [MCT GitHub 用户指南](https://microsoftlearning.github.io/MCT-User-Guide/)
 - **需要手动生成实验室说明？** - [MicrosoftLearning/Docker-Build ](https://github.com/MicrosoftLearning/Docker-Build) 存储库中提供了说明
 
 ## <a name="what-are-we-doing"></a>我们要做什么？
