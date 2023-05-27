@@ -1,20 +1,15 @@
 ---
 lab:
   title: 11 - 在 Privileged Identity Management 中分配 Azure 资源角色
-  learning path: "02"
+  learning path: '02'
   module: Module 02 - Implement an authentication and access management solution
-ms.openlocfilehash: ca3725a8f81afffeb093fc997c2caf7917a35948
-ms.sourcegitcommit: 80c5c0ef60c1d74fcc58c034fe6be67623013cc0
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "146823190"
 ---
-# <a name="lab-11---assign-azure-resource-roles-in-privileged-identity-management"></a>实验室 11 - 在 Privileged Identity Management 中分配 Azure 资源角色
+
+# 实验室 11 - 在 Privileged Identity Management 中分配 Azure 资源角色
 
 注意 - 此实验室需要 Azure Pass。 有关说明，请参阅实验室 00。
 
-## <a name="lab-scenario"></a>实验室方案
+## 实验室方案
 
 Azure Active Directory (Azure AD) Privileged Identity Management (PIM) 可以管理内置的 Azure 资源角色以及自定义角色，包括但不限于：
 
@@ -27,11 +22,11 @@ Azure Active Directory (Azure AD) Privileged Identity Management (PIM) 可以管
 你需要使用户符合 Azure 资源角色的条件。
 
 
-#### <a name="estimated-time-10-minutes"></a>预计用时：10 分钟
+#### 预计用时：10 分钟
 
-### <a name="exercise-1---pim-with-azure-resources"></a>练习 1 - 针对 Azure 资源的 PIM
+### 练习 1 - 针对 Azure 资源的 PIM
 
-#### <a name="task-1---assign-azure-resource-roles"></a>任务 1 - 分配 Azure 资源角色
+#### 任务 1 - 分配 Azure 资源角色
 
 1. 使用全局管理员帐户登录 [https://portal.azure.com](https://portal.azure.com)。
 
@@ -77,7 +72,7 @@ Azure Active Directory (Azure AD) Privileged Identity Management (PIM) 可以管
 
 18. 创建新的角色分配后，会显示状态通知。
 
-#### <a name="task-2---update-or-remove-an-existing-resource-role-assignment"></a>任务 2 - 更新或删除现有资源角色分配
+#### 任务 2 - 更新或删除现有资源角色分配
 
 按照以下步骤更新或删除现有的角色分配。
 

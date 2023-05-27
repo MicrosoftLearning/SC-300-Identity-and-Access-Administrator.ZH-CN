@@ -1,26 +1,21 @@
 ---
 lab:
   title: 03 - 使用组成员身份分配许可证
-  learning path: "01"
+  learning path: '01'
   module: Module 01 - Implement an identity management solution
-ms.openlocfilehash: bf32962c7594a36532476d3af378d767ba981017
-ms.sourcegitcommit: 80c5c0ef60c1d74fcc58c034fe6be67623013cc0
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "146823205"
 ---
-# <a name="lab-03-assigning-licenses-using-group-membership"></a>实验室 03：使用组成员身份分配许可证
 
-## <a name="lab-scenario"></a>实验室方案
+# 实验室 03：使用组成员身份分配许可证
+
+## 实验室方案
 
 你的公司决定使用 Azure AD 中的安全组来管理许可证。 你需要配置新的安全组，向该组分配许可证，以及验证组成员许可证是否已更新。
 
-#### <a name="estimated-time-25-minutes"></a>预计用时：25 分钟
+#### 预计用时：25 分钟
 
-### <a name="exercise-1---create-a-security-group-and-add-a-user"></a>练习 1 - 创建安全组并添加用户
+### 练习 1 - 创建安全组并添加用户
 
-#### <a name="task-1---check-to-see-if-delia-dennis-has-access-to-office-365"></a>任务 1 - 检查 Delia Dennis 是否可以访问 Office 365
+#### 任务 1 - 检查 Delia Dennis 是否可以访问 Office 365
 
 1. 启动一个新的 InPrivate 浏览器窗口。
 2. 连接到 [https://www.office.com](https://www.office.com)。
@@ -37,7 +32,7 @@ ms.locfileid: "146823205"
     
 5. 关闭浏览器窗口。
 
-#### <a name="task-2----create-a-security-group-in-azure-active-directory"></a>任务 2 - 在 Azure Active Directory 中创建安全组
+#### 任务 2 - 在 Azure Active Directory 中创建安全组
 
 1. 浏览到 [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview]( https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)。
 
@@ -61,7 +56,7 @@ ms.locfileid: "146823205"
 8. 选择“创建”按钮。
 9. 完成后，验证名为“sg-SC300-O365”的组是否显示在“所有组”列表中 。
 
-#### <a name="task-3---assign-a-license-to-a-group"></a>任务 3 - 向组分配许可证
+#### 任务 3 - 向组分配许可证
 
 1. 在“所有组”列表中，选择“sg-SC300-O365” 。
 2. 在“市场营销”页的“管理”下，选择“许可证” 。
@@ -74,7 +69,7 @@ ms.locfileid: "146823205"
 
 6. 选择“保存”  。
 
-#### <a name="taks-4---confirm-the-office-365-license"></a>任务 4 - 确认 Office 365 许可证
+#### 任务 4 - 确认 Office 365 许可证
 
 1. 启动一个新的 InPrivate 浏览器窗口。
 2. 连接到 [https://www.office.com](https://www.office.com)。
@@ -91,9 +86,9 @@ ms.locfileid: "146823205"
     
 5. 关闭浏览器窗口。 
 
-### <a name="exercise-2---create-an-microsoft-365-group-in-azure-active-directory"></a>练习 2 - 在 Azure Active Directory 中创建 Microsoft 365 组
+### 练习 2 - 在 Azure Active Directory 中创建 Microsoft 365 组
 
-#### <a name="task-1---create-the-group"></a>任务 1 - 创建组
+#### 任务 1 - 创建组
 
 你作为 Azure AD 管理员的职责之一是创建不同类型的组。 你需要为组织的销售部门创建新的 Microsoft 365 组。
 
@@ -117,9 +112,9 @@ ms.locfileid: "146823205"
 
 5. 完成后，验证名为“西北部销售额”的组是否显示在“所有组”列表中。
 
-### <a name="exercise-3---creating-a-dynamic-group-with-all-users-as-members"></a>练习 3 - 创建将所有用户添加为成员的动态组
+### 练习 3 - 创建将所有用户添加为成员的动态组
 
-#### <a name="task-1---create-the-dynamic-group"></a>任务 1 - 创建动态组
+#### 任务 1 - 创建动态组
 
 随着公司发展，手动组管理正在变得过于耗时。 由于对目录进行了标准化，现在可以利用动态组。 必须创建新的动态组以确保准备好在生产环境中创建动态组。
 
@@ -157,7 +152,7 @@ ms.locfileid: "146823205"
 
 12. 在“新建组”页上，选择“创建”以创建组。
 
-#### <a name="task-2---verify-the-members-have-been-added"></a>任务 2 - 验证是否已添加成员
+#### 任务 2 - 验证是否已添加成员
 
 注意 - 动态组成员资格的填充最多可能需要 15 分钟。
 
@@ -170,7 +165,7 @@ ms.locfileid: "146823205"
 7. 在“管理”菜单中选择“成员” 。
 8. 查看成员。
 
-#### <a name="task-3---experiment-with-alternate-rules"></a>任务 3 - 试验替代规则
+#### 任务 3 - 试验替代规则
 
 1. 尝试创建仅包含来宾用户的组：
 
