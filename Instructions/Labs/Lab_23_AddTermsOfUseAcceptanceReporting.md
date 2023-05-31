@@ -1,34 +1,29 @@
 ---
 lab:
   title: 23 - 添加使用条款和接受报告
-  learning path: "04"
+  learning path: '04'
   module: Module 04 - Plan and Implement and Identity Governance Strategy
-ms.openlocfilehash: 22bbcfadf8ca85f75dca4a5f4a72cb895ff5bf10
-ms.sourcegitcommit: b5fc07c53b5663eaa1883cf38b70c57cd88470ca
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "146741632"
 ---
-# <a name="lab-23-add-terms-of-use-and-acceptance-reporting"></a>实验室 23：添加使用条款和接受报告 
 
-## <a name="lab-scenario"></a>实验室方案
+# 实验室 23：添加使用条款和接受报告 
+
+## 实验室方案
 
 组织可以通过 Azure AD 使用条款策略这种简单的方法向最终用户显示信息。 可以通过这样的呈现方式确保用户看到法律要求或符合性要求的相关免责声明。 本文介绍如何快速了解使用条款 (ToU) 策略。
 
 你需要为组织创建并执行 ToU 策略。
 
-#### <a name="estimated-time-20-minutes"></a>预计用时：20 分钟
+#### 预计用时：20 分钟
 
-### <a name="exercise-1---set-up-a-term-of-use-and-test-them"></a>练习 1 - 设置使用条款并对其进行测试
+### 练习 1 - 设置使用条款并对其进行测试
 
-#### <a name="task-1---add-terms-of-use"></a>任务 1 - 添加《使用条款》
+#### 任务 1 - 添加《使用条款》
 
 完成使用条款文档后，请使用以下过程添加它。
 
 1. 使用全局管理员帐户登录到 [https://portal.azure.com](https://portal.azure.com)。
 
-2. 打开 Azure Active Directory ，然后选择 Identity Governance。
+2. 打开 Azure Active Directory，然后选择“Identity Governance” **** 。
 
 3. 在左侧导航菜单中的“使用条款”下，选择“使用条款”。
 
@@ -69,7 +64,7 @@ ms.locfileid: "146741632"
     | 今天的日期 | 每月 | 从今天开始，用户必须接受使用条款，并且以后每个月都要接受。|
     | 将来的日期 | 每月 | 从今天开始，用户必须接受使用条款。 到达指定的将来日期时，同意状态将会过期，以后用户必须每个月接受使用条款。 |
 
-    例如，如果将过期开始日期设置为“1 月 1 日”，将频率设置为“每月”，则两个用户的过期计划如下：
+    例如，如果将过期开始日期设置为“1 月 1 日”，将频率设置为“每月”，则两个用户的过期计划如下：********
 
     | User | 第一个接受日期 | 第一个过期日期 | 第二个过期日期 | 第三个过期日期 |
     |---|---|---|---|---|
@@ -128,7 +123,7 @@ ms.locfileid: "146741632"
 
 28. 如果选择使用自己的帐户，则可刷新浏览器。 系统将提示你重新登录。 当你登录时，你将需要接受使用条款。
 
-#### <a name="task-2---log-in-as-adele"></a>任务 2 - 以 Adele 身份登录
+#### 任务 2 - 以 Adele 身份登录
 
 1. 打开一个新的 InPrivate 浏览器窗口。
 2. 连接到 https://portal.azure.com。
@@ -148,7 +143,7 @@ ms.locfileid: "146741632"
 
     >**注意**：使用条款可能需要几分钟才会出现，或者你可以注销并重新登录门户。
  
-#### <a name="task-3---view-report-of-who-has-accepted-and-declined"></a>任务 3 - 查看关于已接受和已拒绝的用户的报告
+#### 任务 3 - 查看关于已接受和已拒绝的用户的报告
 
 “使用条款”页会显示已接受和拒绝的用户计数。 在使用条款有效期内，会存储这些计数以及接受用户/拒绝用户。
 
@@ -166,7 +161,7 @@ ms.locfileid: "146741632"
 
 5. 在“标识治理 | 使用条款”页面，突出显示“测试使用条款”并选择“查看选定的审核日志”，以查看审核日志活动  。
 
-#### <a name="task-4---what-terms-of-use-looks-like-for-users"></a>任务 4 - 呈现给用户的使用条款外观
+#### 任务 4 - 呈现给用户的使用条款外观
 
 1. 创建并强制执行使用条款后，处于使用条款范围内的用户会看到使用条款页。
 
@@ -180,7 +175,7 @@ ms.locfileid: "146741632"
 
     ![用户在移动设备上登录时显示的示例使用条款](./media/mobile-tou.png)
 
-#### <a name="task-5---how-users-can-review-their-terms-of-use"></a>任务 5 - 用户如何查看其使用条款
+#### 任务 5 - 用户如何查看其使用条款
 
 用户可按以下过程查看已接受的使用条款。
 
@@ -196,13 +191,13 @@ ms.locfileid: "146741632"
 
 4. 在“组织的通知”下，你可查看你已接受的使用条款。
 
-#### <a name="task-6---edit-terms-of-use-details"></a>任务 6 - 编辑使用条款详细信息
+#### 任务 6 - 编辑使用条款详细信息
 
 可以编辑使用条款的某些详细信息，但不能修改现有文档。 以下过程介绍如何编辑详细信息。
 
-1. 以全局管理员身份登录 [https://portal.azure.com](https://portal.azure.com)。
+1. 以全局管理员身份登录  [https://portal.azure.com](https://portal.azure.com)  。
 
-2. 打开 Azure Active Directory，然后选择“Identity Governance”。
+2. 打开 Azure Active Directory，然后选择“Identity Governance” **** 。
 
 3. 在左侧导航菜单中的“使用条款”下，选择“使用条款”。
 
@@ -218,7 +213,7 @@ ms.locfileid: "146741632"
 
     - **要求用户展开使用条款** - 如果将此项设置为“打开”，则会强制最终用户在接受使用条款文档之前先将其展开。
 
-    - **更新现有使用条款** 文档。
+    - **更新现有使用条款**文档。
 
     - 可向现有 ToU 添加语言。要更改其他设置（例如，要求用户在每台设备上同意使用条款、使同意状态过期、重新接受使用条款之前的持续时间，或条件访问策略），必须创建新的使用条款。
 
@@ -226,7 +221,7 @@ ms.locfileid: "146741632"
 
 7. 完成后，选择“保存”以保存所做的更改。
 
-#### <a name="task-7---update-an-existing-terms-of-use-document"></a>任务 7 - 更新现有的使用条款文档
+#### 任务 7 - 更新现有的使用条款文档
 
 有时，你可能需要更新使用条款文档。
 

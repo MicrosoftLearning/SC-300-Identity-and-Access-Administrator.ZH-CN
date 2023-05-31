@@ -1,30 +1,25 @@
 ---
 lab:
   title: 20 - 实现应用的访问管理
-  learning path: "03"
+  learning path: '03'
   module: Module 03 - Implement Access Management for Apps
-ms.openlocfilehash: d1c505f5cf844f5acc1ffa6e8f912e89cbd0de66
-ms.sourcegitcommit: dfc500fdfe49349ca42c60b125dd6c59a71661c0
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 08/11/2022
-ms.locfileid: "147548905"
 ---
-# <a name="lab-20---implement-access-management-for-apps"></a>实验室 20 - 实现应用的访问管理
 
-## <a name="lab-scenario"></a>实验室方案
+# 实验室 20 - 实现应用的访问管理
+
+## 实验室方案
 
 你的组织要求仅特定用户或组有权访问企业应用程序。 你需要将用户分配到特定应用程序。
 
-#### <a name="estimated-time-5-minutes"></a>预计用时：5 分钟
+#### 预计用时：5 分钟
 
-### <a name="exercise-1---configure-an-enterprise-app"></a>练习 1 - 配置企业应用
+### 练习 1 - 配置企业应用
 
-#### <a name="task-1---add-an-app-to-your-azure-ad-tenant"></a>任务 1 - 将应用添加到 Azure AD 租户
+#### 任务 1 - 将应用添加到 Azure AD 租户
 
-1. 使用全局管理员帐户登录到 [https://portal.azure.com](https://portal.azure.com)。
+1. 使用全局管理员帐户登录  [https://portal.azure.com](https://portal.azure.com)  。
 
-2. 打开门户菜单，然后选择“Azure Active Directory”。
+2. 打开门户菜单，然后选择“Azure Active Directory” **** 。
 
 3. 在“Azure Active Directory”页的“管理”下，选择“企业应用程序” 。
 
@@ -42,7 +37,7 @@ ms.locfileid: "147548905"
 
 8. 创建帐户后，你将被重定向到“GitHub Enterprise Cloud – 企业帐户”页。
 
-#### <a name="task-2---assign-users-to-an-app"></a>任务 2 - 向应用分配用户
+#### 任务 2 - 向应用分配用户
 
 1. 在“GitHub Enterprise Cloud - 企业帐户”页的“概述”页面的“开始”下，选择“1. 分配用户和组”。
 

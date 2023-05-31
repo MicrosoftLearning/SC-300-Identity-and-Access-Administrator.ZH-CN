@@ -1,30 +1,25 @@
 ---
 lab:
   title: 27 - 适用于 Azure AD 数据源的 Microsoft Sentinel Kusto 查询
-  learning path: "04"
+  learning path: '04'
   module: Module 04 - Plan and Implement and Identity Governance Strategy
-ms.openlocfilehash: eac2b28212e21982e38208936be912ebd1f22f85
-ms.sourcegitcommit: 80c5c0ef60c1d74fcc58c034fe6be67623013cc0
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "146823232"
 ---
-# <a name="lab-27---microsoft-sentinel-kusto-queries-for-azure-ad-data-sources"></a>实验室 27 - 适用于 Azure AD 数据源的 Microsoft Sentinel Kusto 查询
+
+# 实验室 27 - 适用于 Azure AD 数据源的 Microsoft Sentinel Kusto 查询
 
 注意 - 此实验室需要 Azure Pass。 有关说明，请参阅实验室 00。
 
-## <a name="lab-scenario"></a>实验室方案
+## 实验室方案
 
 Microsoft Sentinel 是 Microsoft 的云原生 SIEM 和 SOAR 解决方案。  通过连接来自 Microsoft 和第三方安全解决方案的数据源，可以执行安全操作任务。  在本实验室练习中，你将创建一个 Microsoft Sentinel 工作区，其中包含 Azure AD 的数据连接器，用于使用 Kusto 查询语言 (KQL) 执行搜寻查询。 
 
-#### <a name="estimated-time-30-minutes"></a>预计用时：30 分钟
+#### 预计用时：30 分钟
 
-### <a name="exercise-1---configure-microsoft-sentinel-for-kusto-queries"></a>练习 1 - 为 Kusto 查询配置 Microsoft Sentinel
+### 练习 1 - 为 Kusto 查询配置 Microsoft Sentinel
 
-#### <a name="task-1---create-a-microsoft-sentinel-workspace"></a>任务 1 - 创建 Microsoft Sentinel 工作区
+#### 任务 1 - 创建 Microsoft Sentinel 工作区
 
-1. 以全局管理员身份登录 [https://portal.azure.com](https://portal.azure.com)。
+1. 以全局管理员身份登录  [https://portal.azure.com](https://portal.azure.com)  。
 
 1. 搜索“Microsoft Sentinel”并将其选中。 
 
@@ -40,11 +35,11 @@ Microsoft Sentinel 是 Microsoft 的云原生 SIEM 和 SOAR 解决方案。  通
 
 1. 选择“审阅 + 创建”，然后选择“创建” 。
 
-1. Log Analytics 工作区部署完成后，选择工作区并选择“添加”。  这会将工作区添加到 Microsoft Sentinel 并打开 Microsoft Sentinel。
+1. Log Analytics 工作区部署完成后，选择“刷新”按钮。 然后选择工作区，选择“添加”。  这会将工作区添加到 Microsoft Sentinel 并打开 Microsoft Sentinel。
 
 1. 如果出现提示，请选择“确定”以激活 Microsoft Sentinel 免费试用版。
 
-#### <a name="task-2---add-azure-ad-as-a-data-source"></a>任务 2 - 将 Azure AD 添加为数据源
+#### 任务 2 - 将 Azure AD 添加为数据源
 
 1. 在“Microsoft Sentinel”中，导航到“配置”菜单，然后选择“数据连接器”  。
 
@@ -64,7 +59,7 @@ Microsoft Sentinel 是 Microsoft 的云原生 SIEM 和 SOAR 解决方案。  通
 
    注意 - Azure AD 数据连接器可能需要几分钟时间才能显示在活动计数中。 
 
-#### <a name="task-3---run-kusto-query-on-user-activity"></a>任务 3 - 对用户活动运行 Kusto 查询
+#### 任务 3 - 对用户活动运行 Kusto 查询
 
 1. 在“Microsoft Sentinel”中，导航到“常规”菜单标题下的“日志”  。
 

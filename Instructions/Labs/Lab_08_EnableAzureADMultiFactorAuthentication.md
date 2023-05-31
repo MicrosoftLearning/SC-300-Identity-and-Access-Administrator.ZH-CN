@@ -1,28 +1,23 @@
 ---
 lab:
   title: 08 - 启用 Azure AD 多重身份验证
-  learning path: "02"
+  learning path: '02'
   module: Module 02 - Implement an Authentication and Access Management Solution
-ms.openlocfilehash: c03626519eec91f5b2f12779f5023e7d06f3c6ec
-ms.sourcegitcommit: 80c5c0ef60c1d74fcc58c034fe6be67623013cc0
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "146823214"
 ---
-# <a name="lab-08---enable-azure-ad-multi-factor-authentication"></a>实验室 08 - 启用 Azure AD 多重身份验证
 
-## <a name="lab-scenario"></a>实验室方案
+# 实验室 08 - 启用 Azure AD 多重身份验证
+
+## 实验室方案
 
 为了提高组织中的安全性，你被要求启用 Azure Active Directory 的多重身份验证。
 
-#### <a name="estimated-time-15-minutes"></a>预计用时：15 分钟
+#### 预计用时：15 分钟
 
 重要提示 - 此练习需要 Azure AD Premium 许可证。
 
-### <a name="exercise-1---review-and-enable-multi-factor-authentication-in-azure"></a>练习 1 - 在 Azure 中查看并启用多重身份验证
+### 练习 1 - 在 Azure 中查看并启用多重身份验证
 
-#### <a name="task-1---review-azure-multi-factor-authentication-options"></a>任务 1 - 查看 Azure 多重身份验证选项
+#### 任务 1 - 查看 Azure 多重身份验证选项
 
 1. 浏览到 [https://portal.azure.com](https://portal.azure.com)，使用目录的全局管理员帐户登录。
 
@@ -42,7 +37,7 @@ ms.locfileid: "146823214"
 
     还可以在此处启用或禁用应用密码，以使用户可以为不支持多重身份验证的应用创建唯一的帐户密码。 此功能使用户可以使用特定于该应用的其他密码通过其 Azure AD 标识进行身份验证。
 
-#### <a name="task-2---setup-conditional-access-rules-for-mfa-for-delia-dennis"></a>任务 2 - 为 Delia Dennis 设置 MFA 的条件访问规则
+#### 任务 2 - 为 Delia Dennis 设置 MFA 的条件访问规则
 
 接下来，让我们研究如何设置条件访问策略规则，此类规则将对访问网络上的特定应用的来宾用户强制执行 MFA。
 
@@ -90,7 +85,7 @@ ms.locfileid: "146823214"
 
     现已为所选的用户和应用程序启用 MFA。 下次来宾尝试登录该应用时，系统将提示他们注册 MFA。
 
-#### <a name="task-3---test-delias-login"></a>任务 3 - 测试 Delia 的登录
+#### 任务 3 - 测试 Delia 的登录
 
 1. 打开一个新的 InPrivate 浏览窗口。
 2. 连接到 https://www.office.com。
@@ -102,9 +97,9 @@ ms.locfileid: "146823214"
 
 可以看到，由于我们为 Delia 创建了条件访问规则，因此需要进行 MFA 才可启动 Office 365 主页。
 
-### <a name="exercise-2---configure-mfa-to-be-required-for-login"></a>练习 2 - 配置登录所需的 MFA
+### 练习 2 - 配置登录所需的 MFA
 
-#### <a name="task-1---configure-azure-ad-per-user-mfa"></a>任务 1 - 配置 Azure AD 每用户 MFA
+#### 任务 1 - 配置 Azure AD 每用户 MFA
 
 最后，我们介绍如何为用户帐户配置 MFA。 这是获取多重身份验证设置的另一种方法。
 
@@ -130,6 +125,6 @@ ms.locfileid: "146823214"
 10. 可以选择“服务设置”以查看 MFA 设置屏幕，如本实验室前面部分所示。
 11. 关闭 MFA 设置选项卡。
 
-#### <a name="task-2----try-logging-in-as-adele"></a>任务 2 - 尝试以 Adele 的身份登录
+#### 任务 2 - 尝试以 Adele 的身份登录
 
 1. 如果你想查看另一 MFA 登录流程示例，可以尝试以 Adele 身份登录。

@@ -1,26 +1,21 @@
 ---
 lab:
   title: 02 - 使用租户属性
-  learning path: "01"
+  learning path: '01'
   module: Module 01 - Implement an Identity Management Solution
-ms.openlocfilehash: f43e996adefddcf01f7feb5e01056582faab35eb
-ms.sourcegitcommit: bc5c47a39782e94c249ec4bce01ba0da9249ec61
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "146822630"
 ---
-# <a name="lab-02-working-with-tenant-properties"></a>实验室 02：使用租户属性
 
-## <a name="lab-scenario"></a>实验室方案
+# 实验室 02：使用租户属性
+
+## 实验室方案
 
 你需要标识和更新与你的租户关联的不同属性。
 
-#### <a name="estimated-time-15-minutes"></a>预计用时：15 分钟
+#### 预计用时：15 分钟
 
-### <a name="exercise-1---create-a-custom-subdomains"></a>练习 1 - 创建自定义子域 
+### 练习 1 - 创建自定义子域 
 
-#### <a name="task-1---create-a-custom-subdomain-name"></a>任务 1 - 创建自定义子域名称
+#### 任务 1 - 创建自定义子域名称
 
 1. 浏览到 [https://portal.azure.com](https://portal.azure.com)，使用目录的全局管理员帐户登录。
 
@@ -41,9 +36,9 @@ ms.locfileid: "146822630"
 1. 选择“添加域”以添加子域。
 
 
-### <a name="exercise-2---changing-the-tenant-display-name"></a>练习 2 - 更改租户显示名称
+### 练习 2 - 更改租户显示名称
 
-#### <a name="task-1---set-the-tenant-name-and-technical-contact"></a>任务 1 - 设置租户名称和技术联系人
+#### 任务 1 - 设置租户名称和技术联系人
 
 1. 在 Azure Active Directory 中，在左侧导航栏的“管理”部分中，选择“属性” 。
 
@@ -58,7 +53,7 @@ ms.locfileid: "146822630"
 
    保存完成后，你会立即发现名称已更改。
 
-#### <a name="task-2---review-the-country-or-region-and-other-values-associated-with-your-tenant"></a>任务 2 - 查看国家或地区以及与租户相关的其他值
+#### 任务 2 - 查看国家或地区以及与租户相关的其他值
 
 1. 在“Azure Active Directory”页的“管理”部分中，选择“属性” 。
 
@@ -70,7 +65,7 @@ ms.locfileid: "146822630"
 
     ![Azure Active Directory“属性”页的屏幕图像，其中突出显示了“国家或地区”以及“位置”设置](./media/azure-active-directory-properties-country-location.png)
 
-#### <a name="task-3---finding-the-tenant-id"></a>任务 3 - 查找租户 ID
+#### 任务 3 - 查找租户 ID
 
 Azure 订阅与 Azure Active Directory (Azure AD) 之间存在信任关系。 订阅信任 Azure AD 对用户、服务和设备执行身份验证。 每个订阅都有一个与之关联的租户 ID，可以通过几种方法查找订阅的租户 ID。
 
@@ -80,15 +75,15 @@ Azure 订阅与 Azure Active Directory (Azure AD) 之间存在信任关系。 �
 
     ![显示“租户属性”页的屏幕图像，其中突出显示了“租户 ID”框](./media/portal-tenant-id.png)
 
-### <a name="exercise-3---setting-your-privacy-information"></a>练习 3 - 设置隐私信息
+### 练习 3 - 设置隐私信息
 
-#### <a name="task-1---adding-your-privacy-info-on-azure-ad-including-global-privacy-contact-and-privacy-statement-url"></a>任务 1 - 在 Azure AD 上添加隐私信息，包括全局隐私联系人和隐私声明 URL
+#### 任务 1 - 在 Azure AD 上添加隐私信息，包括全局隐私联系人和隐私声明 URL
 
 Microsoft 强烈建议添加全局隐私联系人和组织的隐私声明，以便内部员工和外部来宾可以查看你的策略。 由于隐私声明是为每个企业唯一创建和定制的，我们强烈建议你与律师联系以获取帮助。
 
    备注 - 如需详细了解如何查看或删除个人数据，请参阅 [https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure)。 有关 GDPR 的详细信息，请参阅 [https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted)。
 
-可以在 Azure AD 的“属性”区域中添加组织的隐私信息。 访问“属性”区域并添加隐私信息：
+可以在 Azure AD 的“属性”区域中添加组织的隐私信息 ****  。 访问“属性”区域并添加隐私信息：
 
 1. 在“Azure Active Directory”页的“管理”部分中，选择“属性” 。
 
@@ -103,15 +98,15 @@ Microsoft 强烈建议添加全局隐私联系人和组织的隐私声明，以�
 - 隐私声明 URL -  <https://github.com/MicrosoftLearning/SC-300-Identity-and-Access-Administrator/blob/master/Allfiles/Labs/Lab2/SC-300-Lab_ContosoPrivacySample.pdf>
 
      - 实验室目录中提供了示例隐私 PDF 文件。
-     - 键入指向组织的文档的链接，该文档用于描述组织如何处理内部和外部来宾的数据隐私。
+     \- 键入指向组织文档的链接，该文档描述组织如何处理内部和外部来宾的数据隐私。
 
-    重要提示 - 如果不加入自己的隐私声明或隐私联系人，外部来宾将在“查看权限”框中看到以下内容：<你的组织名称\> 未提供条款链接供你查看 。 例如，来宾用户将在收到通过 B2B 协作访问组织的邀请时看到此消息。
+    重要提示 - 如果不加入自己的隐私声明或隐私联系人，外部来宾将在“查看权限”框中看到以下内容：<你的组织名称\> 未提供条款链接供你查看 **** 。 例如，来宾用户将在收到通过 B2B 协作访问组织的邀请时看到此消息。
 
     ![带有消息的 B2B 协作“查看权限”框](./media/active-directory-no-privacy-statement-or-contact.png)
 
 3. 选择“保存”。
 
-#### <a name="task-2---check-your-privacy-statement"></a>任务 2 - 检查隐私声明
+#### 任务 2 - 检查隐私声明
 
 1. 返回 Azure 主屏幕 - 仪表板。
 2. 在 UI 的右上角，选择你的用户名。

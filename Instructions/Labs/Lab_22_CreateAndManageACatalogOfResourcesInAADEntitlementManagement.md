@@ -1,26 +1,21 @@
 ---
 lab:
   title: 22 - 在 Azure AD 权利管理中创建和管理资源目录
-  learning path: "04"
+  learning path: '04'
   module: Module 04 - Plan and Implement and Identity Governance Strategy
-ms.openlocfilehash: b53df1c7dc346715e52b77673bba150cc78fe332
-ms.sourcegitcommit: b5fc07c53b5663eaa1883cf38b70c57cd88470ca
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "146741634"
 ---
-# <a name="lab-22-create-and-manage-a-catalog-of-resources-in-azure-ad-entitlement-management"></a>实验室 22：在 Azure AD 权利管理中创建和管理资源目录
 
-## <a name="lab-scenario"></a>实验室方案
+# 实验室 22：在 Azure AD 权利管理中创建和管理资源目录
+
+## 实验室方案
 
 目录是资源和访问包的容器。 需要将相关的资源和访问包分组时，可以创建目录。 创建目录的任何人将成为第一个目录所有者。 目录所有者可以添加其他目录所有者。 你需要在组织中创建并配置目录。
 
-#### <a name="estimated-time-15-minutes"></a>预计用时：15 分钟
+#### 预计用时：15 分钟
 
-### <a name="exercise-1---building-out-resources-in-entitlement-management"></a>练习 1 - 在权利管理中构建资源
+### 练习 1 - 在权利管理中构建资源
 
-#### <a name="task-1---create-a-catalog"></a>任务 1 - 创建目录
+#### 任务 1 - 创建目录
 
 1. 使用全局管理员帐户登录 [https://portal.azure.com](https://portal.azure.com)。
 
@@ -28,11 +23,11 @@ ms.locfileid: "146741634"
     - Azure AD Premium P1、P2、EMS E3 或 EMS E5 订阅。
     - 如果你没有这些订阅，可获取 Azure AD Premium 订阅或启用 Azure AD Premium 试用版订阅。
     - 下述适用于需配置目录的管理员帐户之一：
-        - 全局管理员
+        - 全局管理员角色
         - 安全管理员
         - 条件访问管理员
 
-2. 打开 Azure Active Directory ，然后选择 Identity Governance。
+2. 打开 Azure Active Directory，然后选择“Identity Governance” **** 。
 
 3. 在左侧菜单的“权利管理”下，选择“目录”。
 
@@ -54,7 +49,7 @@ ms.locfileid: "146741634"
 
 10. 选择“创建”。
 
-#### <a name="task-2---add-resources-to-a-catalog"></a>任务 2 - 将资源添加到目录
+#### 任务 2 - 将资源添加到目录
 
 若要在访问包中包含资源，这些资源必须存在于目录中。 可添加的资源类型包括组、应用程序和 SharePoint Online 站点。 组可以是云创建的 Microsoft 365 组，或者云创建的 Azure AD 安全组。 应用程序可以是 Azure AD 企业应用程序，包括 SaaS 应用程序，以及你自己的已联合到 Azure AD 的应用程序。 站点可以是 SharePoint Online 站点或 SharePoint Online 站点集合。
 
@@ -83,7 +78,7 @@ ms.locfileid: "146741634"
 
 8. 完成后，选择“添加”。 现在，可将这些资源包含在目录中的访问包内。
 
-#### <a name="task-3---add-additional-catalog-owners"></a>任务 3 - 添加其他目录所有者
+#### 任务 3 - 添加其他目录所有者
 
 创建了目录的用户将成为第一个目录所有者。 若要委托目录的管理，请将用户添加到目录所有者角色。 这有助于共享目录管理责任。
 
@@ -99,7 +94,7 @@ ms.locfileid: "146741634"
 
 5. 查看“角色和管理员”列表中新添加的角色。
 
-#### <a name="task-4---edit-a-catalog"></a>任务 4 - 编辑目录
+#### 任务 4 - 编辑目录
 
 可以编辑目录的名称和说明。 用户将在访问包的详细信息中看到此信息。
 
@@ -113,11 +108,11 @@ ms.locfileid: "146741634"
 
 4. 选择“保存”。
 
-#### <a name="task-5---create-access-reviews-for-guest-users"></a>任务 5 - 为来宾用户创建访问评审
+#### 任务 5 - 为来宾用户创建访问评审
 
-1. 访问评审可以管理访问生命周期。  Azure AD Identity Governance 提供一个概述仪表板，其中显示了访问评审的状态。 在“Identity Governance”菜单中选择“访问评审” 。
+1. 访问评审可以管理访问生命周期。Azure AD Identity Governance 提供一个概述仪表板，其中显示了访问评审的状态。 在“Identity Governance”菜单中选择“访问评审” 。
 
-1. 在“访问评审”菜单下，可以选择“访问评审”，为来宾用户配置访问评审。  选择“+ 新建访问评审”以创建来宾用户访问评审。  磁贴随即打开，可为来宾用户配置访问评审。
+1. 在“访问评审”菜单下，可以选择“访问评审”，为来宾用户配置访问评审。选择“+ 新建访问评审”以创建来宾用户访问评审。磁贴随即打开，可为来宾用户配置访问评审。
 
 1. 为“选择要评审的内容”选择“团队 + 组” 。
 
@@ -138,7 +133,7 @@ ms.locfileid: "146741634"
 1. 选择“下一页:**查看 + 创建”，然后选择“创建”以创建新的“代码评审”**  。
 
 
-#### <a name="task-6---delete-a-catalog"></a>任务 6 - 删除目录
+#### 任务 6 - 删除目录
 
 可以删除目录，但前提是它不包含任何访问包。
 
