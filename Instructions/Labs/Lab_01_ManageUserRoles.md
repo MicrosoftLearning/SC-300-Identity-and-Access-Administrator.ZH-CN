@@ -1,34 +1,34 @@
 ---
 lab:
   title: 01 - 管理用户角色
-  learning path: "01"
+  learning path: '01'
   module: Module 01 - Implement an Identity Management Solution
-ms.openlocfilehash: 9af8166d7b06f48ab62579c82dd6769a3bd89704
-ms.sourcegitcommit: 6a016964eb4dcdad3685cc303453389197cd8233
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "147400403"
 ---
-# <a name="lab-01-manage-user-roles"></a>实验室 01：管理用户角色
 
-## <a name="lab-scenario"></a>实验室方案
+# WWL 租户 - 使用条款
+如果在讲师引导式培训过程中向你提供租户，请注意，提供租户旨在支持讲师引导式培训中的动手实验室。 租户不应共享或用于动手实验室以外的用途。 本课程使用的租户为试用租户，课程结束后无法使用或访问，不符合扩展条件。 租户不得转换为付费订阅。 在本课程中获得的租户仍然是 Microsoft Corporation 的财产，我们保留随时获取访问权限和收回的权利。 
+
+
+
+# 实验室 01：管理用户角色
+
+## 实验室方案
 
 你的公司最近雇佣了一名新员工担任应用程序管理员。 你需要创建一个新用户并分配合适的角色。
 
-#### <a name="estimated-time-30-minutes"></a>预计用时：30 分钟
+#### 预计用时：30 分钟
 
-### <a name="exercise-1---create-a-new-user-and-test-their-application-admin-rights"></a>练习 1 - 创建新用户并测试他们的应用程序管理员权限
+### 练习 1 - 创建新用户并测试他们的应用程序管理员权限
 
-#### <a name="task-1---add-a-new-user"></a>任务 1 - 添加新用户
+#### 任务 1 - 添加新用户
 
-1. 以全局管理员身份登录 [https://portal.azure.com](https://portal.azure.com)
+1. 以全局管理员身份登录  [https://portal.azure.com](https://portal.azure.com) 
 
 2. 搜索并选择“Azure Active Directory”。
 
-3. 在左侧导航菜单中的“管理”下，选择“用户”，然后选择“+ 新建用户”  。
+3. 在左侧导航菜单中的“管理”下，选择“用户”，然后选择“+ 新建用户”和“创建新用户”   。
 
-4. 确保选择了“创建用户”。  使用以下信息创建用户：
+4. 标记“创建用户”按钮。 然后使用以下信息创建用户：
 
     | **设置**| **值**|
     | :--- | :--- |
@@ -37,15 +37,15 @@ ms.locfileid: "147400403"
     | 名字| Chris|
     | 姓氏| 绿色|
 
-5. 标记“创建密码”
+5. 标记“自动生成密码”选项。
 
-6. 使用密码 - 输入一个你能记住的安全密码。
+6. 将生成的密码复制到一个你能记住的位置以备下一个任务使用。
 
      首次登录此帐户时必须更改密码
 
 7. 选择“创建”。 现已创建用户并注册到你的组织。
 
-#### <a name="task-2---login-and-try-to-create-an-app"></a>任务 2 - 登录并尝试创建应用
+#### 任务 2 - 登录并尝试创建应用
 
 1. 启动一个新的 InPrivate 浏览器窗口。
 2. 以 Chris Green 身份打开 Azure 门户 [https://portal.azure.com](https://portal.azure.com)。
@@ -53,15 +53,15 @@ ms.locfileid: "147400403"
     | 设置| **值**|
     | :--- | :--- |
     | 用户名| ChrisG@`your domain name.com`|
-    | 密码| Pass@word1|
+    | 密码| 输入上一个任务自动生成的密码。 |
 
 3. 更新你的密码。
 
     | 设置| **值**|
     | :--- | :--- |
-    | 当前密码| Pass@word1|
-    | 新密码| Pa$$w.rd1234|
-    | 确认密码| Pa$$w.rd1234|
+    | 当前密码| 使用自动生成的密码|
+    | 新密码| 输入唯一且安全的密码 |
+    | 确认密码| 重新输入唯一且安全的密码 |
 
 4. 如果看到“欢迎使用 Microsoft Azure”导览对话框，请选择“以后再说”按钮 。
 
@@ -72,9 +72,9 @@ ms.locfileid: "147400403"
 10. 选择右上角的“ChrisG”名称并注销。
 
 
-### <a name="exercise-2---assign-the-application-admin-role-and-create-an-app"></a>练习 2 - 分配应用程序管理员角色并创建应用
+### 练习 2 - 分配应用程序管理员角色并创建应用
 
-#### <a name="task-1---assign-a-role-to-a-user"></a>任务 1 - 为用户分配角色
+#### 任务 1 - 为用户分配角色
 
 使用 Azure Active Directory (Azure AD) 时，可以指定有限的管理员以权限较低的角色来管理标识任务。 可出于以下目的分配管理员：添加或更改用户、分配管理角色、重置用户密码、管理用户许可证，以及管理域名。
 
@@ -94,7 +94,7 @@ ms.locfileid: "147400403"
 
 备注：新分配的“应用程序管理员”角色将显示在用户的“分配的角色”页中。
 
-#### <a name="task-2---check-application-permissions"></a>任务 2 - 检查应用程序权限
+#### 任务 2 - 检查应用程序权限
 
 1. 启动一个新的 InPrivate 浏览器窗口。
 2. 以 Chris Green 身份打开 Azure 门户 [https://portal.azure.com](https://portal.azure.com)。
@@ -102,7 +102,7 @@ ms.locfileid: "147400403"
     | 设置| **值**|
     | :--- | :--- |
     | 用户名| ChrisG@`your domain name.com`|
-    | 密码| Pa$$w.rd1234|
+    | 密码| 输入之前创建的唯一安全密码 |
 
 3. 如果看到“欢迎使用 Microsoft Azure”导览对话框，请选择“以后再说”按钮 。
 4. 在屏幕顶部的搜索对话框中搜索并选择“企业应用程序”。
@@ -113,15 +113,15 @@ ms.locfileid: "147400403"
 
 7. 注销 Azure 门户中的 Chris Green 实例并关闭浏览器。
 
-### <a name="exercise-3---remove-a-role-assignment"></a>练习 3 - 删除角色分配
+### 练习 3 - 删除角色分配
 
-#### <a name="task-1---remove-the-application-administrator-from-chris-green"></a>任务 1 - 从 Chris Green 中删除应用程序管理员
+#### 任务 1 - 从 Chris Green 中删除应用程序管理员
 
 此任务将使用替代方法删除分配的角色；它将使用 Azure AD 中的“角色和管理员”选项。
 
 1. 如果尚未以全局管理员身份登录，请启动 Azure 门户并立即登录。
 2. 在搜索框中键入“Azure Active Directory”并启动 Azure AD。
-3. 在 Azure Active Directory 中，选择“角色和管理员”，然后从列表中选择“应用程序管理员”角色  。
+3. 在 Azure Active Directory 中，选择“角色和管理员”，然后从列表中选择“应用程序管理员”角色 ****  **** 。
 
 注意 - 如果实验室环境已激活 Azure AD Premium P2，则将启用 Privileged Identity Management (PIM)，你需要选择“下一步”并为该用户分配永久角色 。
 
@@ -131,9 +131,9 @@ ms.locfileid: "147400403"
 7. 当确认框打开时回答“是”。
 8. 关闭 Azure Active Directory。
 
-### <a name="exercise-4---bulk-import-of-users"></a>练习 4 - 批量导入用户
+### 练习 4 - 批量导入用户
 
-#### <a name="task-1---bulk-operations-for-creating-users-with-a-csv-file"></a>任务 1 - 使用 .csv 文件创建用户的批量操作
+#### 任务 1 - 使用 .csv 文件创建用户的批量操作
 
 1. 在 Azure AD 菜单中，选择“管理”下的“用户” 。
 
@@ -151,9 +151,10 @@ ms.locfileid: "147400403"
 
 6. Allfiles/Lab1 文件夹中提供了一个示例 CSV -- SC300BulkUser.csv。
    1. 打开记事本。
-   2. 打开 SC300BulkUser.csv 文件
-   3. 将“输入域名”更改为 Azure 实验室环境的域。
-   4. 保存该文件。
+     - 在实验室环境中，选择“开始”按钮，然后键入“记事本”。  
+   1. 打开 SC300BulkUser.csv 文件
+   1. 将“输入域名”更改为 Azure 实验室环境的域。
+   1. 保存该文件。
 
 7. 在“批量创建用户”对话框中，选择步骤 3
 
@@ -161,20 +162,21 @@ ms.locfileid: "147400403"
 
 9. 选择“打开”  。
 
-7. 系统会通知你已成功上传文件。  选择“提交”以添加用户。 
+7. 系统会通知你已成功上传文件。选择“提交”以添加用户。 
 
 创建用户后，系统会提示你已成功创建。  关闭批量创建用户磁贴，新用户将填充到“用户 | 所有用户”列表。 
 
-#### <a name="task-2---bulk-addition-of-users-using-powershell"></a>任务 2 - 使用 PowerShell 批量添加用户
+#### 任务 2 - 使用 PowerShell 批量添加用户
 
-1. 以管理员身份打开 PowerShell。  这可以通过在 Windows 中搜索 PowerShell 并选择“以管理员身份运行”来完成。 
+1. 以管理员身份打开 PowerShell。这可以通过在 Windows 中搜索 PowerShell 并选择“以管理员身份运行”来完成。 
 
 注意 - 选择 PowerShell 而不是 PowerShell ISE。
 
-2. 如果以前未使用过 Azure AD PowerShell 模块，则需要添加它。  运行以下命令：Install-Module AzureAD。  出现提示时，选择“Y”继续。
+2. 如果以前未使用过 Azure AD PowerShell 模块，则需要添加并导入它。  运行以下两个命令，并在系统提示确认时按 Y：
 
     ```
     Install-Module AzureAD
+    Import-Module AzureAD
     ```
 
 3. 通过运行以下命令确认模块正确安装：  
@@ -204,7 +206,7 @@ ms.locfileid: "147400403"
     ```
 
     ```
-    $PasswordProfile.Password = "Pass@word1" 
+    $PasswordProfile.Password = "<<enter a secure password you will remember>>" 
     ```
 
 8. 现在便可以创建新用户了。  以下命令将填充用户信息并运行。  如果要添加多个用户，可以使用记事本 txt 文件添加用户信息并将其复制/粘贴到 PowerShell 中。 
@@ -214,14 +216,14 @@ ms.locfileid: "147400403"
     ```
 注意 - 将 labtenantname.com 替换为实验室租户分配的 onmicrosoft.com 名称  。
 
-## <a name="experiment-with-managing-users"></a>试验管理用户
+## 试验管理用户
 
 可以使用 Azure AD 页面添加和删除用户。  而使用脚本可以创建用户和分配角色。  试验使用脚本为 Chris Green 用户帐户分配不同的角色。 
  
 
-### <a name="exercise-5---remove-a-user-from-azure-active-directory"></a>练习 5 - 从 Azure Active Directory 删除用户
+### 练习 5 - 从 Azure Active Directory 删除用户
 
-#### <a name="task-1---remove-a-user"></a>任务 1 - 删除用户
+#### 任务 1 - 删除用户
 
 可能出现已删除帐户，然后需要恢复此帐户的情况。 你需要验证是否可以恢复最近已删除的帐户。
 
@@ -239,7 +241,7 @@ ms.locfileid: "147400403"
 
 5. 查看对话框，然后选择“是”。
 
-#### <a name="task-2---restore-a-deleted-user"></a>任务 2 - 还原已删除的用户
+#### 任务 2 - 还原已删除的用户
 
 1. 在“用户”页面的左侧导航栏中，选择“已删除的用户”。
 
@@ -256,9 +258,9 @@ ms.locfileid: "147400403"
 6. 验证用户是否已还原。
 
 
-### <a name="exercise-6---add-a-windows-10-license-to-a-user-account"></a>练习 6 - 向用户帐户添加 Windows 10 许可证
+### 练习 6 - 向用户帐户添加 Windows 10 许可证
 
-#### <a name="task-1---find-your-unlicensed-user-in-azure-active-directory"></a>任务 1 - 在 Azure Active Directory 中查找未获许可的用户
+#### 任务 1 - 在 Azure Active Directory 中查找未获许可的用户
 
 组织中的一些用户帐户将不会获得其分配的许可证中的所有可用产品，或者将需要更新或补充其许可证分配。 你需要确保能够在 Azure AD 中更新用户帐户的许可证分配。
 

@@ -1,32 +1,27 @@
 ---
 lab:
   title: 24 - 使用 Azure AD Identity Governance 设置来管理外部用户的生命周期
-  learning path: "04"
+  learning path: '04'
   module: Module 04 - Plan and Implement and Identity Governance Strategy
-ms.openlocfilehash: a159b0548b2755c34ad9e4412e8f70ea14be1d5f
-ms.sourcegitcommit: b5fc07c53b5663eaa1883cf38b70c57cd88470ca
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "146741631"
 ---
-# <a name="lab-24-manage-the-lifecycle-of-external-users-in-azure-ad-identity-governance-settings"></a>实验室 24：使用 Azure AD Identity Governance 设置来管理外部用户的生命周期  
 
-## <a name="lab-scenario"></a>实验室方案
+# 实验室 24：使用 Azure AD Identity Governance 设置来管理外部用户的生命周期  
+
+## 实验室方案
 
 你可以选择当外部用户（已通过正在审批的访问包请求邀请到你的目录的用户）不再有任何访问包分配时将发生什么情况。 如果用户放弃其所有访问包分配，或者其最后一个访问包分配过期，则可能会发生这种情况。 默认情况下，当外部用户不再有任何访问包分配时，系统会阻止其登录到你的目录。 30 天后，系统会从你的目录中删除外部用户的来宾用户帐户。
 
-#### <a name="estimated-time-5-minutes"></a>预计用时：5 分钟
+#### 预计用时：5 分钟
 
-### <a name="exercise-1---azure-ad-identity-governance-settings"></a>练习 1 - Azure AD Identity Governance 设置
+### 练习 1 - Azure AD Identity Governance 设置
 
-#### <a name="task-1---manage-the-lifecycle-of-external-users-in-azure-ad-identity-governance-settings"></a>任务 1 - 使用 Azure AD Identity Governance 设置来管理外部用户的生命周期
+#### 任务 1 - 使用 Azure AD Identity Governance 设置来管理外部用户的生命周期
 
-1. 以全局管理员身份登录 [https://portal.azure.com](https://portal.azure.com)。
+1. 以全局管理员身份登录  [https://portal.azure.com](https://portal.azure.com)  。
 
 2. 具有全局管理员或用户管理员角色的帐户才能完成这些任务。
 
-3. 打开 Azure Active Directory，然后选择“Identity Governance”。
+3. 打开 Azure Active Directory，然后选择“Identity Governance” **** 。
 
 4. 在左侧导航菜单的“权利管理”下，选择“设置”。
 

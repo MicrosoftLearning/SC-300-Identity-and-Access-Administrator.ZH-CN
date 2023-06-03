@@ -1,30 +1,25 @@
 ---
 lab:
   title: 26 - 针对 Azure AD 角色配置 Privileged Identity Management
-  learning path: "04"
+  learning path: '04'
   module: Module 04 - Plan and Implement and Identity Governance Strategy
-ms.openlocfilehash: 129d26f994f732e94568b2b0d69383ad4b7c3031
-ms.sourcegitcommit: 80c5c0ef60c1d74fcc58c034fe6be67623013cc0
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "146823238"
 ---
-# <a name="lab-26-configure-privileged-identity-management-for-azure-ad-roles"></a>实验室 26：针对 Azure AD 角色配置 Privileged Identity Management
 
-## <a name="lab-scenario"></a>实验室方案
+# 实验室 26：针对 Azure AD 角色配置 Privileged Identity Management
+
+## 实验室方案
 
 特权角色管理员可以在其 Azure Active Directory (Azure AD) 组织中自定义 Privileged Identity Management (PIM)，包括更改激活合格角色分配的用户的体验。 你需要熟悉如何配置 PIM。
 
-#### <a name="estimated-time-30-minutes"></a>预计用时：30 分钟
+#### 预计用时：30 分钟
 
-### <a name="exercise-1---configure-azure-ad-role-settings"></a>练习 1 - 配置 Azure AD 角色设置
+### 练习 1 - 配置 Azure AD 角色设置
 
-#### <a name="task-1---open-role-settings"></a>任务 1 - 打开角色设置
+#### 任务 1 - 打开角色设置
 
 遵循以下步骤打开 Azure AD 角色的设置。
 
-1. 以全局管理员身份登录 [https://portal.azure.com](https://portal.azure.com)。
+1. 以全局管理员身份登录  [https://portal.azure.com](https://portal.azure.com)  。
 
 2. 搜索并选择“Azure AD Privileged Identity Management”。
 
@@ -40,7 +35,7 @@ ms.locfileid: "146823238"
 
 7. 查看角色设置详细信息。
 
-#### <a name="task-2---require-approval-to-activate"></a>任务 2 - 需要批准才能激活
+#### 任务 2 - 需要批准才能激活
 
 如果设置多个审批者，则审批会在其中一项批准或拒绝后立即完成。 不能要求获得至少两位用户的批准。 若要求批准以激活角色，请按照以下步骤操作。
 
@@ -58,9 +53,9 @@ ms.locfileid: "146823238"
 
 5. 配置角色设置后，选择“更新”以保存更改。
 
-### <a name="exercise-2---pim-with-azure-ad-roles"></a>练习 2 - 针对 Azure AD 角色的 PIM
+### 练习 2 - 针对 Azure AD 角色的 PIM
 
-#### <a name="task-1---assign-a-role"></a>任务 1 - 分配角色
+#### 任务 1 - 分配角色
 
 使用 Azure Active Directory (Azure AD)，全局管理员可以完成永久性的 Azure AD 管理员角色分配。 可以使用 Azure 门户或 PowerShell 命令创建这些角色分配。
 
@@ -101,7 +96,7 @@ Azure AD Privileged Identity Management (PIM) 服务还允许特权角色管理�
 
 13. 查看其余设置，然后选择“分配”。
 
-#### <a name="task-2---log-in-with-miriam"></a>任务 2 - 以 Miriam 身份登录
+#### 任务 2 - 以 Miriam 身份登录
 
 1. 打开一个新的 InPrivate 浏览器窗口。
 2. 连接到 Azure 门户 (https://portal.azure.com) )。
@@ -120,7 +115,7 @@ Azure AD Privileged Identity Management (PIM) 服务还允许特权角色管理�
 9. 选择“分配的角色”，然后选择“符合条件的分配” 。
 10. 请注意，Miriam 现在可以使用“合规性管理员”角色。
 
-#### <a name="task-3---activate-your-azure-ad-roles"></a>任务 3 - 激活 Azure AD 角色
+#### 任务 3 - 激活 Azure AD 角色
 
 需要充当某个 Azure AD 角色时，可在 Privileged Identity Management 中通过打开“我的角色”请求激活。
 
@@ -146,7 +141,7 @@ Azure AD Privileged Identity Management (PIM) 服务还允许特权角色管理�
 
 8. 选择“激活”  。
 
-#### <a name="task-4---assign-a-role-with-restricted-scope"></a>任务 4 - 分配范围受限的角色
+#### 任务 4 - 分配范围受限的角色
 
 对于某些角色，所授予权限的范围可以限制为单个管理单元、服务主体或应用程序。 若要分配范围为一个管理单元的角色，则可参考此过程。
 
@@ -163,7 +158,7 @@ Azure AD Privileged Identity Management (PIM) 服务还允许特权角色管理�
 
 7. 与在不具有限制的范围内分配角色一样，你需要添加成员并完成设置选项。 现在选择“取消”。
 
-#### <a name="task-5---update-or-remove-an-existing-role-assignment"></a>任务 5 - 更新或删除现有的角色分配
+#### 任务 5 - 更新或删除现有的角色分配
 
 按照以下步骤更新或删除现有的角色分配。
 

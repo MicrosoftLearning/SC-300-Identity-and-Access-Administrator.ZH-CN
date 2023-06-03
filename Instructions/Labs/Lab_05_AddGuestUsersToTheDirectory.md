@@ -1,40 +1,33 @@
 ---
 lab:
   title: 05 - 将来宾用户添加到目录
-  learning path: "01"
+  learning path: '01'
   module: Module 01 - Implement an identity management solution
-ms.openlocfilehash: 48a24758034e463192f9f726b223dce1b961bb76
-ms.sourcegitcommit: b5fc07c53b5663eaa1883cf38b70c57cd88470ca
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "146741638"
 ---
-# <a name="lab-05-add-guest-users-to-the-directory"></a>实验室 05：将来宾用户添加到目录
 
-## <a name="lab-scenario"></a>实验室方案
+# 实验室 05：将来宾用户添加到目录
+
+## 实验室方案
 
 你的公司与许多供应商合作，有时你需要将一些供应商帐户作为来宾添加到你的目录。
 
-#### <a name="estimated-time-20-minutes"></a>预计用时：20 分钟
+#### 预计用时：20 分钟
 
-### <a name="exercise-1---add-guest-users-to-the-directory"></a>练习 1 - 将来宾用户添加到目录
+### 练习 1 - 将来宾用户添加到目录
 
-#### <a name="task---add-the-guest-user"></a>任务 - 添加来宾用户
+#### 任务 - 添加来宾用户
 
-1. 以拥有受限的管理员目录角色或来宾邀请者角色的用户身份登录 [https://portal.azure.com](https://portal.azure.com)。
+1. 以拥有受限的管理员目录角色或来宾邀请者角色的用户身份登录  [https://portal.azure.com](https://portal.azure.com)  。
 
-2. 选择“Azure Active Directory” 。
+2. 选择“Azure Active Directory” **** 。
 
-3. 在“管理”下，选择“用户” 。
+3. 在“管理”下，选择“用户” ****  **** 。
 
-4. 选择“新来宾用户”。
+4. 选择“+ 新建用户” **** 。
 
-    ![显示“用户”页的屏幕图像，其中“新建来宾用户”菜单选项处于选中状态](./media/lp1-mod3-new-guest-user-menu-selection.png)
+5. 在“新建用户”菜单上，选择“邀请外部用户”，然后将信息添加为来宾用户。
 
-5. 在“新建用户”页面上，选择“邀请用户”，然后将信息添加为来宾用户。
-
-    >备注 - 不支持组电子邮件地址；输入个人的电子邮件地址。 另外，某些电子邮件提供程序允许用户向其电子邮件地址中添加加号 (+) 和附加文本来帮助执行收件箱筛选之类的操作。 但是，Azure AD 当前不支持在电子邮件地址中使用加号。 为避免在传送时出现问题，请省略加号及其之后的任何字符，直至 @ 符号。
+    备注 - 不支持组电子邮件地址；输入个人的电子邮件地址。 另外，某些电子邮件提供程序允许用户向其电子邮件地址中添加加号 (+) 和附加文本来帮助执行收件箱筛选之类的操作。 但是，Azure AD 当前不支持在电子邮件地址中使用加号。 为避免在传送时出现问题，请省略加号及其之后的任何字符，直至 @ 符号。
 
 6. 输入电子邮件地址，例如 **sc300externaluser1@sc300email.com** 。
 
@@ -45,9 +38,9 @@ ms.locfileid: "146741638"
 发送邀请后，该用户帐户将以来宾的形式自动添加到目录。
 
 
-### <a name="exercise-2---invite-guest-users-in-bulk"></a>练习 2 - 批量邀请来宾用户
+### 练习 2 - 批量邀请来宾用户
 
-#### <a name="task-1---bulk-user-invite"></a>任务 1 - 批量邀请用户
+#### 任务 1 - 批量邀请用户
 
 最近与另一家公司建立了合作伙伴关系。 目前，合作伙伴公司的员工将作为来宾添加。 你需要确保可一次性导入多个来宾用户。
 
@@ -90,7 +83,7 @@ ms.locfileid: "146741638"
 
 13. 作业完成后，会显示一条通知，指出批量操作成功。
 
-#### <a name="task-2---invite-guest-users-with-powershell"></a>任务 2 - 使用 PowerShell 邀请来宾用户
+#### 任务 2 - 使用 PowerShell 邀请来宾用户
 
 1. 以管理员身份打开 PowerShell。  这可以通过在 Windows 中搜索 PowerShell 并选择“以管理员身份运行”来完成。  
 

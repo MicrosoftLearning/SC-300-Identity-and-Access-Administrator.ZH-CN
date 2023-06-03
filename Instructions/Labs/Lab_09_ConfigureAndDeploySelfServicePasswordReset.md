@@ -1,25 +1,20 @@
 ---
 lab:
   title: 09 - 启用 Azure AD 自助式密码重置
-  learning path: "02"
+  learning path: '02'
   module: Module 02 - Implement an Authentication and Access Management Solution
-ms.openlocfilehash: 9e641505e826bfa720dc52ddebabe01435af9166
-ms.sourcegitcommit: b5fc07c53b5663eaa1883cf38b70c57cd88470ca
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "146741598"
 ---
-# <a name="lab-09---configure-and-deploy-self-service-password-reset"></a>实验室 09 - 启用 Azure AD 自助式密码重置
-## <a name="lab-scenario"></a>实验室方案
+
+# 实验室 09 - 启用 Azure AD 自助式密码重置
+## 实验室方案
 
 公司已决定为员工提供支持，并启用自助式密码重置。 你需要在组织中配置此设置。
 
-#### <a name="estimated-time-15-minutes"></a>预计用时：15 分钟
+#### 预计用时：15 分钟
 
-### <a name="exercise-1---create-a-group-with-sspr-enabled-and-add-users-to-it"></a>练习 1 - 创建启用 SSPR 的组并添加用户
+### 练习 1 - 创建启用 SSPR 的组并添加用户
 
-#### <a name="task-1---create-a-group-to-assign-sspr-to"></a>任务 1 - 创建要将 SSPR 分配到其中的组
+#### 任务 1 - 创建要将 SSPR 分配到其中的组
 
 需要先向人数有限的一组用户推送 SSPR，以确保 SSPR 配置按预期工作。 让我们创建用于受限推出的安全组，并将用户添加到该组。
 
@@ -38,33 +33,33 @@ ms.locfileid: "146741598"
     | | Bianca Pisani |
   
     
-3. 选择“创建”。
+3. 选择“创建” **** 。
 
     ![显示“新建组”页的屏幕图像，其中突出显示了“组类型”、“组名称”和“创建”](./media/lp2-mod2-create-sspr-security-group.png)
 
-#### <a name="task-2---enable-sspr-for-you-test-group"></a>任务 2 - 为测试组启用 SSPR
+#### 任务 2 - 为测试组启用 SSPR
 
 为组启用 SSPR。
 
 1. 浏览回“Azure Active Directory”页。
 
-2. 在“管理”下，选择“密码重置”。
+2. 在“管理”下，选择“密码重置” ****  **** 。
 
-3. 在“密码重置”页的“属性”页上，在“已启用自助式密码重置”下，选择“选定” 。
+3. 在“密码重置”页的“属性”页上，在“已启用自助式密码重置”下，选择“选定” **** 。
 
 4. 选择“选择组”，然后选择“SSPRSecurityGroupUser” 。
 
-5. 在默认密码重置策略窗格中，选择“SSPRTesters”组。
+5. 在默认密码重置策略窗格中，选择“SSPRTesters”组 。
 
-6. 在“密码重置”页的“属性”页上，选择“保存”。
+6. 在“密码重置”页的“属性”页上，选择“保存” **** 。
 
     ![显示密码重置属性页的屏幕图像，其中突出显示了“选定”、“选择组”和“保存”](./media/lp2-mod2-enable-password-reset-for-selected-group.png)
 
-7. 在“管理”下，选择并查看“身份验证方法”、“注册”、“通知”和“自定义”设置的默认值。
+7. 在“管理”下，选择并查看“身份验证方法”、“注册”、“通知”和“自定义”设置的默认值 ****  ****  ****  。
 
     备注：虽然选择“电话”作为本实验室其余部分的身份验证方法很重要，但也可使用其他选项 。
 
-#### <a name="taks-3---register-for-sspr-with-alex"></a>任务 3 - 使用 Alex 注册 SSPR
+#### 任务 3 - 使用 Alex 注册 SSPR
 
 SSPR 配置完成后，可以为创建的用户注册移动电话号码。
 
@@ -87,7 +82,7 @@ SSPR 配置完成后，可以为创建的用户注册移动电话号码。
     备注 - 在本实验室中，你将使用“电话”选项 。 输入移动电话详细信息。
 
 6. 在“电话号码”字段中输入个人手机号码。
-7. 选择“以短信形式向我发送验证码”。
+7. 选择“以短信形式向我发送验证码” **** 。
 8. 选择“下一步”  。
 
 9. 在移动电话上收到验证码后，在文本框中输入该验证码，然后选择“下一步”。
@@ -96,11 +91,11 @@ SSPR 配置完成后，可以为创建的用户注册移动电话号码。
 
 11. 关闭浏览器。 无需完成登录过程。
 
-#### <a name="task-4---test-sspr"></a>任务 4 - 测试 SSPR
+#### 任务 4 - 测试 SSPR
 
 现在来测试用户是否可以重置其密码。
 
-1. 打开其他浏览器或打开 InPrivate 或 Incognito 浏览器会话，然后浏览到 [https://portal.azure.com](https://portal.azure.com)。
+1. 打开其他浏览器或打开 InPrivate 或 Incognito 浏览器会话，然后浏览到  [https://portal.azure.com](https://portal.azure.com)。
 
     这是为了确保系统能很好地提示你进行用户身份验证。
 
@@ -122,7 +117,7 @@ SSPR 配置完成后，可以为创建的用户注册移动电话号码。
 
 7. 在“选择新密码”步骤中，输入并确认新密码。  建议密码 = Pass@w.rd1234。
 
-8. 完成后，选择“完成”。
+8. 完成后，选择“完成”****。
 
 9. 使用创建的新密码以 AlexW 身份登录。
 
@@ -130,6 +125,6 @@ SSPR 配置完成后，可以为创建的用户注册移动电话号码。
 
 11. 完成后，关闭浏览器。
 
-#### <a name="task-5---what-happens-if-you-try-a-user-not-in-ssprtesters-group"></a>任务 5 - 如果尝试使用 SSPRTesters 组之外的用户会怎样？
+#### 任务 5 - 如果尝试使用 SSPRTesters 组之外的用户会怎样？
 
 1. 在测试中，打开一个新的 InPrivate 浏览器窗口并尝试以 GradyA 身份登录到 Azure 门户，然后选择“忘记密码”选项。
