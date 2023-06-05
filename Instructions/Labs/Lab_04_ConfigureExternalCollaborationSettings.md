@@ -1,38 +1,44 @@
 ---
 lab:
   title: 04 - 配置外部协作设置
-  learning path: "01"
+  learning path: '01'
   module: Module 01 - Implement an identity management solution
-ms.openlocfilehash: 1980b26735b55bc06edfb356ec03f34ba221afb9
-ms.sourcegitcommit: b5fc07c53b5663eaa1883cf38b70c57cd88470ca
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "146741600"
 ---
-# <a name="lab-04-configure-external-collaboration-settings"></a>实验室 04：配置外部协作设置
 
-## <a name="lab-scenario"></a>实验室方案
+# 实验室 04：配置外部协作设置
+
+## 实验室方案
 
 你需要为组织启用外部协作设置以进行批准的来宾访问。
 
-#### <a name="estimated-timing-5-minutes"></a>预计用时：5 分钟
+#### 预计用时：5 分钟
 
-### <a name="exercise-1---allowing-guest-users-to-be-invited-into-your-organization"></a>练习 1 - 允许邀请来宾用户加入组织
+### 练习 1 - 允许邀请来宾用户加入组织
 
-#### <a name="task---configure-external-collaboration-settings"></a>任务 - 配置外部协作设置
+#### 任务 1 - 使来宾用户能够执行自助注册
 
-1. 以租户管理员身份登录到 [https://portal.azure.com](https://portal.azure.com)。
-2. 选择“Azure Active Directory” 。
-3. 选择“外部标识”>“外部协作设置”。
+1. 以租户管理员身份登录到  [https://portal.azure.com](https://portal.azure.com)  。
+2. 选择“Azure Active Directory” **** 。
+3. 选择“用户设置”。
+4. 选择“管理外部用户协作设置”。
+5. 确保“通过用户流启用来宾自助注册”设置标记为“是” 。
+6. 选择屏幕顶部的“保存”。
+
+#### 任务 2 - 配置外部协作设置
+
+1. 以租户管理员身份登录到  [https://portal.azure.com](https://portal.azure.com)  。
+2. 选择“Azure Active Directory” **** 。
+3. 选择“外部标识”>“所有标识提供者” **** 。
 4. 选择屏幕顶部附近的“电子邮件一次性密码”通知链接。
 
     备注 - 一次性密码是一种非常安全的方式，可用于邀请用户加入组织。
+    
+5. 确保选中“是”。
+6. 根据需要选择“保存”。
+7. 否则，选择 `Home > Contoso Marketing >`“外部标识”返回上一屏幕。
+8. 选择左侧的“外部协作设置”
 
-5. 选择 `Home > Contoso Marketing >`“外部标识”以返回上一屏幕。
-6. 选择左侧的“外部协作设置”
-
-7. 在“来宾用户访问权限”下，查看可用的访问级别，然后选择“来宾用户访问权限仅限于自己的目录对象的属性和成员身份（限制最严格）”。
+9. 在“来宾用户访问权限”下，查看可用的访问级别，然后选择“来宾用户访问权限仅限于自己的目录对象的属性和成员身份（限制最严格）” **** 。
 
     注意
     - 来宾用户具有与成员相同的访问权限（包括首选项）：此选项使来宾与成员用户具有相同的对 Azure AD 资源和目录数据的访问权限。
@@ -41,7 +47,7 @@ ms.locfileid: "146741600"
 
     ![显示来宾用户访问限制选项的屏幕图像](./media/lp1-mod3-guest-user-access-restrictions.png)
 
-8. 在“来宾邀请设置”下，选择“成员用户和分配有特定管理员角色的用户可以邀请来宾用户，包括具有成员权限的来宾”！ 
+10. 在“来宾邀请设置”下，选择“成员用户和分配有特定管理员角色的用户可以邀请来宾用户，包括具有成员权限的来宾”！ **** 
 
     注意
     - 组织中的任何人都可以邀请包括来宾和非管理员在内的来宾用户(范围最广)：若要允许组织中的来宾邀请其他来宾（包括不是组织成员的来宾），请选择此单选按钮。
@@ -52,7 +58,7 @@ ms.locfileid: "146741600"
 
     ![显示来宾邀请设置的屏幕图像，其中突出显示了“来宾可以邀请”设为“否”](./media/lp1-mod3-guest-user-invite-settings.png)
 
-9. 在“协作限制”下，查看可用选项并接受默认设置。
+11. 在“协作限制”下，查看可用选项并接受默认设置 **** 。
 
     **重要事项**
     - 可以创建允许列表或拒绝列表。 不能同时设置这两种类型的列表。 默认情况下，不在允许列表中的任何域都会包含在拒绝列表中，反之亦然。
@@ -61,4 +67,4 @@ ms.locfileid: "146741600"
     - 此列表独立于 OneDrive for Business 和 SharePoint Online 允许/阻止列表。 若要在 SharePoint Online 中限制单个文件的共享，需要为 OneDrive for Business 和 SharePoint Online 设置允许或拒绝列表。
     - 此列表不适用于已兑换邀请的外部用户。 设置列表后，将强制实施该列表。 如果用户邀请处于挂起状态，而你设置了一个阻止该用户的域的策略，则该用户在尝试兑换邀请时将会失败。
 
-10. 完成后，保存所做的更改。
+12. 完成后，保存所做的更改。
