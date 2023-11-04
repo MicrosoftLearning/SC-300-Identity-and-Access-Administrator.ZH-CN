@@ -23,7 +23,7 @@ lab:
     - Azure AD Premium P1、P2、EMS E3 或 EMS E5 订阅。
     - 如果你没有这些订阅，可获取 Azure AD Premium 订阅或启用 Azure AD Premium 试用版订阅。
     - 下述适用于需配置目录的管理员帐户之一：
-        - 全局管理员
+        - 全局管理员角色
         - 安全管理员
         - 条件访问管理员
 
