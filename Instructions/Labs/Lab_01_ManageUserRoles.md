@@ -22,20 +22,18 @@ lab:
 
 #### 任务 1 - 添加新用户
 
-1. 以全局管理员身份登录  [https://portal.azure.com](https://portal.azure.com) 
+1. 以全局管理员身份登录  [https://entra.microsoft.com](https://entra.microsoft.com) 
 
-2. 搜索并选择“Azure Active Directory”。
+2. 在左侧菜单中选择“标识”****。
 
-3. 在左侧导航菜单中的“管理”下，选择“用户”，然后选择“+ 新建用户”和“创建新用户”   。
+3. 在左侧导航菜单中的“用户”**** 下，选择“所有用户”****，然后选择“+ 新建用户”**** 和“创建新用户”****。
 
 4. 标记“创建用户”按钮。 然后使用以下信息创建用户：
 
     | **设置**| **值**|
     | :--- | :--- |
-    | 用户名| ChrisG|
-    | 名称| Chris Green|
-    | 名字| Chris|
-    | 姓氏| 绿色|
+    | 用户主体名称| ChrisG|
+    | 显示名称| Chris Green|
 
 5. 标记“自动生成密码”选项。
 
@@ -43,14 +41,14 @@ lab:
 
      首次登录此帐户时必须更改密码
 
-7. 选择“创建”。 现已创建用户并注册到你的组织。
+7. 选择“查看 + 创建”  。 然后，在查看屏幕中选择“创建”****。 现已创建用户并注册到你的组织。
 
 #### 任务 2 - 登录并尝试创建应用
 
 1. 启动一个新的 InPrivate 浏览器窗口。
-2. 以 Chris Green 身份打开 Azure 门户 [https://portal.azure.com](https://portal.azure.com)。
+2. 以 Chris Green 的身份打开 Microsoft Entra 管理中心 [https://entra.microsoft.com](https://entra.microsoft.com)。
 
-    | 设置| **值**|
+    | **设置**| **值**|
     | :--- | :--- |
     | 用户名| ChrisG@`your domain name.com`|
     | 密码| 输入上一个任务自动生成的密码。 |
@@ -63,7 +61,7 @@ lab:
     | 新密码| 输入唯一且安全的密码 |
     | 确认密码| 重新输入唯一且安全的密码 |
 
-4. 如果看到“欢迎使用 Microsoft Azure”导览对话框，请选择“以后再说”按钮 。
+4. 如果看到导览对话框****，请选择“以后再说”**** 按钮 。
 
 5. 在屏幕顶部的搜索对话框中搜索并选择“企业应用程序”。
 7. 选择“+ 新建应用程序”。 请注意，“+ 创建自己的应用程序”不可用。
@@ -76,11 +74,11 @@ lab:
 
 #### 任务 1 - 为用户分配角色
 
-使用 Azure Active Directory (Azure AD) 时，可以指定有限的管理员以权限较低的角色来管理标识任务。 可出于以下目的分配管理员：添加或更改用户、分配管理角色、重置用户密码、管理用户许可证，以及管理域名。
+使用 Microsoft Entra ID，可指定受限的管理员来管理权限较低的角色中的标识任务。 可出于以下目的分配管理员：添加或更改用户、分配管理角色、重置用户密码、管理用户许可证，以及管理域名。
 
-1. 如果尚未以全局管理员角色登录，请打开 Azure 门户并登录。
-2. 导航到 Azure Active Directory 页面。
-3. 选择菜单“管理”部分下的“用户”。
+1. 如果尚未以全局管理员角色登录，请打开 Microsoft Entra 管理中心并登录。
+2. 导航到“标识”，然后选择“用户”页。
+3. 选择菜单的“管理”部分下的“所有用户”****。
 4. 选择“Chris Green”帐户。
 5. 从“管理”菜单中选择“分配的角色”。
 6. 选择“+ 添加分配”并标记 `Application administrator` 角色。
@@ -88,18 +86,18 @@ lab:
 
     ![“分配的角色”页 - 显示所选角色](./media/directory-role-select-role.png)
 
-注意 - 如果实验室环境已激活 Azure AD Premium P2，则将启用 Privileged Identity Management (PIM)，你需要选择“下一步”并为该用户分配永久角色 。
+**备注** - 如果实验室环境已激活 Microsoft Entra ID 高级版 P2，则将启用 Privileged Identity Management (PIM)，你需要选择“下一步”**** 并为该用户分配永久角色。
 
-8. 选择“刷新”按钮。
+9. 选择“刷新”**** 按钮。
 
 备注：新分配的“应用程序管理员”角色将显示在用户的“分配的角色”页中。
 
 #### 任务 2 - 检查应用程序权限
 
 1. 启动一个新的 InPrivate 浏览器窗口。
-2. 以 Chris Green 身份打开 Azure 门户 [https://portal.azure.com](https://portal.azure.com)。
+2. 以 Chris Green 的身份打开 Microsoft Entra 管理中心 [https://entra.microsoftcom](https://entra.microsoft.com)。
 
-    | 设置| **值**|
+    | **设置**| **值**|
     | :--- | :--- |
     | 用户名| ChrisG@`your domain name.com`|
     | 密码| 输入之前创建的唯一安全密码 |
@@ -108,6 +106,7 @@ lab:
 4. 在屏幕顶部的搜索对话框中搜索并选择“企业应用程序”。
 5. 请注意，现在可以使用“+ 新建应用程序”。
 6. 选择“+ 新建应用程序”
+7. 你会看到“+ 创建自己的应用程序”**** 不再以灰色显示。如果选择库应用，将看到“创建”**** 按钮可用。
 
    备注：此角色现在能够向租户添加应用程序。我们将在以后的实验室中更多地试用该功能。
 
@@ -119,23 +118,20 @@ lab:
 
 此任务将使用替代方法删除分配的角色；它将使用 Azure AD 中的“角色和管理员”选项。
 
-1. 如果尚未以全局管理员身份登录，请启动 Azure 门户并立即登录。
-2. 在搜索框中键入“Azure Active Directory”并启动 Azure AD。
-3. 在 Azure Active Directory 中，选择“角色和管理员”，然后从列表中选择“应用程序管理员”角色 ****  **** 。
-
-注意 - 如果实验室环境已激活 Azure AD Premium P2，则将启用 Privileged Identity Management (PIM)，你需要选择“下一步”并为该用户分配永久角色 。
-
+1. 如果尚未以全局管理员身份登录，请启动 Microsoft Entra 管理中心并立即登录。
+2. 在搜索框中键入“角色”****，然后启动 Microsoft Entra ID 角色和管理。
+3. 在“角色和管理员” **** 的“所有角色” **** 中，从列表中选择“应用程序管理员”**** 角色。
 4. “应用程序管理员 | 分配”页面应会列出 Chris Green 的姓名。
 5. 勾选 Chris Green 旁边的框。
 6. 从对话框顶部的选项中选择“X 删除分配”。
 7. 当确认框打开时回答“是”。
-8. 关闭 Azure Active Directory。
+8. 关闭屏幕。
 
 ### 练习 4 - 批量导入用户
 
 #### 任务 1 - 使用 .csv 文件创建用户的批量操作
 
-1. 在 Azure AD 菜单中，选择“管理”下的“用户” 。
+1. 在 Microsoft Entra ID 菜单中，首先打开“标识”****，再选择“用户”****，然后选择“所有用户”****。
 
 2. 在“用户 | 所有用户”磁贴上，选择“批量操作”下拉箭头，然后选择“批量创建”  。
 
@@ -170,68 +166,72 @@ lab:
 
 1. 以管理员身份打开 PowerShell。这可以通过在 Windows 中搜索 PowerShell 并选择“以管理员身份运行”来完成。 
 
-注意 - 选择 PowerShell 而不是 PowerShell ISE。
+**备注** - 此实验室需要装有 PowerShell 版本 7.2 或更高版本才能正常工作。  当 PowerShell 打开时，屏幕顶部会显示版本，如果目前运行的版本较旧，请按照屏幕上的说明转到 https://aka.ms/PowerShell-Release?tag=7.3.9。 向下滚动到资产部分，然后选择 powershell-7.3.1-win-x64.msi。 下载完成后，选择“打开文件”。 使用所有默认值进行安装。
 
-2. 如果以前未使用过 Azure AD PowerShell 模块，则需要添加并导入它。  运行以下两个命令，并在系统提示确认时按 Y：
-
-    ```
-    Install-Module AzureAD
-    Import-Module AzureAD
-    ```
-
-3. 通过运行以下命令确认模块正确安装：  
+2. 如果以前未使用过 Microsoft.Graph PowerShell 模块，则需要安装它。  运行以下两个命令，并在系统提示确认时按 Y：
 
     ```
-    Get-Module AzureAD 
+    Install-Module Microsoft.Graph
     ```
+3. 确认已安装 Microsoft.Graph 模块：
+
+    ```
+    Get-InstalledModule Microsoft.Graph
+    ```
+    
 
 4. 接下来，需要通过运行以下命令登录到 Azure：  
 
     ```
-    Connect-AzureAD 
+    Connect-MgGraph -Scopes "User.ReadWrite.All"
     ``` 
+    将打开 Edge 浏览器，系统会提示你登录。  使用 MOD 管理员帐户进行连接。  接受权限请求，然后关闭浏览器窗口。
 
-5. 将显示 Microsoft 登录窗口，供你登录 Azure AD。  
-
-6. 若要验证是否已连接并查看现有用户，请运行：  
+5. 若要验证是否已连接并查看现有用户，请运行：  
 
     ``` 
-    Get-AzureADUser 
+    Get-MgUser 
     ```
     
-7. 若要向所有新用户分配一个通用临时密码，请运行以下命令，并将 TempPW 替换为要提供给用户的密码。  
+7. 若要向所有新用户分配一个通用临时密码，请运行以下命令，并将 <Enter a complex Password> 替换为要提供给用户的密码。  
 
     ``` 
-    $PasswordProfile = New-Object -TypeName Microsoft.Open.AzureAD.Model.PasswordProfile
-    ```
-
-    ```
-    $PasswordProfile.Password = "<<enter a secure password you will remember>>" 
+    $PWProfile = @{
+        Password = "<Enter a complex password you will>";
+        ForceChangePasswordNextSignIn = $false
+    }
     ```
 
 8. 现在便可以创建新用户了。  以下命令将填充用户信息并运行。  如果要添加多个用户，可以使用记事本 txt 文件添加用户信息并将其复制/粘贴到 PowerShell 中。 
 
     ```
-    New-AzureADUser -DisplayName "New User" -PasswordProfile $PasswordProfile -UserPrincipalName "NewUser@labtenantname.com" -AccountEnabled $true -MailNickName "Newuser"
+    New-MgUser `
+        -DisplayName "New PW User" `
+        -GivenName "New" -Surname "User" `
+        -MailNickname "newuser" `
+        -UsageLocation "USA" `
+        -UserPrincipalName "newuser@<labtenantname.com>" `
+        -PasswordProfile $PWProfile -AccountEnabled `
+        -Department "Research" -JobTitle "Trainer"
     ```
 注意 - 将 labtenantname.com 替换为实验室租户分配的 onmicrosoft.com 名称  。
 
 ## 试验管理用户
 
-可以使用 Azure AD 页面添加和删除用户。  而使用脚本可以创建用户和分配角色。  试验使用脚本为 Chris Green 用户帐户分配不同的角色。 
+可以使用 Microsoft Entra ID 页添加和删除用户。  而使用脚本可以创建用户和分配角色。  试验使用脚本为 Chris Green 用户帐户分配不同的角色。 
  
 
-### 练习 5 - 从 Azure Active Directory 删除用户
+### 练习 5 - 从 Microsoft Entra ID 中删除用户
 
 #### 任务 1 - 删除用户
 
 可能出现已删除帐户，然后需要恢复此帐户的情况。 你需要验证是否可以恢复最近已删除的帐户。
 
-1. 浏览到 [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview]( https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)。
+1. 浏览到 [https://entra.micrososft.com](Microsoft Entra admin center)。
 
-2. 在左侧导航栏的“管理”下，选择“用户”。
+2. 在左侧导航栏的“标识”下，选择“用户”。********
 
-3. 在“用户”列表中，选中要删除的用户对应的复选框。 例如，选择“Chris Green”。
+3. 打开“所有用户”**** 列表，选中与要删除的用户对应的复选框。 例如，选择“Chris Green”。
 
     提示 - 通过从列表中选择用户可以同时管理多个用户。 如果选择某个用户，打开该用户的页面后，你将只能管理这一个用户。
 
@@ -243,7 +243,7 @@ lab:
 
 #### 任务 2 - 还原已删除的用户
 
-1. 在“用户”页面的左侧导航栏中，选择“已删除的用户”。
+1. 在“用户”页中，选择左侧导航栏的“所有用户”****，选择“已删除的用户”****。
 
 2. 查看已删除的用户列表，然后选择“Chris Green”。
 
@@ -264,9 +264,9 @@ lab:
 
 组织中的一些用户帐户将不会获得其分配的许可证中的所有可用产品，或者将需要更新或补充其许可证分配。 你需要确保能够在 Azure AD 中更新用户帐户的许可证分配。
 
-1. 浏览到 [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview]( https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)。
+1. 浏览到 [https://entra.microsoft.com]( https://entra.microsoft.com)。
 
-2. 在左侧导航栏的“管理”下，选择“用户”。 
+2. 在左侧导航栏中的“标识”**** 下，选择“用户”****，然后选择“所有用户”****。
 
 3. 在“用户”页的搜索框中输入“Raul”。
 
@@ -280,22 +280,20 @@ lab:
 
 7. 确保 Raul 的状态为“未找到许可证分配”。
 
-8. 浏览到 [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview]( https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)。
+8. 导航回到左侧导航栏中的“所有用户”****，在“标识”**** 下，选择“用户”****
 
-9. 在左侧导航栏的“管理”下，选择“用户” 
+9. 在“用户”页上，选择“Raul Razo”。
 
-10. 在“用户”页上，选择“Raul Razo”。
+10. 在左侧导航栏中，选择“许可证”。
 
-11. 在左侧导航栏中，选择“许可证”。
+11. 选择“+ 分配”按钮。 
 
-12. 选择“+ 分配”按钮。 
-
-13. 在“更新许可证分配”页上，选择“Windows 10/11 企业版 E3”许可证复选框。
+12. 在“更新许可证分配”页上，选择“Windows 10/11 企业版 E3”许可证复选框。
 
     ![显示“更新许可证分配”页的屏幕图像，其中突出显示许可证选项](./media/lp1-mod2-assign-user-license-options.png)
 
-14. 完成后选择“保存”。
+13. 完成后选择“保存”。
 
-15. 在屏幕顶部选择“主页”，然后依次选择“Contoso”、“用户”和“Raul Razo”   。
+14. 在屏幕顶部选择“主页”，然后依次选择“Contoso”、“用户”和“Raul Razo”   。
 
-16. 请注意，许可证已分配。
+15. 请注意，许可证已分配。
