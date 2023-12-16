@@ -21,7 +21,7 @@ lab:
 
 1. 浏览到 [https://portal.azure.com](https://portal.azure.com)
 
-1. 选择“+ 创建资源”。 
+1. 选择“+ 创建资源”。
 
 1. 在“搜索市场”搜索栏中键入“Windows Server”。
 
@@ -42,7 +42,7 @@ lab:
 
 1. 浏览到 [https://portal.azure.com](https://portal.azure.com) 中的**虚拟机**。
 
-1. 从任务 1 中选择新创建的虚拟机。
+1. 选择在任务 1 中新创建的虚拟机。
 
 1. 选择“访问控制 (IAM)”。
 
@@ -155,7 +155,7 @@ lab:
 
 1. 浏览到 [https://portal.azure.com](https://portal.azure.com)
 
-1. 选择“+ 创建资源”。 
+1. 选择“+ 创建资源”。
 
 1. 在“热门”视图中的“Ubuntu Server 18.04 LTS”下，选择“创建” 。
 

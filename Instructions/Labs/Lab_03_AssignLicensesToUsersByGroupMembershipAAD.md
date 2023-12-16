@@ -106,7 +106,7 @@ lab:
    | 组名称| 西北部销售额|
    | 成员身份类型| 已分配|
    | 所有者| *分配自己的管理员帐户作为组所有者*|
-   | 成员| Alex Wilber 和 Bianca Pisani |
+   | 成员| Alex Wilber 和 Bianca Pisani|
 
    ![显示“新建组”页的屏幕图像，其中突出显示了“组类型”、“组名称”、“所有者”和“成员”](./media/lp1-mod2-create-o365-group.png)
 
