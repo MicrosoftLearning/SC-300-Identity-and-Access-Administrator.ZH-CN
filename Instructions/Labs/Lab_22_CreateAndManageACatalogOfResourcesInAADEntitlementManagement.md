@@ -1,11 +1,11 @@
 ---
 lab:
-  title: 22 - 在 Azure AD 权利管理中创建和管理资源目录
+  title: 22 - 在 Microsoft Entra 权利管理中创建和管理资源目录
   learning path: '04'
   module: Module 04 - Plan and Implement and Identity Governance Strategy
 ---
 
-# 实验室 22：在 Azure AD 权利管理中创建和管理资源目录
+# 实验室 22：在 Microsoft Entra 权利管理中创建和管理资源目录
 
 ## 实验室方案
 
@@ -17,21 +17,21 @@ lab:
 
 #### 任务 1 - 创建目录
 
-1. 使用全局管理员帐户登录 [https://portal.azure.com](https://portal.azure.com)。
+1. 使用全局管理员帐户登录 [https://entra.microsoft.com](https://entra.microsoft.com)。
 
-    重要说明 - 若要使用和配置 Azure AD 使用条款，必须具备以下先决条件：
-    - Azure AD Premium P1、P2、EMS E3 或 EMS E5 订阅。
-    - 如果你没有这些订阅，可获取 Azure AD Premium 订阅或启用 Azure AD Premium 试用版订阅。
+    **重要提示** - 要使用和配置 Microsoft Entra ID 使用条款，必须具备：
+    - Microsoft Entra ID Premium P1、P2、EMS E3 或 EMS E5 订阅。
+    - 如果没有这些订阅，则可以获取 Microsoft Entra ID Premium 试用版。
     - 下述适用于需配置目录的管理员帐户之一：
         - 全局管理员角色
         - 安全管理员
         - 条件访问管理员
 
-2. 打开 Azure Active Directory，然后选择“Identity Governance” **** 。
+2. 打开“标识”**** 菜单，然后选择“标识治理” ****。
 
 3. 在左侧菜单的“权利管理”下，选择“目录”。
 
-4. 在顶部菜单中选择“+ 新建策略”。
+4. 在顶部菜单上，选择“+ 新建目录”****。
 
     ![屏幕图像显示 Identity governance 目录页，其中突出显示了“新建目录”菜单 ](./media/lp4-mod1-identity-governance-new-catalog.png)
 
@@ -51,7 +51,7 @@ lab:
 
 #### 任务 2 - 将资源添加到目录
 
-若要在访问包中包含资源，这些资源必须存在于目录中。 可添加的资源类型包括组、应用程序和 SharePoint Online 站点。 组可以是云创建的 Microsoft 365 组，或者云创建的 Azure AD 安全组。 应用程序可以是 Azure AD 企业应用程序，包括 SaaS 应用程序，以及你自己的已联合到 Azure AD 的应用程序。 站点可以是 SharePoint Online 站点或 SharePoint Online 站点集合。
+若要在访问包中包含资源，这些资源必须存在于目录中。 可添加的资源类型包括组、应用程序和 SharePoint Online 站点。 其中的组可以是云创建的 Microsoft 365 组或云创建的 Microsoft Entra 安全组。 应用程序可以是 Microsoft Entra 企业应用程序，包括 SaaS 应用程序和你自己的联合到 Microsoft Entra ID 的应用程序。 站点可以是 SharePoint Online 站点或 SharePoint Online 站点集合。
 
 1. 如有必要，在“Identity Governance”页上选择“目录”。
 
@@ -82,7 +82,7 @@ lab:
 
 创建了目录的用户将成为第一个目录所有者。 若要委托目录的管理，请将用户添加到目录所有者角色。 这有助于共享目录管理责任。
 
-1. 如有必要，请在 Azure 门户中浏览到“Azure Active Directory”，然后依次选择“Identity Governance”、“目录”和“市场营销”。
+1. 如有必要，请在 Microsoft Entra 管理中心浏览到“标识”****，依次选择“标识治理”****、“目录”****，然后选择“市场营销”****。
 
 2. 在“营销目录”页的左侧导航菜单中，选择“角色和管理员”。
 
@@ -110,7 +110,7 @@ lab:
 
 #### 任务 5 - 为来宾用户创建访问评审
 
-1. 访问评审可以管理访问生命周期。Azure AD Identity Governance 提供一个概述仪表板，其中显示了访问评审的状态。 在“Identity Governance”菜单中选择“访问评审” 。
+1. 访问评审可以管理访问生命周期。Microsoft Entra 标识治理提供一个概述仪表板，其中显示了访问评审的状态。 在“Identity Governance”菜单中选择“访问评审” 。
 
 1. 在“访问评审”菜单下，可以选择“访问评审”，为来宾用户配置访问评审。选择“+ 新建访问评审”以创建来宾用户访问评审。磁贴随即打开，可为来宾用户配置访问评审。
 

@@ -9,7 +9,7 @@ lab:
 
 ## 实验室方案
 
-你需要启用和配置 Azure AD 组织的登录和用户风险策略，以提供额外的安全层。
+作为额外的安全层，你需要启用和配置 Microsoft Entra 组织的登录和用户风险策略。
 
 #### 预计用时：10 分钟
 
@@ -18,11 +18,11 @@ lab:
 
 #### 任务 1 - 配置策略
 
-1. 使用全局管理员帐户登录 [https://portal.azure.com]( https://portal.azure.com)。
+1. 使用全局管理员帐户登录 [https://entra.microsoft.com]( https://entra.microsoft.com)。
 
-2. 打开门户菜单，然后选择“Azure Active Directory” **** 。
+2. 打开门户菜单，然后选择“Microsoft Entra ID” ****。
 
-3. 在“Azure Active Directory”页的“管理”下，选择“安全性” 。
+3. 在左侧菜单的“标识”**** 下，选择“保护”****。
 
 4. 在“安全性”页的左侧导航栏中，选择“标识保护”。
 

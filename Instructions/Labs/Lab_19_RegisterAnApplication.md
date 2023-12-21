@@ -15,19 +15,19 @@ lab:
 
 注册应用程序会在应用与 Microsoft 标识平台之间建立信任关系。 信任是单向的：应用信任 Microsoft 标识平台，但标识平台并不信任应用。
 
-1. 使用全局管理员帐户登录 [https://portal.azure.com](https://portal.azure.com)  。
+1. 使用全局管理员帐户登录 [https://entra.microsoft.com](https://entra.microsoft.com) 。
 
-2. 打开门户菜单，然后选择“Azure Active Directory” **** 。
+2. 打开门户菜单，然后选择“Microsoft Entra ID” ****。
 
-3. 在 Azure Active Directory 边栏选项卡中，选择“管理”下的“应用注册”。
+3. 在“标识”菜单上的“应用程序”下，选择“应用注册”。************
 
 4. 在“应用注册”页面上的菜单中，选择“+新建注册”。
 
 5. 在“注册应用程序”边栏选项卡上，使用默认值注册一个名为“演示应用”的应用。 无需输入重定向 URI。
 
-    ![显示“注册应用程序”边栏选项卡的屏幕图像，其中突出显示了名称和默认设置](./media/lp3-mod3-register-an-application.png)
+    ![显示“注册应用程序”页面的屏幕图像，其中突出显示了名称和默认设置](./media/lp3-mod3-register-an-application.png)
 
-6. 完成后，你将转到“演示应用”边栏选项卡。
+6. 完成后，你将定向到“演示应用”**** 页。
 
 
 #### 任务 2 - 配置平台设置
@@ -36,10 +36,9 @@ lab:
 
 若要根据面向的平台或设备配置应用程序设置：
 
+配置已注册的应用程序的平台设置来添加和修改它的重定向 URI。
 
-1. 配置已注册的应用程序的平台设置来添加和修改它的重定向 URI。
-
-1. 在 Azure 门户的“应用注册”中选择你的应用程序 **** 。
+1. 在 Microsoft Entra 管理中心的“应用注册” **** 中选择你的应用程序。
 
 2. 在“管理”下选择“身份验证” ****  **** 。
 
@@ -67,11 +66,10 @@ lab:
 
 ![Azure 门户的屏幕截图，其中显示了应用注册中的“证书和密码”窗格](./media/portal-05-app-reg-04-credentials.png)
 
+    **Note**: Sometimes called a *public key*, certificates are the recommended credential type, because as they provide a higher level of assurance than a client secret. When using a trusted public certificate, you can add the certificate using the Certificates & secrets feature. Your certificate must be one of the following file types: .cer, .pem, .crt.
 
->注意：证书有时被称为公钥，它们是推荐的凭据类型，因为它们提供的保证级别比客户端密码高 ** 。 使用受信任的公共证书时，可使用“证书和密码”功能添加证书。 证书必须是以下文件类型之一：.cer、.pem、.crt。
 
-
->注意：客户端密码也称为应用程序密码，它是应用可用于代替证书来标识自身的一个字符串 ** 。 在这两种凭据类型中，它使用起来更加轻松。 它常常在开发过程中使用，但它的安全性不如证书。 应在生产环境中运行的应用程序中使用证书。
+    **Note**: The client secret, also known as an *application password*, is a string value your app can use in place of a certificate to identity itself. It's the easier of the two credential types to use. It's often used during development, but is considered less secure than a certificate. You should use certificates in your applications running in production.
 
 1. 在 Azure 门户的“应用注册”中选择你的应用程序 ****  。
 
@@ -85,9 +83,9 @@ lab:
 
 6. 在记事本中记下密码的值，以供在客户端应用程序代码中使用；“证书和机密”页面将显示新密码值 。 复制此值非常重要，因为它只显示一次；如果刷新页面再返回，则它只会显示为掩码值。
 
-1. 跳过“添加重定向 URI”和“配置平台设置”部分 ****   ****  。 无需为 Web API 配置重定向 URI，因为没有用户以交互方式进行登录。
+7. 跳过“添加重定向 URI”和“配置平台设置”部分 ****   ****  。 无需为 Web API 配置重定向 URI，因为没有用户以交互方式进行登录。
 
-1. 暂时跳过“添加凭据”部分 ****  。 仅当你的 API 访问下游 API 时，它才需要其自己的凭据 - 本文未涵盖这一方案。
+8. 暂时跳过“添加凭据”部分 ****  。 仅当你的 API 访问下游 API 时，它才需要其自己的凭据 - 本文未涵盖这一方案。
 
 注册 Web API 后，便可以添加范围，API 的代码可使用这些范围向 API 的使用者提供具体权限。
 
@@ -98,11 +96,11 @@ lab:
 
 首先，请按照以下步骤创建一个名为 Employees.Read.All 的示例范围：
 
-1. 登录 Azure 门户。
+1. 登录 Microsoft Entra 管理中心。
 
 2. 如果有权访问多个租户，请使用顶部菜单中的“目录 + 订阅”筛选器，选择包含你的客户端应用注册的租户 ****  。
 
-3. 选择“Azure Active Directory”>“应用注册”，然后选择 API 的应用注册 ****   **** 。
+3. 依次选择“标识” ****、“应用程序” 、“应用注册”** ******，最后选择 API 的应用注册。
 
 4. 依次选择“公开 API”、“+ 添加范围” ****  **** 。
 
@@ -156,14 +154,11 @@ lab:
 
     如图所示，范围的完整字符串由 Web API 的“应用程序 ID URI”与范围的“范围名称”串联而成 ****   **** 。
 
-1. 使用应用程序 ID URI（在末尾添加“/Employees.Read.All”）来测试 API。
-
-    >注意：例如，如果 Web API 的应用程序 ID URI 为  `https://contoso.com/api`，范围名称为 Employees.Read.All，则完整范围为：`https://contoso.com/api/Employees.Read.All` 
+        **Note**: For example, if your web API's application ID URI is `https://contoso.com/api` and the scope name is Employees.Read.All, the full scope is: `https://contoso.com/api/Employees.Read.All`
 
 
-    >**注意**：接下来，你将按照上述步骤配置客户端应用的注册，其中包含对 Web API 的访问权限和你所定义的范围。
-    向客户端应用注册授予访问 Web API 的权限后，Microsoft 标识平台可以向客户端颁发 OAuth 2.0 访问令牌。 当客户端调用 Web API 时，它会提供一个访问令牌，令牌的范围 (scp) 声明设置为你在客户端的应用注册中所指定的权限。
-    以后可以根据需要公开其他范围。 请考虑 Web API 可以公开与多个操作关联的多个范围。 在运行时，资源可通过评估其收到的 OAuth 2.0 访问令牌中的范围 (scp) 声明，来控制对 Web API 的访问。
+        **Note**: Next, you will configure a client app's registration with access to your web API and the scopes you defined by following the steps above.
+    向客户端应用注册授予访问 Web API 的权限后，Microsoft 标识平台可以向客户端颁发 OAuth 2.0 访问令牌。 当客户端调用 Web API 时，它会提供一个访问令牌，令牌的范围 (scp) 声明设置为你在客户端的应用注册中所指定的权限。 以后可以根据需要公开其他范围。 请考虑 Web API 可以公开与多个操作关联的多个范围。 在运行时，资源可通过评估其收到的 OAuth 2.0 访问令牌中的范围 (scp) 声明，来控制对 Web API 的访问。
 
 
 ### 练习 2 - 使用自定义角色管理应用注册
@@ -172,17 +167,17 @@ lab:
 
 你需要为应用管理创建新的自定义角色。 此新角色只应具有执行凭据管理所需的特定权限。
 
-1. 使用全局管理员帐户登录  [https://portal.azure.com](https://portal.azure.com)  。
+1. 使用全局管理员帐户登录  [https://entra.microsoft.com](https://entra.microsoft.com)  。
 
-2. 打开门户菜单，然后选择“Azure Active Directory” **** 。
+2. 打开门户菜单，然后选择“Microsoft Entra ID” ****。
 
-3. 在“Azure Active Directory”边栏选项卡的“管理”下，选择“角色和管理员” 。
+3. 在左侧菜单的“标识”**** 下，选择“角色和管理员”****。
 
-4. 在“角色和管理员”边栏选项卡的“菜单”上，选择“+ 新建自定义角色”。
+4. 选择“角色和管理员”**** 项，然后选择“+ 新建自定义角色”****。
 
     ![“角色和管理员”边栏选项卡的屏幕图像，其中突出显示了“新建自定义角色”菜单选项](./media/lp3-mod1-new-custom-role.png)
 
-5. 在“新建自定义角色”边栏选项卡中的“基本信息”选项卡上，在“名称”框中输入“我的自定义应用角色”。
+5. 在“新建自定义角色”对话框的“基本信息”标签页的“名称”框中，输入“我的自定义应用角色”****。
 
 6. 查看其余选项，然后选择“下一步”。
 

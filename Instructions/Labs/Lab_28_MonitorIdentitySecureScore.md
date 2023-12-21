@@ -9,7 +9,7 @@ lab:
 
 ## 实验室方案
 
-Azure AD 标识保护为基于标识的风险提供自动检测和修正，并在门户中提供数据以调查潜在风险。 Azure AD 标识保护还提供标识安全分数来监视和改进标识安全状况。  与 Microsoft 365 Defender 和 Microsoft Defender for Cloud 相同，标识安全分数提供了改进操作和建议，可改进 Azure Active Directory 中标识的总体安全状况。  本实验室将探讨此功能。 
+Microsoft Entra 标识保护为基于标识的风险提供自动检测和修正，并在门户中提供数据以调查潜在风险。 Microsoft Entra 标识保护还提供标识安全分数来监视和改进标识安全状态。  与 Microsoft 365 Defender 和 Microsoft Defender for Cloud 相同，标识安全分数提供改进操作和建议，可改进 Microsoft Entra ID 中标识的总体安全状况。  本实验室将探讨此功能。 
 
 #### 预计用时：15 分钟
 
@@ -17,9 +17,9 @@ Azure AD 标识保护为基于标识的风险提供自动检测和修正，并�
 
 #### 任务 1 - 查看标识安全功能分数和改进操作
 
-1. 以全局管理员身份登录  [https://portal.azure.com](https://portal.azure.com)  。
+1. 以全局管理员身份登录  [https://entra.microsoft.com](https://entra.microsoft.com)  。
 
-2. 搜索并选择“Azure AD 标识保护”。
+2. 打开“保护”**** 菜单，然后选择“标识安全分数”****
 
 3. 在“概述”磁贴中，你将找到“标识安全分数” 。
 

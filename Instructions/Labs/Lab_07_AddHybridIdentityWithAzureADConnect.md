@@ -1,15 +1,22 @@
 ---
 lab:
-  title: 07 - 使用 Azure AD Connect 添加混合标识
+  title: 07 - 可选 --- 使用 Microsoft Entra Connect 添加混合标识
   learning path: '01'
   module: Module 01 - Implement an identity management solution
 ---
 
-# 实验室 07：可选 - 使用 Azure AD Connect 添加混合标识
+# 实验室 07：可选 --- 使用 Microsoft Entra Connect 添加混合标识
+
+
+
+# 此实验室目前无法正常工作。  由于 Microsoft Entra ID 中的许可更改，实验室出现故障。  我们目前正在对实验室进行故障排除和更新，预计应在一周内重新联机。  请移动到下一个实验室。
+
+
+
 
 注意 - 此实验室需要 Azure Pass。 有关说明，请参阅实验室 00。
 
-备注 2 - 此实验室标题为“可选”。  至少需要 1 小时才能完成，并且需要你详细说明实验步骤。  在时间允许的情况下请随时使用计算机。  如果你的公司已经设置了混合配置，或者你不打算使用 Azure AD Connect，请跳过此实验室。
+备注 2 - 此实验室标题为“可选”。  至少需要 1 小时才能完成，并且需要你详细说明实验步骤。  在时间允许的情况下请随时使用计算机。  如果你的公司已经设置了混合配置，或者你不打算使用 Microsoft Entra Connect，请跳过此实验室。
 
 ## 实验室方案
 
@@ -68,7 +75,7 @@ lab:
    -   用户名：demouser
    -   密码：使用在任务 1 中创建的安全密码
 
-2.  在与 DC1 的远程桌面会话中，启动 Windows PowerShell ISE，将以下脚本添加到脚本窗格中，并运行该脚本以禁用 DC1 和 APP1 Azure VM 上的 Internet Explorer 增强的安全配置和用户访问控制   ：
+2.  在与 DC1**** 的远程桌面会话中，启动“Windows PowerShell ISE”****，然后打开“脚本”窗格。  接下来，将以下脚本添加到脚本窗格，并运行该脚本以在 DC1**** 和 APP1**** Azure VM 上禁用 Internet Explorer 增强的安全配置和用户访问控制：
 
     ```pwsh
 
@@ -139,7 +146,7 @@ lab:
 2.  在与 DC1 的远程桌面会话中，启动 Internet Explorer，导航到以下链接。
 
     ```
-    https://github.com/microsoft/MCW-Hybrid-identity/tree/main/Hands-on%20lab/studentfiles
+    https://github.com/microsoft/MCW-Hybrid-identity/tree/main/Archive/Hands-on%20lab/studentfiles
     ```
 
 3. 在“为 Active Directory 演示/测试环境创建用户/组”页上，选择 CreateDemoUsers.ps1 链接，接受许可条款，并将相应的脚本保存到本地文件系统 。
@@ -323,9 +330,9 @@ lab:
     }
     ```
 
-### 任务 6：安装 Azure AD Connect
+### 任务 6：安装 Microsoft Entra Connect
 
-在此任务中，你需要安装 Azure AD Connect。
+在此任务中，你将安装 Microsoft Entra Connect。
 
 1. 在与 DC1 的远程桌面会话的“服务器管理器”中，单击“本地服务器”，确保已禁用“IE 增强的安全配置”  。 如果未禁用，请选择“IE 增强的安全配置”旁边的“开启”链接，将管理员设置设置为“关闭”，然后选择“确定”    。
 
@@ -337,7 +344,7 @@ lab:
 
 2. 在与 DC1 的远程桌面会话中，启动 Chrome 浏览器并导航到 Azure 门户 (<https://portal.azure.com>)。
 
-3. 当系统提示登录时，请输入 john.doe Azure AD 用户帐户的凭据（你在本练习前面已复制到记事本中）。
+3. 当系统提示登录时，请输入 john.doe**** Microsoft Entra 用户帐户的凭据（你在本练习前面已复制到记事本中）。
 
 4. 出现提示时，请更改 john.doe 用户帐户的密码。 
   
@@ -347,13 +354,13 @@ lab:
 
 6. 如果显示“欢迎使用 Microsoft Azure”对话框，请选择“以后再说” 。 
 
-7. 在 Azure 门户的左侧导航中，选择 Azure Active Directory 以导航到“Contoso”-“概览”页面 。
+7. 在 Azure 门户中，搜索“Microsoft Entra Connect”****。
 
-8. 在“Contoso”-“概览”页上，选择左侧“管理”下的 Azure AD Connect  。
+8. 在“搜索结果”页上，选择“Microsoft Entra Connect”****。
 
-9.  在“Azure AD Connect”页上，选择“下载 Azure AD Connect”链接 。  然后从菜单中选择“连接同步”。
+9.  在“Microsoft Entra Connect**** 页上，选择“下载 Microsoft Entra Connect”**** 链接。  然后从菜单中选择“连接同步”。
 
-10. 在 Microsoft Azure Active Directory Connect”网页的“Microsoft 下载”站点上，选择“下载” 。
+10. 在“Microsoft 下载”站点的“Microsoft Azure Active Directory Connect v2”**** 网页上，选择“下载”****。
 
 11. 当提示是运行还是保存 AzureADConnect.msi 时，请选择“运行” 。 这将下载该文件，并自动启动 Microsoft Azure Active Directory Connect 向导。 
 

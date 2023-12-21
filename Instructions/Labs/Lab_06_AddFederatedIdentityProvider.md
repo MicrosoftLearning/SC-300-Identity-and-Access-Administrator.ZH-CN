@@ -34,7 +34,7 @@ lab:
 
 7. 在“用户类型”下，选择“外部”，然后选择“创建” 。
 
-8. 在“OAuth 同意屏幕”上的“应用信息”下，输入应用名称，例如 Azure AD 。
+8. 在“OAuth 同意屏幕”**** 的“应用信息”下，输入应用名称，例如 Microsoft Entra ID****。
 
 9. 在“用户支持电子邮件”下，选择电子邮件地址。 这应包括用于登录 Google 的电子邮件地址。
 
@@ -52,7 +52,7 @@ lab:
 
 14. 选择“+ 创建凭据”，然后选择“OAuth 客户端 ID” 。
 
-15. 在“应用程序类型”菜单中，选择“Web 应用程序”。 为应用程序指定合适的名称，例如 Azure AD B2B。 在“已授权的重定向 URI”下，添加以下 URI：
+15. 在“应用程序类型”菜单中，选择“Web 应用程序”。 为应用程序提供合适的名称，例如 Microsoft Entra B2B。 在“已授权的重定向 URI”下，添加以下 URI：
 
    ```
       https://login.microsoftonline.com
@@ -79,12 +79,12 @@ lab:
 
 ### 练习 2 - 配置 Azure 以使用外部标识提供者
 
-#### 任务 1 - 为 Google 联合配置 Azure AD
-1. 以管理员身份登录到 [https://portal.azure.com](https://portal.azure.com)  。
+#### 任务 1 - 为 Google 联合身份验证配置 Microsoft Entra ID
+1. 以管理员身份登录到 [https://entra.microsoft.com](https://entra.microsoft.com)  。
 
-2. 选择“Azure Active Directory” **** 。
+2. 选择“Microsoft Entra ID” ****。
 
-3. 在“管理”下，选择“外部标识” ****  **** 。
+3. 在“标识” **** 下，选择“外部标识” ****。
 
 4. 从左侧菜单中选择“所有标识提供者”。
 
@@ -101,9 +101,9 @@ lab:
 #### 任务 2 - 邀请你测试用户帐户
 9. 如果使用了现有的 Gmail 帐户，请记得通过“外部标识”|“所有标识提供者”删除该帐户。 还可返回到 Google 开发人员控制台并删除所创建的项目。
 
-10. 打开 Azure Active Directory (Azure AD)。
+10. 打开 Microsoft Entra ID。
 
-11. 转到“用户”。
+11. 转到“用户”，然后选择“所有用户”****。
 
 12. 选择“+ 新建用户”。
 

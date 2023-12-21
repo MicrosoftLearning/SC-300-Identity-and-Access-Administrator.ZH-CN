@@ -26,27 +26,27 @@ Microsoft Defender for Cloud Apps 可用于创建特定于要监视的云应用�
 5. 确认 Microsoft Forms 打开，并且未收到任何警告消息。
 6. 关闭 InPrivate 浏览窗口。
 
-#### 任务 2 - 将 Azure AD 配置为使用 Defender for Cloud Apps
+#### 任务 2 - 将 Microsoft Entra ID 配置为使用 Defender for Cloud 应用
 
-1. 导航到 [portal.azure.com](portal.azure.com) 并转到 Azure Active Directory。
+1. 导航到 https://entra.microsoft.com[](https://entra.microsoft.com)，然后转到“Microsoft Entra ID”。
 
-2. 在“管理”下，选择“安全性”   。
+2. 在“标识”**** 下，选择“保护”****。
 
-3. 在“保护”下，选择“条件访问”   。
+3. 然后选择“条件访问”****。
 
-4. 选择“+ 新建策略”下拉列表，然后选择“创建新策略” 。
+4. 选择“+ 创建新策略”。
 
 5. 输入策略名称，例如“使用 Forms 监视 Pradeep”。
 
-6. 在“用户或工作负载标识”下，选择“包含的特定用户”，然后选择“选择用户和组”并标记“用户和组”   。
+6. 在“分配”**** 下，依次选择“已选择 0 个用户和组”****、“包括特定用户”****、“选择用户和组”****，然后标记“用户和组”****。
 
 7. 选择实验室租户的 Pradeep Gupta 帐户，然后选择“选择” 。
 
-8. 在“云应用或操作”下，选择“未选择云应用、操作或身份验证上下文”。
+8. 在“目标资源”下，选择“未选择目标资源”********。
 
 9. 选择“选择应用”，然后选择“Microsoft Forms”，然后选择“选择”  。 
 
-10. 在“访问控制”下，选择“会话”和“已选择 0 个控件” 。
+10. 在“访问控制”下****，选择“会话”**** 和“已选择 0 个控件”****。
 
 11. 选择“使用条件访问应用控制”框，保留默认值“仅监视”，然后选择“选择”  。
 
@@ -84,7 +84,7 @@ Microsoft Defender for Cloud Apps 可用于创建特定于要监视的云应用�
 
 1. 将“类别”保留为“访问控制” 。
 
-1. 在“符合以下所有条件的活动”下，选择“符合 Intune 且已加入混合 Azure AD”的下拉菜单，然后取消选择“已加入混合 Azure AD”  。
+1. 在“符合以下所有条件的活动”**** 下，选择“符合 Intune 且已加入混合 Microsoft Entra”**** 的下拉菜单，然后取消选择“已加入混合 Microsoft Entra”****。
 
 1. 选择“选择应用”下拉列表。  选择“Microsoft Forms”。
 
