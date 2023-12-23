@@ -25,7 +25,7 @@ Microsoft Defender for Cloud Apps 利用来自网络流量的日志来识别用�
 
 1. 在应用列表中，注意应用名称旁边的风险评分。  
 
-1. 打开另一个浏览器选项卡并导航到 Dropbox.com。
+1. 打开另一个浏览器标签页并导航到 **www.dropbox.com**。
 
 1. 你将能够访问此网站。
 

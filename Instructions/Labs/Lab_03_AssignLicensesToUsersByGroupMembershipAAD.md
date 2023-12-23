@@ -9,7 +9,7 @@ lab:
 
 ## 实验室方案
 
-你的公司决定使用 Azure AD 中的安全组来管理许可证。 你需要配置新的安全组，向该组分配许可证，以及验证组成员许可证是否已更新。
+你所在组织已决定使用 Microsoft Entra ID 中的安全组来管理许可证。 你需要配置新的安全组，向该组分配许可证，以及验证组成员许可证是否已更新。
 
 #### 预计用时：25 分钟
 
@@ -32,11 +32,11 @@ lab:
     
 5. 关闭浏览器窗口。
 
-#### 任务 2 - 在 Azure Active Directory 中创建安全组
+#### 任务 2 - 在 Microsoft Entra ID 中创建安全组
 
-1. 浏览到 [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview]( https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)。
+1. 浏览到 [https://entra.microsoft.com](https://entra.microsoft.com)。
 
-2. 在左侧导航栏的“管理”下，选择“组”。
+2. 在左侧导航栏的“标识”**** 下，选择“组”****，然后选择“所有组”****。
 3. 在“组”页的菜单中，选择“新建组”。
 4. 使用以下信息创建组：
 
@@ -86,15 +86,15 @@ lab:
     
 5. 关闭浏览器窗口。 
 
-### 练习 2 - 在 Azure Active Directory 中创建 Microsoft 365 组
+### 练习 2 - 在 Microsoft Entra ID 中创建 Microsoft 365 组
 
 #### 任务 1 - 创建组
 
-你作为 Azure AD 管理员的职责之一是创建不同类型的组。 你需要为组织的销售部门创建新的 Microsoft 365 组。
+你作为 Microsoft Entra 管理员的部分职责是创建不同类型的组。 你需要为组织的销售部门创建新的 Microsoft 365 组。
 
-1. 浏览到 [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview]( https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)。
+1. 浏览到 [https://entra.microsoft.com]( https://entra.microsoft.com)。
 
-2. 在左侧导航栏的“管理”下，选择“组”。
+2. 在左侧导航栏的“标识”**** 下，选择“组”****，然后选择“所有组”****。
 
 3. 在“组”页的菜单中，选择“新建组”。
 
@@ -118,11 +118,11 @@ lab:
 
 随着公司发展，手动组管理正在变得过于耗时。 由于对目录进行了标准化，现在可以利用动态组。 必须创建新的动态组以确保准备好在生产环境中创建动态组。
 
-1. 使用在租户中分配了全局管理员或用户管理员角色的帐户登录到 [https://portal.azure.com](https://portal.azure.com)。
+1. 使用在租户中分配了全局管理员或用户管理员角色的帐户登录到 [https://entra.microsoft.com](https://entra.microsoft.com)。
 
-2. 选择“Azure Active Directory”  。
+2. 选择“标识”。
 
-3. 在“管理”下选择“组”，然后选择“新建组”    。
+3. 在“组”**** 下选择“所有组”****，然后选择“新建组”****。
 
 4. 在“新建组”  页的“组类型”  下选择“安全性”  。
 
@@ -156,9 +156,9 @@ lab:
 
 注意 - 动态组成员资格的填充最多可能需要 15 分钟。
 
-1. 选择“主页”`Azure Active Directory`。
-2. 启动 Azure Active Directory。
-3. 在“管理”菜单中，选择“组” 。
+1. 选择“主页”`Microsoft Entra admin center`。
+2. 启动“标识”****。
+3. 在“组”**** 菜单中，选择“所有组”****。
 4. 在筛选框中键入“SC300”，此时将列出新创建的组。
 5. 选择“SC300-myDynamicGroup”以打开组。
 6. 请注意，该组显示包含 30 多个直接成员。
@@ -171,6 +171,6 @@ lab:
 
    - (user.objectid -ne null) 和 (user.userType -eq "Guest")
 
-2. 尝试创建仅包含 Azure AD 用户成员的组。
+2. 尝试创建仅包含 Microsoft Entra 用户成员**** 的组。
 
    - (user.objectid -ne null) 和 (user.userType -eq "Member")

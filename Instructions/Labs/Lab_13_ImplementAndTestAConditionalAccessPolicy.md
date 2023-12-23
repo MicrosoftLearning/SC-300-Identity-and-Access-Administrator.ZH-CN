@@ -9,7 +9,7 @@ lab:
 
 ## 实验室方案
 
-你的公司需要能够限制用户访问其内部应用程序。 你需要部署 Azure Active Directory 条件访问策略。
+你的公司需要能够限制用户访问其内部应用程序。 必须部署 Microsoft Entra 条件访问策略。
 
 注意 - 对于条件访问策略，可以禁用安全默认值，要记住的关键点来自培训。  可在此链接中找到有关安全默认值的其他信息：<https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/concept-fundamentals-security-defaults>
 
@@ -29,41 +29,41 @@ lab:
    | 用户名 | DebraB@ `<<your lab domain>>.onmicrosoft.com` |
    | 密码 | 输入租户的管理员密码（请参阅“实验室资源”选项卡以检索租户管理员密码）。 |
     
-4. 选择 Yammer 图标以查看它是否正确加载。
+4. 选择 Sway **** 图标以查看它是否正确加载。
 
 #### 任务 2 - 创建条件访问策略
 
-Azure Active Directory 条件访问是一项 Azure AD 高级功能，可用于指定控制谁可以访问资源的详细策略。 使用条件访问，可以通过基于组、设备类型、位置和角色等限制用户的访问来保护应用程序。
+Microsoft Entra 条件访问是 Microsoft Entra ID 的一项高级功能，可用于指定详细的策略来控制谁可以访问资源。 使用条件访问，可以通过基于组、设备类型、位置和角色等限制用户的访问来保护应用程序。
 
-1. 浏览到 [https://portal.azure.com](https://portal.azure.com)，使用目录的全局管理员帐户登录。
+1. 浏览到 [https://entra.microsoft.com](https://entra.microsoft.com)，使用目录的全局管理员帐户登录。
 
-2. 打开门户菜单，然后选择“Azure Active Directory” **** 。
+2. 打开门户菜单，然后选择“Microsoft Entra ID” ****。
 
-3. 在“Azure Active Directory”页的“管理”下，选择“安全性” 。
+3. 在菜单的“标识”**** 下，选择“保护”****。
 
 4. 在“安全性”页的左侧导航栏中，选择“条件访问”。
 
-5. 在“概述(预览)”上，单击“+ 创建新策略” 。
+5. 在“概述（预览）”**** 上，单击“+ 新建策略”****。
 
    ![显示“条件访问”页的屏幕图像，其中突出显示了“新建策略”](./media/lp2-mod1-conditional-access-new-policy.png)
 
-6. 在“名称”框中，输入“阻止 DebraB 登录 Yammer” 。
+6. 在“名称”**** 框中，输入“阻止 Sway for DebraB”****。
 
    备注 - 使用此命名可帮助你快速识别策略及其功能。
 
-7. 在“分配”下，选择“用户或工作负载标识” 。
+7. 在“分配”**** 下，选择“已选择 0 个用户和组”****。
 
-8. 在“包括”选项卡上，选中“用户和组”复选框。
+8. 在“包括”选项卡上，选择“选择用户和组”****，然后选中“用户和组”**** 复选框。
 
 9. 在“选择”窗格中，选择“DebraB”帐户，然后选择“选择” 。
 
-10. 选择“云应用或操作”。
+10. 在“目标资源”**** 中，选择“未选择目标资源”****。
 
-11. 确认已选择“云应用”，然后选择“选择应用”。
+11. 验证是否已选择“云应用”****，然后选择“选择应用”****，最后在“选择”部分选择“无”****。
 
-12. 在“选择”窗格中，搜索“Yammer”并选择“Office 365 Yammer”，然后选择“选择”  。
+12. 在“选择”窗格中，搜索“Sway”**** 并选择“Sway”****，然后选择“选择”****。
 
-13. 在“访问控制”  下，选择“授予”  。
+13. 在“访问控制”**** 下的“授权”**** 部分中，选择“已选择 0 个控件”****。
 
 14. 在“授予”窗格中，选择“阻止访问”，然后选择“选择”。
 
@@ -77,7 +77,7 @@ Azure Active Directory 条件访问是一项 Azure AD 高级功能，可用于�
 
 你应该测试条件访问策略，以确保它们按预期工作。
 
-1. 打开一个新的“Inprivate”浏览器标签页，然后浏览到 [https://www.yammer.com/office365](https://www.yammer.com/office365)。
+1. 打开新的“InPrivate”浏览器标签页，然后浏览到 https://sway.office.com[](https://sway.office.com)。
     - 出现提示时，以 DebraB 身份登录：
 
    | 设置 | 值 |
@@ -85,17 +85,17 @@ Azure Active Directory 条件访问是一项 Azure AD 高级功能，可用于�
    | 用户名 | DebraB@ `<<your lab domain>>.onmicrosoft.com` |
    | 密码 | 输入租户的管理员密码（请参阅“实验室资源”选项卡以检索租户管理员密码）。 |
      
-2. 验证你已成功阻止访问 Microsoft Yammer。
+2. 验证是否已阻止你访问 Microsoft Sway。
 
    ![显示由于启用了条件访问策略而被阻止的资源访问的屏幕图像](./media/lp2-mod3-test-conditional-access-policy.png)
 
 3. 如果你已登录，请关闭选项卡，等待 1 分钟，然后重试。
     
-   备注 - 如果以 DebraB 的身份自动登录到 Yammer，则需要手动注销。凭据/访问权限已缓存。  注销并登录后，Yammer 会话应会拒绝访问。
+   **备注** - 如果以 DebraB 身份自动登录到 Sway，则需要手动注销。你的凭据/访问权限已缓存。  注销并登录后，Yammer 会话应会拒绝访问。
 
 4. 关闭选项卡并返回到“条件访问”页。
 
-5. 选择“Yammer 条件访问”策略。
+5. 选择“阻止 Sway for DebraB”**** 策略。
 
 6. 在“启用策略”下，选择“关闭”，然后选择“保存”。
 
@@ -103,9 +103,9 @@ Azure Active Directory 条件访问是一项 Azure AD 高级功能，可用于�
 
 #### 任务 - 使用 What if 测试条件访问策略
 
-1. 打开门户菜单，然后选择“Azure Active Directory” **** 。
+1. 打开 Microsoft Entra 管理中心菜单，然后选择“Microsoft Entra ID” ****。
 
-1. 在“Azure Active Directory”页的“管理”下，选择“安全性” 。
+1. 在菜单的“标识”**** 下，选择“保护”****。
 
 1. 在“安全性”页的左侧导航栏中，选择“条件访问”。
 
@@ -117,7 +117,7 @@ Azure Active Directory 条件访问是一项 Azure AD 高级功能，可用于�
 
 1. 选择“DebraB”作为用户。
 
-1. 在“云应用、操作或身份验证上下文”下，选择“Yammer” 。 
+1. 在“云应用、操作或身份验证上下文”**** 下，选择“Sway”****。 
 
 1. 选择“What if”。 将在磁贴底部为你提供一个关于“要应用的策略”和“将不会应用的策略”的报表 。
 
@@ -125,17 +125,17 @@ Azure Active Directory 条件访问是一项 Azure AD 高级功能，可用于�
 
 ### 练习 3 - 使用条件访问策略配置登录频率控制
 
-#### 任务 - 使用 Azure 门户配置条件访问
+#### 任务 - 使用 Microsoft Entra 管理中心配置条件访问
 
 作为你所在公司的大型安全配置的一部分，你需要测试可用于控制登录频率的条件访问策略
 
-1. 浏览到 [https://portal.azure.com](https://portal.azure.com)，使用目录的全局管理员帐户登录。
+1. 浏览到 [https://entra.microsoft.com](https://entra.microsoft.com)，使用目录的全局管理员帐户登录。
 
-2. 打开门户菜单，然后选择“Azure Active Directory” **** 。
+2. 打开门户菜单，然后选择“Microsoft Entra ID” ****。
 
-3. 在“Azure Active Directory”页的“管理”下，选择“安全性” 。
+3. 在菜单的“标识”**** 下，选择“保护”****。
 
-4. 在“安全性”页的左侧导航栏中，选择“条件访问”。
+4. 在“保护”菜单的左侧导航栏中，选择“条件访问”****。
 
 5. 在顶部菜单中选择“+ 新建策略”，然后从下拉列表中选择“创建新策略” 。
 
@@ -143,9 +143,9 @@ Azure Active Directory 条件访问是一项 Azure AD 高级功能，可用于�
 
 6. 在“名称”框中，输入“登录频率”。
 
-7. 在“分配”下，选择“用户或工作负载标识” 。
+7. 在“分配”**** 下，选择“已选择 0 个用户和组”****。
 
-8. 在“包括”选项卡上，选中“用户和组”复选框。
+8. 在“包括”标签页上，标记“选择用户和组”****，然后选择“用户和组”**** 复选框。
 
 9. 在“选择”窗格中，选择“Grady Archie”帐户，然后选择“选择” 。
 

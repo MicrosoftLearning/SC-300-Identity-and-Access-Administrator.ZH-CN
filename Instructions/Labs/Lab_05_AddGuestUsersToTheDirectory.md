@@ -17,23 +17,26 @@ lab:
 
 #### 任务 - 添加来宾用户
 
-1. 以拥有受限的管理员目录角色或来宾邀请者角色的用户身份登录  [https://portal.azure.com](https://portal.azure.com)  。
+1. 以分配了有限管理员目录角色或来宾邀请者角色，或者以全局管理员的用户身份登录到 https://entra.Microsoft.com [](https://entra.microsoft.com) 。
 
-2. 选择“Azure Active Directory” **** 。
+2. 选择“标识” ****。
 
-3. 在“管理”下，选择“用户” ****  **** 。
+3. 在“用户” **** 下，选择“所有用户” ****。
 
 4. 选择“+ 新建用户” **** 。
 
 5. 在“新建用户”菜单上，选择“邀请外部用户”，然后将信息添加为来宾用户。
 
-    备注 - 不支持组电子邮件地址；输入个人的电子邮件地址。 另外，某些电子邮件提供程序允许用户向其电子邮件地址中添加加号 (+) 和附加文本来帮助执行收件箱筛选之类的操作。 但是，Azure AD 当前不支持在电子邮件地址中使用加号。 为避免在传送时出现问题，请省略加号及其之后的任何字符，直至 @ 符号。
+    备注 - 不支持组电子邮件地址；输入个人的电子邮件地址。 另外，某些电子邮件提供程序允许用户向其电子邮件地址中添加加号 (+) 和附加文本来帮助执行收件箱筛选之类的操作。 但是，Microsoft Entra ID 当前不支持在电子邮件地址中使用加号。 为避免在传送时出现问题，请省略加号及其之后的任何字符，直至 @ 符号。
 
 6. 输入电子邮件地址，例如 **sc300externaluser1@sc300email.com** 。
 
-7. 完成后选择“邀请”。
+7. 选择“属性”选项卡。
 
 8. 在“用户”页上，验证是否列出了帐户，并在“用户类型”列中，验证是否显示“来宾” 。
+
+9. 完成后，选择“查看 + 邀请”****，然后选择“邀请”****。
+
 
 发送邀请后，该用户帐户将以来宾的形式自动添加到目录。
 
@@ -44,11 +47,11 @@ lab:
 
 最近与另一家公司建立了合作伙伴关系。 目前，合作伙伴公司的员工将作为来宾添加。 你需要确保可一次性导入多个来宾用户。
 
-1. 以全局管理员身份登录 [https://portal.azure.com](https://portal.azure.com)。
+1. 以全局管理员身份登录 [https://entra.microsoft.com](https://entra.microsoft.com)。
 
-2. 在导航窗格中选择“Azure Active Directory”。
+2. 在导航窗格中，选择“标识”****。
 
-3. 在“管理”下，选择“用户” 。
+3. 在“用户”**** 下，选择“所有用户”****。
 
 4. 在“用户”页的菜单上，选择“批量操作”>“批量邀请”。
 
@@ -85,38 +88,46 @@ lab:
 
 #### 任务 2 - 使用 PowerShell 邀请来宾用户
 
-1. 以管理员身份打开 PowerShell。  这可以通过在 Windows 中搜索 PowerShell 并选择“以管理员身份运行”来完成。  
+1. 以管理员身份打开 PowerShell。这可以通过在 Windows 中搜索 PowerShell 并选择“以管理员身份运行”来完成。 
 
-1. 如果以前未使用过 Azure AD PowerShell 模块，则需要添加它。  运行以下命令：Install-Module AzureAD。  出现提示时，选择“Y”继续。
+**备注** - 此实验室需要具有 PowerShell 版本 7.2 或更高版本才能正常运行。  当 PowerShell 打开时，将在屏幕顶部显示版本号，如果正在运行旧版本，请按照屏幕上的说明转到 https://aka.ms/PowerShell-Release?tag=7.3.9。 向下滚动到“资产”部分，然后选择“powershell-7.3.1-win-x64.msi”。 下载完成后，选择“打开文件”。 使用所有默认值进行安装。
 
-    ``` 
-    Install-Module AzureAD
-    ```
-
-1. 通过运行以下命令确认模块正确安装：  
+2. 如果以前未使用过 Microsoft.Graph PowerShell 模块，则需要安装该模块。  运行以下两个命令，并在系统提示确认时按 Y：
 
     ```
-    Get-Module AzureAD 
+    Install-Module Microsoft.Graph
     ```
-
-1. 接下来，需要通过运行以下命令登录到 Azure：  
+3. 确认已安装 Microsoft.Graph 模块：
 
     ```
-    Connect-AzureAD
+    Get-InstalledModule Microsoft.Graph
     ```
     
-1. 将显示 Microsoft 登录窗口，供你登录 Azure AD。  
 
-1. 若要验证是否已连接并查看现有用户，请运行：  
-
-    ```
-    Get-AzureADUser 
-    ```
-
-1. 你已准备好邀请来宾用户。  以下命令将填充用户信息并运行。  如果要添加多个用户，可以使用记事本 txt 文件添加用户信息并将其复制/粘贴到 PowerShell 中。 
+4. 接下来，需要通过运行以下命令登录到 Azure：  
 
     ```
-    New-AzureADMSInvitation -InvitedUserDisplayName "Display" -InvitedUserEmailAddress name@emaildomain.com -InviteRedirectURL https://myapps.microsoft.com -SendInvitationMessage $true 
+    Connect-MgGraph -Scopes "User.ReadWrite.All"
+    ``` 
+    Edge 浏览器将打开，系统会提示你登录。  使用 MOD 管理员帐户进行连接。  接受权限请求；然后关闭浏览器窗口。
+
+5. 设置电子邮件的值，并为外部用户重定向：
+
+    ```
+    Import-Module Microsoft.Graph.Identity.SignIns
+    
+    $params = @{
+        invitedUserEmailAddress = "admin@fabrikam.com"
+        inviteRedirectUrl = "https://myapp.contoso.com"
+    }
     ```
 
-现在，你已了解如何在 Azure AD 门户、Microsoft 365 管理中心中邀请用户，使用 csv 文件批量邀请以及使用 PowerShell 命令邀请用户。
+6. 发送 MgInvitation 命令以邀请外部用户：
+
+    ```
+    New-MgInvitation -BodyParameter $params
+    ```
+
+7. 此时可以关闭 PowerShell。
+    
+现在，你已了解如何在 Microsoft Entra 管理中心、Microsoft 365 管理中心中邀请用户，使用 csv 文件批量邀请以及使用 PowerShell 命令邀请用户。  可以进入 Microsoft Entra 管理中心，并检查“所有用户”以查看已将管理员添加为外部用户。

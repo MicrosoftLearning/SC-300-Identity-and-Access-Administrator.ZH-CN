@@ -1,11 +1,11 @@
 ---
 lab:
-  title: 27 - 适用于 Azure AD 数据源的 Microsoft Sentinel Kusto 查询
+  title: 27 - 适用于 Microsoft Entra 数据源的 Microsoft Sentinel Kusto 查询
   learning path: '04'
   module: Module 04 - Plan and Implement and Identity Governance Strategy
 ---
 
-# 实验室 27 - 适用于 Azure AD 数据源的 Microsoft Sentinel Kusto 查询
+# 实验室 27 - 适用于 Microsoft Entra 数据源的 Microsoft Sentinel Kusto 查询
 
 注意 - 此实验室需要 Azure Pass。 有关说明，请参阅实验室 00。
 
@@ -23,7 +23,7 @@ Microsoft Sentinel 是 Microsoft 的云原生 SIEM 和 SOAR 解决方案。  通
 
 1. 搜索“Microsoft Sentinel”并将其选中。 
 
-1. 选择“创建 Microsoft Sentinel”。
+1. 在左上角选择“+ 创建”****。
 
 1. 在“将 Microsoft Sentinel 添加到工作区”磁贴中，选择“创建新工作区” 。
 
@@ -40,12 +40,19 @@ Microsoft Sentinel 是 Microsoft 的云原生 SIEM 和 SOAR 解决方案。  通
 1. 如果出现提示，请选择“确定”以激活 Microsoft Sentinel 免费试用版。
 
 #### 任务 2 - 将 Azure AD 添加为数据源
+    **Note** - As of 11/1/2023, the data source is still Azure AD (not Microsoft Entra ID)
 
-1. 在“Microsoft Sentinel”中，导航到“配置”菜单，然后选择“数据连接器”  。
+1. 在“Microsoft Sentinel”**** 中，在菜单上导航到“内容管理”****，然后选择“内容中心”****。
 
-1. 在数据连接器列表中，找到“Azure Active Directory”并选中它。
+1. 使用搜索框在连接器列表中查找 Azure****，找到 Azure Active Directory**** 并选中复选框。
 
-1. 在右侧，将打开一个预览磁贴。  选择“打开连接器页”。
+1. 在右侧，将打开一个预览磁贴。  选择“安装”  。
+
+1. 安装完成后，在“配置”菜单中选择“数据连接器”**** 菜单项。
+
+    **备注** - 应显示“已安装 1 个连接器”并列出 Microsoft Entra ID****。
+
+1. 选择“Microsoft Entra ID”****，然后选择“打开连接器页”****。
 
 1. 在连接器页中，将为数据连接器提供说明和后续步骤。 确认每个先决条件旁都有复选标记，以继续进行配置 。
 
@@ -65,15 +72,15 @@ Microsoft Sentinel 是 Microsoft 的云原生 SIEM 和 SOAR 解决方案。  通
 
 1. 关闭“欢迎使用 Log Analytics”窗口。
 
-1. 随即会打开一个窗口，其中包含示例查询，选择“审核”，然后滚动以查找“用户 ID” 。
+1. 将打开包含示例查询的窗口，选择“审核”****，然后搜索以查找“用户 ID”****。
 
-1. 选择“运行”。 
+1. 选择**运行**。 
 
-1. 这将提供 Azure AD 上的用户 ID 列表。  由于我们刚刚才创建工作区，因此可能不会看到结果。  请注意查询的格式。
+1. 这将提供 Microsoft Entra ID 上的用户 ID 列表。  由于我们刚刚才创建工作区，因此可能不会看到结果。  请注意查询的格式。
 
 1. 在菜单中的“威胁管理”下，选择“搜寻” 。 
 
-1. 向下滚动以查找查询“用户帐户和身份验证应用程序的异常登录位置”。  这个关于 Azure Active Directory 登录的查询会考虑每个 Azure Active Directory 应用程序的所有用户登录，并为单个应用程序中的用户选出位置配置文件中最异常的更改。 目的是搜寻用户帐户入侵行为（可能通过特定的应用程序向量）。 
+1. 向下滚动以查找查询“用户帐户和身份验证应用程序的异常登录位置”。  这个对 Microsoft Entra 登录的查询会考虑每个 Microsoft Entra 应用程序的所有用户登录，并为单个应用程序中的用户选出位置配置文件中最异常的更改。 目的是搜寻用户帐户入侵行为（可能通过特定的应用程序向量）。 
 
 1. 选择“查看查询结果”以运行查询。
 

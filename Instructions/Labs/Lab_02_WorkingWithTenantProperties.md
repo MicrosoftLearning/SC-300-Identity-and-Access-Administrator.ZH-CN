@@ -17,15 +17,11 @@ lab:
 
 #### 任务 1 - 创建自定义子域名称
 
-1. 浏览到 [https://portal.azure.com](https://portal.azure.com)，使用目录的全局管理员帐户登录。
+1. 浏览到 [https://entra.microsoft.com](https://entra.microsoft.com)，使用目录的全局管理员帐户登录。
 
-1. 选择“显示门户菜单”汉堡图标，然后选择“Azure Active Directory”。
+1. 在“标识”**** 菜单中，打开“设置”**** 菜单，选择“域名”****。
 
-    ![Azure 门户菜单，其中选择了“Azure Active Directory”](./media/azure-portal-menu-aad.png)
-
-1. 在 Azure AD 的“管理”部分中，选择“自定义域名”  。
-
-1. 选择“添加自定义域”。
+1. 选择“+ 添加自定义域”。
 
 1. 在“自定义域名”字段中，通过将 sales 放在 onmicrosoft.com 域名前面，为实验室租户创建一个自定义子域  。  格式如下所示：
 
@@ -40,7 +36,9 @@ lab:
 
 #### 任务 1 - 设置租户名称和技术联系人
 
-1. 在 Azure Active Directory 中，在左侧导航栏的“管理”部分中，选择“属性” 。
+1. 在 Microsoft Entra 管理中心内，打开“标识”**** 菜单。
+
+1. 在左侧导航栏中，依次选择“概述”**** 菜单项和“属性”****。
 
 1. 在对话框中更改“姓名”和“技术联系人”的租户属性 。
 
@@ -55,7 +53,7 @@ lab:
 
 #### 任务 2 - 查看国家或地区以及与租户相关的其他值
 
-1. 在“Azure Active Directory”页的“管理”部分中，选择“属性” 。
+1. 在“标识”**** 菜单中，选择“概述”****，然后选择“属性”****。
 
 2. 在“租户属性”下，找到“国家或地区”，查看相关信息。
 
@@ -67,11 +65,13 @@ lab:
 
 #### 任务 3 - 查找租户 ID
 
-Azure 订阅与 Azure Active Directory (Azure AD) 之间存在信任关系。 订阅信任 Azure AD 对用户、服务和设备执行身份验证。 每个订阅都有一个与之关联的租户 ID，可以通过几种方法查找订阅的租户 ID。
+Azure 订阅与 Microsoft Entra ID 存在信任关系。 Microsoft Entra ID 是用于对订阅的用户、服务和设备进行身份验证的受信任服务。 每个订阅都有一个与之关联的租户 ID，可以通过几种方法查找订阅的租户 ID。
 
-1. 在“Azure Active Directory”页的“管理”部分中，选择“属性” 。
+1. 打开“Microsoft Entra 管理中心”https://entra.microsoft.com[](https://entra.microsoft.com)
 
-2. 在“租户属性”下，找到“租户 ID”。 这是你的唯一租户标识符。
+1. 在“标识”**** 菜单中，选择“概述”****，然后选择“属性”****。
+
+1. 在“租户属性”下，找到“租户 ID”。 这是你的唯一租户标识符。
 
     ![显示“租户属性”页的屏幕图像，其中突出显示了“租户 ID”框](./media/portal-tenant-id.png)
 
@@ -85,7 +85,7 @@ Microsoft 强烈建议添加全局隐私联系人和组织的隐私声明，以�
 
 可以在 Azure AD 的“属性”区域中添加组织的隐私信息 ****  。 访问“属性”区域并添加隐私信息：
 
-1. 在“Azure Active Directory”页的“管理”部分中，选择“属性” 。
+1. 在“标识”**** 菜单中，选择“概述”****，然后选择“属性”****。
 
     ![显示租户属性的屏幕图像，其中突出显示了“技术联系人”、“全局联系人”和“隐私声明”框](./media/properties-area.png)
 

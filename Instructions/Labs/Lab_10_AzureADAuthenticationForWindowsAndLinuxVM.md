@@ -5,7 +5,7 @@ lab:
   module: Module 02 - Implement an Authentication and Access Management Solution
 ---
 
-# 实验室 10 - 适用于 Windows 和 Linux 虚拟机的 Azure AD 身份验证
+# 实验室 10 - 适用于 Windows 和 Linux 虚拟机的 Microsoft Entra 身份验证
 
 注意 - 此实验室需要 Azure Pass。 有关说明，请参阅实验室 00。
 
@@ -23,16 +23,18 @@ lab:
 
 1. 选择“+ 创建资源”。
 
-1. 在“搜索市场”搜索栏中键入“Windows Server”。
+1. 在“搜索市场”搜索栏中键入“Windows 11”****。
 
-1. 选择“Windows Server”，然后从“选择软件计划”下拉列表中选择“Windows Server 2022 Datacenter” 。
+1. 从“Windows 11”**** 框中，在“选择软件计划”下拉列表中选择“Windows 11 企业版 22H2”****。
 
 1. 必须在“基本信息”选项卡上为 VM 创建管理员用户名和密码。
    - 使用你能记住的用户名和安全密码。
 
-1. 在“管理”选项卡上，选中“Azure AD”部分下的“使用 Azure AD 登录”框。
+1. 在“管理”**** 选项卡上，选中 Azure AD 部分下的“使用 Azure AD 登录”**** 框。
 
-1. 你将注意到，“标识”部分下的“系统分配的托管标识”会自动选中并变为灰色。 使用 Azure AD 启用登录后，此操作将自动执行。
+    备注：截至 2023 年 11 月 1 日，此 UI 尚未更新以显示 Microsoft Entra ID，仍引用 Azure AD。
+
+    备注 2：你将注意到，“标识”部分下的“系统分配的托管标识”**** 会自动选中并变为灰色。 使用 Azure AD 启用登录后，此操作将自动执行。
 
 1. 完成创建虚拟机的其余体验。 
 
@@ -42,7 +44,7 @@ lab:
 
 1. 浏览到 [https://portal.azure.com](https://portal.azure.com) 中的**虚拟机**。
 
-1. 选择在任务 1 中新创建的虚拟机。
+1. 选择“任务 1”中新创建的虚拟机。
 
 1. 选择“访问控制 (IAM)”。
 
