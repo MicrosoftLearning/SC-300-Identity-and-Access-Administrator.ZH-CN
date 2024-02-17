@@ -91,11 +91,11 @@ lab:
 1. 退出虚拟机 RDP 会话。
 
 
-#### 任务 4 - 修改 RDP 文件以支持 Azure AD 登录
+#### 任务 4 - 修改 RDP 文件以支持 Microsoft Entra ID 登录
 
 1. 在文件管理器中打开“下载”文件夹。
 
-1. 创建 RDP 文件的副本，并在文件名末尾添加 -AzureAD 。
+1. **创建 RDP 文件的副本**，并在文件名末尾添加 **-EntraID**。
 
 1. 编辑刚刚使用记事本复制的 RDP 文件的新版本。 将这两行文本添加到文件底部：
      ```
@@ -105,11 +105,11 @@ lab:
  
  1. 保存 RDP 文件。  现在应有该文件的两个版本：
       - <<virtual machine name>>.RDP
-      - <<virtual machine name>>-AzureAD.RDP
+      - <<virtual machine name>>-EntraID.RDP
 
-#### 任务 5 - 使用 Azure AD 登录名连接到 Windows Server 2022 Datacenter
+#### 任务 5 - 使用 Microsoft Entra ID 登录名连接到 Windows 虚拟机
 
-1. 打开 **<<virtual machine name>>-AzureAD.RDP
+1. 打开 **<<virtual machine name>>-EntraID.RDP
 
 1. 当对话框打开时，选择“连接”。
 
@@ -129,19 +129,17 @@ lab:
 
 1. Windows Server 应确认登录并打开正常服务器管理器仪表板。
 
-#### 任务 6 - 用于探索 Azure AD 登录名的可选测试
+#### 任务 6 - 进行测试（可选）以探索 Microsoft Entra ID 登录
 
 1. 检查 JoniS 是否是添加到管理员组的唯一用户。
 
-1. 从服务器管理器仪表板中，选择左上角的“工具”菜单。
-
-1. 启动计算机管理工具。
+1. 使用辅助鼠标单击“开始”按钮，然后在弹出菜单中选择“计算机管理”****。
 
 1. 打开“本地用户和组”，然后导航到“组、管理员” 。
 
 1. 应会在列表中看到 Azure\JoniSherman....。
 
-1. 请检查其他 Azure AD 成员是否可以登录。
+1. 检查其他 Microsoft Entra ID 成员是否可以登录。
 
 1. 退出远程桌面会话。
 
@@ -159,7 +157,9 @@ lab:
 
 1. 选择“+ 创建资源”。
 
-1. 在“热门”视图中的“Ubuntu Server 18.04 LTS”下，选择“创建” 。
+1. 搜索“Ubuntu”****。
+
+1. 在“Ubuntu Server 22.04 LTS”下选择“创建”********。 可将其他 Linux 服务器用于此测试实验室。
 
 1. 在“管理”选项卡上，选中框以启用“使用 Azure Active Directory 登录(预览)” 。
 
