@@ -25,7 +25,7 @@ Microsoft Sentinel 是 Microsoft 的云原生 SIEM 和 SOAR 解决方案。  通
 
 1. 在左上角选择“+ 创建”****。
 
-1. 在“将 Microsoft Sentinel 添加到工作区”磁贴中，选择“创建新工作区” 。
+1. 在“将 Microsoft Sentinel 添加到工作区”磁贴中，选择“+ 新建工作区”********。
 
 1. 在“资源组”中，选择“新建”并输入“Sentinel-RG”  。
 
@@ -40,11 +40,11 @@ Microsoft Sentinel 是 Microsoft 的云原生 SIEM 和 SOAR 解决方案。  通
 1. 如果出现提示，请选择“确定”以激活 Microsoft Sentinel 免费试用版。
 
 #### 任务 2 - 将 Azure AD 添加为数据源
-    **Note** - As of 11/1/2023, the data source is still Azure AD (not Microsoft Entra ID)
+    **Note** - As of 2/8/2024, the data source is now Microsoft Entra ID.
 
 1. 在“Microsoft Sentinel”**** 中，在菜单上导航到“内容管理”****，然后选择“内容中心”****。
 
-1. 使用搜索框在连接器列表中查找 Azure****，找到 Azure Active Directory**** 并选中复选框。
+1. 使用搜索框在连接器列表中查找“Entra”，找到“Microsoft Entra ID”并标记复选框。********
 
 1. 在右侧，将打开一个预览磁贴。  选择“安装”  。
 
@@ -64,7 +64,7 @@ Microsoft Sentinel 是 Microsoft 的云原生 SIEM 和 SOAR 解决方案。  通
 
 1. 在“Microsoft Sentinel | 数据连接器”磁贴上选择“刷新”，数字 1 随即显示在“已连接”计数中  。
 
-   注意 - Azure AD 数据连接器可能需要几分钟时间才能显示在活动计数中。 
+   注意 - Microsoft Entra ID 数据连接器可能需要几分钟时间来显示在活动计数中****。 
 
 #### 任务 3 - 对用户活动运行 Kusto 查询
 
