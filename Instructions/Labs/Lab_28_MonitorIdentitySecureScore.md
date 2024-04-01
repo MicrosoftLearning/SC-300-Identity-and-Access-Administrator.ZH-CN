@@ -9,7 +9,7 @@ lab:
 
 ## 实验室方案
 
-Microsoft Entra 标识保护为基于标识的风险提供自动检测和修正，并在门户中提供数据以调查潜在风险。 Microsoft Entra 标识保护还提供标识安全分数来监视和改进标识安全状态。  与 Microsoft 365 Defender 和 Microsoft Defender for Cloud 相同，标识安全分数提供改进操作和建议，可改进 Microsoft Entra ID 中标识的总体安全状况。  本实验室将探讨此功能。 
+Microsoft Entra 标识保护为基于标识的风险提供自动检测和修正，并在门户中提供数据以调查潜在风险。 Microsoft Entra 标识保护还提供标识安全分数来监视和改进标识安全状况。  与 Microsoft Defender XDR 和 Microsoft Defender for Cloud 相同，标识安全分数提供了改进操作和建议，可改进 Microsoft Entra ID 中标识的总体安全状况。  本实验室将探讨此功能。 
 
 #### 预计用时：15 分钟
 
@@ -27,7 +27,7 @@ Microsoft Entra 标识保护为基于标识的风险提供自动检测和修正�
 
 5. 向下滚动以“改进操作”。
 
-6. 与 Microsoft Defender for Cloud 和 Microsoft 365 Defender 中的改进操作相比，这些改进操作特定于标识。  这为安全状况管理提供了更集中的潜在操作列表。  由此列表发起的任何改进操作也将对整体租户安全状况产生影响。 
+6. 与 Microsoft Defender for Cloud 和 Microsoft Defender XDR 中的改进操作相比，这些改进操作特定于标识。  这为安全状况管理提供了更集中的潜在操作列表。  由此列表发起的任何改进操作也将对整体租户安全状况产生影响。 
 
 #### 任务 2 - 执行改进操作
 
