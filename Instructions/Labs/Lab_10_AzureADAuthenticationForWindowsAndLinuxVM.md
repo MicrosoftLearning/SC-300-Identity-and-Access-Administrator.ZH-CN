@@ -1,6 +1,6 @@
 ---
 lab:
-  title: 10 - 适用于 Windows 和 Linux 虚拟机的 Azure AD 身份验证
+  title: 10 - 适用于 Windows 和 Linux 虚拟机的 Microsoft Entra ID 身份验证
   learning path: '02'
   module: Module 02 - Implement an Authentication and Access Management Solution
 ---
@@ -11,13 +11,13 @@ lab:
 
 ## 实验室方案
 
-该公司决定使用 Azure Active Directory 登录虚拟机进行远程访问。  本实验室将演示如何为 Windows 和 Linux 虚拟机设置此方案。
+该公司决定使用 Microsoft Entra ID 登录虚拟机进行远程访问。  本实验室将演示如何为 Windows 和 Linux 虚拟机设置此方案。
 
 #### 预计用时：30 分钟
 
-### 练习 1 - 使用 Azure AD 登录到 Azure 中的 Windows 虚拟机
+### 练习 1 - 使用 Microsoft Entra ID 登录到 Azure 中的 Windows 虚拟机
 
-#### 任务 1 - 创建启用了 Azure AD 登录的 Windows 虚拟机
+#### 任务 1 - 创建启用了 Microsoft Entra ID 登录的 Windows 虚拟机
 
 1. 浏览到 [https://portal.azure.com](https://portal.azure.com)
 
@@ -30,17 +30,15 @@ lab:
 1. 必须在“基本信息”选项卡上为 VM 创建管理员用户名和密码。
    - 使用你能记住的用户名和安全密码。
 
-1. 在“管理”**** 选项卡上，选中 Azure AD 部分下的“使用 Azure AD 登录”**** 框。
+1. 在“管理”选项卡上，选中“Microsoft Entra ID”部分下的“使用 Microsoft Entra ID 登录”框。********
 
-    备注：截至 2023 年 11 月 1 日，此 UI 尚未更新以显示 Microsoft Entra ID，仍引用 Azure AD。
-
-    备注 2：你将注意到，“标识”部分下的“系统分配的托管标识”**** 会自动选中并变为灰色。 使用 Azure AD 启用登录后，此操作将自动执行。
+        NOTE: You will notice that the **System assigned managed identity** under the Identity section is automatically checked and turned grey. This action should happen automatically once you enable Login with Microsoft Entra ID.
 
 1. 完成创建虚拟机的其余体验。 
 
-1. 选择“创建”。
+1. 选择创建。
 
-#### 任务 2 - 现有 Azure 虚拟机的 Azure AD 登录
+#### 任务 2 - 现有 Azure 虚拟机的 Microsoft Entra ID 登录
 
 1. 浏览到 [https://portal.azure.com](https://portal.azure.com) 中的**虚拟机**。
 
@@ -57,7 +55,7 @@ lab:
 
 1. 选择“审阅 + 分配”以完成该过程
 
-#### 任务 3 - 更新服务器 VM 以支持 Azure AD 登录
+#### 任务 3 - 更新服务器 VM 以支持 Microsoft Entra ID 登录
 
 1. 选择“连接”菜单项。
 
@@ -89,7 +87,6 @@ lab:
 1. 依次选择“应用”、“确定” 。
 
 1. 退出虚拟机 RDP 会话。
-
 
 #### 任务 4 - 修改 RDP 文件以支持 Microsoft Entra ID 登录
 

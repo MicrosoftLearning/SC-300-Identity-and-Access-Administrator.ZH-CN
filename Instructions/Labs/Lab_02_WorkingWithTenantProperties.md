@@ -77,13 +77,13 @@ Azure 订阅与 Microsoft Entra ID 存在信任关系。 Microsoft Entra ID 是�
 
 ### 练习 3 - 设置隐私信息
 
-#### 任务 1 - 在 Azure AD 上添加隐私信息，包括全局隐私联系人和隐私声明 URL
+#### 任务 1 - 在 Microsoft Entra ID 上添加隐私信息，包括全局隐私联系人和隐私声明 URL
 
 Microsoft 强烈建议添加全局隐私联系人和组织的隐私声明，以便内部员工和外部来宾可以查看你的策略。 由于隐私声明是为每个企业唯一创建和定制的，我们强烈建议你与律师联系以获取帮助。
 
    备注 - 如需详细了解如何查看或删除个人数据，请参阅 [https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure)。 有关 GDPR 的详细信息，请参阅 [https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted)。
 
-可以在 Azure AD 的“属性”区域中添加组织的隐私信息 ****  。 访问“属性”区域并添加隐私信息：
+可以在 Microsoft Entra ID 的“属性” 区域中添加组织的隐私信息。 **** 访问“属性”区域并添加隐私信息：
 
 1. 在“标识”**** 菜单中，选择“概述”****，然后选择“属性”****。
 
