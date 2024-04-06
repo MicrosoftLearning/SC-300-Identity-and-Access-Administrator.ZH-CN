@@ -11,7 +11,7 @@ lab:
 
 ## 实验室方案
 
-Microsoft Sentinel 是 Microsoft 的云原生 SIEM 和 SOAR 解决方案。  通过连接来自 Microsoft 和第三方安全解决方案的数据源，可以执行安全操作任务。  在本实验室练习中，你将创建一个 Microsoft Sentinel 工作区，其中包含 Azure AD 的数据连接器，用于使用 Kusto 查询语言 (KQL) 执行搜寻查询。 
+Microsoft Sentinel 是 Microsoft 的云原生 SIEM 和 SOAR 解决方案。  通过连接来自 Microsoft 和第三方安全解决方案的数据源，可以执行安全操作任务。  在本实验室练习中，你将创建一个 Microsoft Sentinel 工作区，其中包含 Microsoft Entra ID 的数据连接器，用于使用 Kusto 查询语言 (KQL) 执行搜寻查询。 
 
 #### 预计用时：30 分钟
 
@@ -39,7 +39,7 @@ Microsoft Sentinel 是 Microsoft 的云原生 SIEM 和 SOAR 解决方案。  通
 
 1. 如果出现提示，请选择“确定”以激活 Microsoft Sentinel 免费试用版。
 
-#### 任务 2 - 将 Azure AD 添加为数据源
+#### 任务 2 - 将 Microsoft Entra ID 添加为数据源
     **Note** - As of 2/8/2024, the data source is now Microsoft Entra ID.
 
 1. 在“Microsoft Sentinel”**** 中，在菜单上导航到“内容管理”****，然后选择“内容中心”****。

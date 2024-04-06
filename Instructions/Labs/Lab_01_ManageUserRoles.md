@@ -110,13 +110,13 @@ lab:
 
    备注：此角色现在能够向租户添加应用程序。我们将在以后的实验室中更多地试用该功能。
 
-7. 注销 Azure 门户中的 Chris Green 实例并关闭浏览器。
+7. 退出登录门户中的 Chris Green 实例并关闭浏览器。
 
 ### 练习 3 - 删除角色分配
 
 #### 任务 1 - 从 Chris Green 中删除应用程序管理员
 
-此任务将使用替代方法删除分配的角色；它将使用 Azure AD 中的“角色和管理员”选项。
+此任务将使用替代方法移除已分配的角色；它将使用 Microsoft Entra ID 中的“角色和管理员”选项。****
 
 1. 如果尚未以全局管理员身份登录，请启动 Microsoft Entra 管理中心并立即登录。
 2. 在搜索框中键入“角色”****，然后启动 Microsoft Entra ID 角色和管理。
@@ -166,9 +166,9 @@ lab:
 
 1. 以管理员身份打开 PowerShell。这可以通过在 Windows 中搜索 PowerShell 并选择“以管理员身份运行”来完成。 
 
-**备注** - 此实验室需要装有 PowerShell 版本 7.2 或更高版本才能正常工作。  当 PowerShell 打开时，屏幕顶部会显示版本，如果目前运行的版本较旧，请按照屏幕上的说明转到 https://aka.ms/PowerShell-Release?tag=7.3.9。 向下滚动到资产部分，然后选择 powershell-7.3.1-win-x64.msi。 下载完成后，选择“打开文件”。 使用所有默认值进行安装。
+**备注** - 此实验室需要具有 PowerShell 版本 7.2 或更高版本才能正常运行。  当 PowerShell 打开时，将在屏幕顶部显示版本号，如果正在运行旧版本，请按照屏幕上的说明转到 https://aka.ms/PowerShell-Release?tag=7.3.9。 向下滚动到“资产”部分，然后选择“powershell-7.3.1-win-x64.msi”。 下载完成后，选择“打开文件”。 使用所有默认值进行安装。
 
-2. 如果以前未使用过 Microsoft.Graph PowerShell 模块，则需要安装它。  运行以下两个命令，并在系统提示确认时按 Y：
+2. 如果以前未使用过 Microsoft.Graph PowerShell 模块，则需要安装该模块。  运行以下两个命令，并在系统提示确认时按 Y：
 
     ```
     Install-Module Microsoft.Graph
@@ -185,7 +185,7 @@ lab:
     ```
     Connect-MgGraph -Scopes "User.ReadWrite.All"
     ``` 
-    将打开 Edge 浏览器，系统会提示你登录。  使用 MOD 管理员帐户进行连接。  接受权限请求，然后关闭浏览器窗口。
+    Edge 浏览器将打开，系统会提示你登录。  使用 MOD 管理员帐户进行连接。  接受权限请求，然后关闭浏览器窗口。
 
 5. 若要验证是否已连接并查看现有用户，请运行：  
 
@@ -209,7 +209,7 @@ lab:
         -DisplayName "New PW User" `
         -GivenName "New" -Surname "User" `
         -MailNickname "newuser" `
-        -UsageLocation "USA" `
+        -UsageLocation "US" `
         -UserPrincipalName "newuser@<labtenantname.com>" `
         -PasswordProfile $PWProfile -AccountEnabled `
         -Department "Research" -JobTitle "Trainer"
