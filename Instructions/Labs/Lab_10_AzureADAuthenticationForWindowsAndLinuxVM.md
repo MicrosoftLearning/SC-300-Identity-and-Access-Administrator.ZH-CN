@@ -146,7 +146,7 @@ lab:
 
 1. 你应该注意到，这些用户中的每一个都被拒绝访问。
 
-### 可选练习 2 - 使用 Azure AD 登录到 Azure 中的 Linux 虚拟机
+### 可选练习 2 - 使用 Microsoft Entra ID 登录到 Azure 中的 Linux 虚拟机
 
 #### 任务 1 - 创建具有系统分配的托管标识的 Linux VM
 
@@ -158,13 +158,13 @@ lab:
 
 1. 在“Ubuntu Server 22.04 LTS”下选择“创建”********。 可将其他 Linux 服务器用于此测试实验室。
 
-1. 在“管理”选项卡上，选中框以启用“使用 Azure Active Directory 登录(预览)” 。
+1. 在“管理”选项卡上，选中用于启用“使用 Microsoft Entra ID 登录”的框。********
 
-1. 确保选中“系统分配的托管标识”。
+1. 确保选中**系统分配的托管标识**。
 
 1. 完成创建虚拟机的其余体验。 在此预览版中，必须使用用户名和密码或 SSH 公钥创建管理员帐户。
 
-#### 任务 2 - 现有 Azure 虚拟机的 Azure AD 登录
+#### 任务 2 - 现有 Azure 虚拟机的 Microsoft Entra ID 登录
 
 1. 浏览到 [https://portal.azure.com](https://portal.azure.com) 中的**虚拟机**。
 
