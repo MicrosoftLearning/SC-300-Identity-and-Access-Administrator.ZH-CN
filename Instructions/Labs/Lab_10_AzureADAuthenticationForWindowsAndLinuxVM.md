@@ -119,7 +119,7 @@ lab:
 1. 选择“确定”。
 
 1. 在登录对话框中输入以下信息：
-   - Username = **AzureAD\JoniS@<<your lab domainname>>
+   - 用户名 = **AzureAD\JoniS@你的域名**
    - 密码 = 输入实验室提供商提供的密码
 
    注意：JoniS 是我们授予在任务 1 期间以管理员身份登录的权限的用户。
