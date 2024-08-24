@@ -262,7 +262,7 @@ lab:
 
 #### 任务 1 - 在 Azure Active Directory 中查找未获许可的用户
 
-组织中的一些用户帐户将不会获得其分配的许可证中的所有可用产品，或者将需要更新或补充其许可证分配。 你需要确保能够在 Azure AD 中更新用户帐户的许可证分配。
+组织中的一些用户帐户将不会获得其分配的许可证中的所有可用产品，或者将需要更新或补充其许可证分配。 需要确保能够在 Microsoft Entra ID 中更新用户帐户的许可证分配。
 
 1. 浏览到 [https://entra.microsoft.com]( https://entra.microsoft.com)。
 
