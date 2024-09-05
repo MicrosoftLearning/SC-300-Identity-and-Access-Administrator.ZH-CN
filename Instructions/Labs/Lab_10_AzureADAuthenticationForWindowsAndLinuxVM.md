@@ -23,20 +23,33 @@ lab:
 
 1. 选择“+ 创建资源”。
 
-1. 在“搜索市场”搜索栏中键入“Windows 11”****。
+1. 在“搜索市场”搜索栏中键入“**Windows 11**”，然后键入 **Enter**。
 
-1. 从“Windows 11”**** 框中，在“选择软件计划”下拉列表中选择“Windows 11 企业版 22H2”****。
+1. 在 **Windows 11** 框中，选择“**创建 v**”，然后从打开的菜单中选择“**Windows 11 企业版，版本 22H2**”。
 
-1. 必须在“基本信息”选项卡上为 VM 创建管理员用户名和密码。
-   - 使用你能记住的用户名和安全密码。
+1. 在“**基本信息**”选项卡上使用以下值创建 VM：
+  | 字段 | 要使用的值 |
+  | :-- | :-- |
+  | 订阅 | Azure Pass - 赞助 |
+  | 资源组 | 新建 - rgEntraLogin |
+  | 虚拟机名称 | vmEntraLogin |
+  | 区域 | *default* |
+  | 可用性选项 | 没有所需的基础结构冗余 |
+  | 安全类型 | 标准 |
+  | 大小 | Standard DC1s_v3 - 1 vCPU, 8 GiB 内存 |
+  | 管理员用户名 | vmEntraAdmin |
+  | 管理员密码 | 使用实验室环境提供的密码，或者让我们成为可以记住的安全密码 |
+  | 许可 | 确认你拥有许可证 |
 
-1. 在“管理”选项卡上，选中“Microsoft Entra ID”部分下的“使用 Microsoft Entra ID 登录”框。********
+1. 无需更改“**磁盘**”或“**网络**”选项卡上的任何内容，但可以查看这些值。
+
+1. 转到“**管理**”选项卡，选中“Microsoft Entra ID”部分下的“**使用 Microsoft Entra ID 登录**”框。
 
         NOTE: You will notice that the **System assigned managed identity** under the Identity section is automatically checked and turned grey. This action should happen automatically once you enable Login with Microsoft Entra ID.
 
-1. 完成创建虚拟机的其余体验。 
+1. 选择“查看 + 创建”
 
-1. 选择创建。
+1. 选择**创建**后。
 
 #### 任务 2 - 现有 Azure 虚拟机的 Microsoft Entra ID 登录
 
@@ -57,7 +70,7 @@ lab:
 
 #### 任务 3 - 更新服务器 VM 以支持 Microsoft Entra ID 登录
 
-1. 选择“连接”菜单项。
+1. 在“**连接**”菜单上，选择“**连接**”项。
 
 1. 在“RDP”选项卡上，选择“下载 RDP 文件” 。  如果出现提示，请为文件选择“保留”选项。  它将保存到“下载”文件夹中。
 
@@ -70,7 +83,7 @@ lab:
 1. 使用在设置虚拟机时创建的管理员用户名和密码。
    - 如果出现提示，请选择“是”以允许访问虚拟机或 RDP 会话。
 
-1. 等待服务器打开并加载所有软件，例如服务器管理器仪表板。
+1. 等待 VM 打开并加载所有软件。
 
 1. 选择虚拟机中的“启动”按钮。
 
@@ -79,6 +92,8 @@ lab:
 1. 从设置列表中选择“系统和安全”。
 
 1. 从“系统”设置中，选择“允许远程访问”选项 。
+
+  注意 - 无需打开系统子菜单。 此选项在“系统”标头下可用。
 
 1. 在打开的对话框底部，你将看到“远程桌面”部分。
 
@@ -124,7 +139,7 @@ lab:
 
    注意：JoniS 是我们授予在任务 1 期间以管理员身份登录的权限的用户。
 
-1. Windows Server 应确认登录并打开正常服务器管理器仪表板。
+1. Windows 应确认登录名并打开正常屏幕。
 
 #### 任务 6 - 进行测试（可选）以探索 Microsoft Entra ID 登录
 
@@ -140,9 +155,9 @@ lab:
 
 1. 退出远程桌面会话。
 
-1. 再次启动 <<server name>>-AzureAD.RDP 文件。
+1. 再次启动 **<<server name>>-EntraID.RDP** 文件。
 
-1. 尝试以 AdeleV、AlexW 或 DiegoS 等其他 Azure AD 成员的身份登录。
+1. 尝试以其他 Microsoft Entra 用户（如 AdeleV、AlexW 或 DiegoS）登录。
 
 1. 你应该注意到，这些用户中的每一个都被拒绝访问。
 
