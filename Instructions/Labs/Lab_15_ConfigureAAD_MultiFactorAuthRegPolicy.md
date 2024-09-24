@@ -17,7 +17,7 @@ lab:
 
 #### 任务 1 - 策略配置
 
-1. 使用全局管理员帐户登录到 [https://entra.microsoft.com]( https://entra.microsoft.com)。
+1. 使用全局管理员帐户登录 [https://entra.microsoft.com]( https://entra.microsoft.com)。
 
 2. 打开门户菜单，然后选择“Microsoft Entra ID” ****。
 
@@ -50,7 +50,7 @@ lab:
 
 1. 在“分配”下，选择“用户”下的“所有用户”，然后选择一个用户来强制实施 MFA 。
 
-1. 将“策略强制实施”从“关”更改为“开”  。
+1. 将“**策略强制实施**”从“**禁用**”更改为“**启用**”。
 
 1. 选择“保存”。
 
