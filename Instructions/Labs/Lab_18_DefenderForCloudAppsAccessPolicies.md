@@ -61,7 +61,7 @@ Microsoft Defender for Cloud Apps 可用于创建特定于要监视的云应用�
    - Username = PradeepG@<<<your lab hoster provided domain>>>
    - 密码 = 资源选项卡中的密码
 5. 确认 Pradeep 具有访问权限，并且你收到一条新消息：
-   - 贵公司正在监视此应用程序的使用情况。
+   - 监视对 Microsoft Forms 的访问。
 6. 关闭 InPrivate 浏览窗口。
 
 ### 练习 2 - 在 Microsoft Defender for Cloud Apps 中设置警报
@@ -72,11 +72,9 @@ Microsoft Defender for Cloud Apps 可用于创建特定于要监视的云应用�
 
 1. 使用全局管理员帐户登录 [https://security.microsoft.com](https://security.microsoft.com)。
 
-1. 在左侧菜单中，滚动到底部，然后选择“更多资源”。
+1. 在左侧菜单中，滚动到左侧菜单的“**云应用**”部分并选择“**策略**”。
 
-1. 在“更多资源”窗口中，找到并选择“Microsoft Defender for Cloud Apps”下的“打开”  。  此时将转到 Microsoft 365 帐户中的“Microsoft Defender for Cloud Apps”门户。
-
-1. 在 Microsoft Defender for Cloud Apps 门户菜单中，选择“控制”的下拉箭头，然后选择“策略”  。
+1. 在“**策略**”菜单中，找到并选择“**策略管理**”。
 
 1. 选择“+ 创建策略”。 选择“访问策略”。
 
@@ -90,7 +88,7 @@ Microsoft Defender for Cloud Apps 可用于创建特定于要监视的云应用�
 
 1. 将“操作”保留为“测试” 。
 
-1. 在“警报”下，选中“创建警报...”并选择“以电子邮件形式发送警报”  。
+1. 在“**警报**”下，选中“**创建警报...**”并选择“**以电子邮件形式发送警报**”。
 
 1. 输入实验室管理员电子邮件地址，然后按 Enter。
 
@@ -105,7 +103,7 @@ Microsoft Defender for Cloud Apps 可用于创建特定于要监视的云应用�
    - Username = PradeepG@<<<your lab hoster provided domain>>>
    - 密码 = 资源选项卡中的密码
 5. 确认 Pradeep 具有访问权限，并且你收到一条新消息：
-   - 贵公司正在监视此应用程序的使用情况。
+   - 监视对 Microsoft Forms 的访问。
 6. 关闭 InPrivate 浏览窗口。
 
 #### 任务 3 - 查看 Defender for Cloud Apps 中的活动

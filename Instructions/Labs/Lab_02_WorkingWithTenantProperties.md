@@ -63,7 +63,7 @@ lab:
 
     重要提示 - 创建租户时将指定国家或地区。 稍后将无法更改此设置。
 
-3. 在“属性”页的“租户属性”下，找到“位置”并查看相关信息  。
+3. 在“**属性**”页的“**租户属性**”下，找到**数据位置**并查看相关信息。
 
     ![Azure Active Directory“属性”页的屏幕图像，其中突出显示了“国家或地区”以及“位置”设置](./media/azure-active-directory-properties-country-location.png)
 
