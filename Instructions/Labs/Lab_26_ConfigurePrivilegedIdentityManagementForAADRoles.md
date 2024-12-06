@@ -7,6 +7,8 @@ lab:
 
 # 实验室 26：为 Microsoft Entra 角色配置 Privileged Identity Management
 
+### 登录类型 = Microsoft 365 管理
+
 ## 实验室方案
 
 特权角色管理员可以在其 Microsoft Entra 组织中自定义 Privileged Identity Management (PIM)，包括更改激活合格角色分配的用户的体验。 你需要熟悉如何配置 PIM。
@@ -55,7 +57,7 @@ lab:
 
 5. 配置角色设置后，选择“更新”以保存更改。
 
-### 练习 2 - 具有 Microsoft Entra 角色的 PIM
+### 练习 2 - 使用 PIM 分配 Microsoft Entra 角色
 
 #### 任务 1 - 分配角色
 

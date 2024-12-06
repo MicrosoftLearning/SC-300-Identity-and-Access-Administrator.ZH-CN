@@ -7,6 +7,8 @@ lab:
 
 # 18 - Microsoft Defender for Cloud Apps 访问和会话策略
 
+### 登录类型 = Microsoft 365 管理
+
 ## 实验室方案
 
 Microsoft Defender for Cloud Apps 可用于创建特定于要监视的云应用的其他条件访问策略。  可从 Microsoft Defender for Cloud Apps 门户中的“控制”菜单中创建这些策略。
@@ -61,7 +63,7 @@ Microsoft Defender for Cloud Apps 可用于创建特定于要监视的云应用�
    - Username = PradeepG@<<<your lab hoster provided domain>>>
    - 密码 = 资源选项卡中的密码
 5. 确认 Pradeep 具有访问权限，并且你收到一条新消息：
-   - 监视对 Microsoft Forms 的访问。
+   - 贵公司正在监视此应用程序的使用情况。
 6. 关闭 InPrivate 浏览窗口。
 
 ### 练习 2 - 在 Microsoft Defender for Cloud Apps 中设置警报
@@ -103,7 +105,7 @@ Microsoft Defender for Cloud Apps 可用于创建特定于要监视的云应用�
    - Username = PradeepG@<<<your lab hoster provided domain>>>
    - 密码 = 资源选项卡中的密码
 5. 确认 Pradeep 具有访问权限，并且你收到一条新消息：
-   - 监视对 Microsoft Forms 的访问。
+   - 贵公司正在监视此应用程序的使用情况。
 6. 关闭 InPrivate 浏览窗口。
 
 #### 任务 3 - 查看 Defender for Cloud Apps 中的活动
