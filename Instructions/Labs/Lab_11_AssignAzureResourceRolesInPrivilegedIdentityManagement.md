@@ -7,6 +7,8 @@ lab:
 
 # 实验室 11 - 在 Privileged Identity Management 中分配 Azure 资源角色
 
+### 登录类型 = Azure 资源登录
+
 注意 - 此实验室需要 Azure Pass。 有关说明，请参阅实验室 00。
 
 ## 实验室方案
@@ -21,7 +23,6 @@ Microsoft Entra Privileged Identity Management (PIM) 可以管理内置的 Azure
 
 你需要使用户符合 Azure 资源角色的条件。
 
-
 #### 预计用时：10 分钟
 
 ### 练习 1 - 针对 Azure 资源的 PIM
@@ -34,11 +35,9 @@ Microsoft Entra Privileged Identity Management (PIM) 可以管理内置的 Azure
 
 3. 在“Privileged Identity Management”页的左侧导航窗格中选择“Azure 资源”。
 
-4. 在顶部菜单中选择“发现资源”。
+4. 在“订阅”下拉列表中，选择 MOC 订阅 ##### 项。 然后在屏幕底部，选择“**管理资源**”。
 
 5. 在“Azure 资源 - 发现”页中，选择订阅。
-
-   ![显示“Azure 资源发现”页的屏幕图像，其中突出显示了订阅和“管理资源”](./media/lp4-mod3-pim-azure-resource-management.png)
 
 6. 在“概述”**** 页中，查看信息。
 
@@ -52,7 +51,7 @@ Microsoft Entra Privileged Identity Management (PIM) 可以管理内置的 Azure
 
 10. 在“选择成员”下，选择“未选择任何成员”。
 
-11. 从组织中选择“Miriam Graham”，该成员将被分配角色。  然后选择“选择”。
+11. 在“选择成员或组”中，搜索组织中将被分配角色的管理员角色 **User1-######@LODSPRODMCA.onmicrosoft.com**。  然后选择“选择”。
 
 12. 选择“**下一页**”。
 

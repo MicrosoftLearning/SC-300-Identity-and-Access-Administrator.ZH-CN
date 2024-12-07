@@ -7,6 +7,8 @@ lab:
 
 # 实验室 17 - Defender for Cloud Apps 应用程序发现和强制实施限制
 
+### 登录类型 = Microsoft 365 管理
+
 ## 实验室方案
 
 Microsoft Defender for Cloud Apps 利用来自网络流量的日志来识别用户正在访问的应用程序。来自本地防火墙的流量日志将提供有关最常见应用程序和访问这些应用的用户的快照报表。来自托管设备的流量将馈送到 Microsoft Defender for Cloud Apps 发现概述仪表板
@@ -29,6 +31,11 @@ Microsoft Defender for Cloud Apps 利用来自网络流量的日志来识别用�
 
 1. 你将能够访问此网站。
 
+1. 关闭 Dropbox 的选项卡。
+
+1. 返回到 Defender for Cloud Apps 屏幕，然后选择 Dropbox 右侧的三点。
+
+1. 选择“**已批准**”，然后选择“**下一步**”按钮。 
 
 #### 任务 2 - 限制 Defender for Cloud Apps 中的应用
 
@@ -38,9 +45,6 @@ Microsoft Defender for Cloud Apps 利用来自网络流量的日志来识别用�
 
 1. 此过程允许你阻止公司策略中未批准的应用程序，从而限制组织内的影子 IT。
 
-**注意**：在取消批准应用程序和阻止该应用程序之间存在延迟。
+**备注**：在批准和取消批准应用程序之间存在延迟。 可能需要等待最多 5 分钟。
 
 一旦应用程序因未经批准而被阻止，将无法通过浏览器、专用浏览器或客户端上的商店下载访问该应用程序，该客户端已载入与 Microsoft Defender for Cloud Apps 集成的 MDE (Microsoft Defender for Endpoint)。
-
-
-

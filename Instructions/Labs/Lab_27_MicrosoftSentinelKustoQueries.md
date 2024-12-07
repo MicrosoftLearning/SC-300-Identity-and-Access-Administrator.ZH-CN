@@ -7,7 +7,7 @@ lab:
 
 # 实验室 27 - 适用于 Microsoft Entra 数据源的 Microsoft Sentinel Kusto 查询
 
-注意 - 此实验室需要 Azure Pass。 有关说明，请参阅实验室 00。
+### 登录类型 = Azure 资源登录
 
 ## 实验室方案
 
@@ -40,7 +40,6 @@ Microsoft Sentinel 是 Microsoft 的云原生 SIEM 和 SOAR 解决方案。  通
 1. 如果出现提示，请选择“确定”以激活 Microsoft Sentinel 免费试用版。
 
 #### 任务 2 - 将 Microsoft Entra ID 添加为数据源
-    **Note** - As of 2/8/2024, the data source is now Microsoft Entra ID.
 
 1. 在“Microsoft Sentinel”**** 中，在菜单上导航到“内容管理”****，然后选择“内容中心”****。
 

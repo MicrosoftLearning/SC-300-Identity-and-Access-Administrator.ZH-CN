@@ -5,7 +5,9 @@ lab:
   module: Module 04 - Plan and Implement and Identity Governance Strategy
 ---
 
-# 实验室 24：在 Microsoft Entra 标识治理设置中管理外部用户的生命周期  
+# 实验室 24：在 Microsoft Entra 标识治理设置中管理外部用户的生命周期
+
+### 登录类型 = Microsoft 365 管理
 
 ## 实验室方案
 

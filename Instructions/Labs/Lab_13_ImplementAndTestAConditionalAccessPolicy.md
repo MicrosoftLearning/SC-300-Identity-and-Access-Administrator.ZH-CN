@@ -7,13 +7,15 @@ lab:
 
 # 实验室 13 - 实现和测试条件访问策略
 
+### 登录类型 = Microsoft 365 管理
+
 ## 实验室方案
 
 你的公司需要能够限制用户访问其内部应用程序。 必须部署 Microsoft Entra 条件访问策略。
 
 注意 - 对于条件访问策略，可以禁用安全默认值，要记住的关键点来自培训。  可在此链接中找到有关安全默认值的其他信息：<https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/concept-fundamentals-security-defaults>
 
-#### 预计用时：30 分钟
+#### 预计用时：20 分钟
 
 ### 练习 1 - 设置条件访问策略以阻止 DebraB 访问 Sway
 
@@ -24,12 +26,16 @@ lab:
 2. 连接到 [https://www.office.com](https://www.office.com) 
 3. 出现提示时，以 DebraB 身份登录：
 
-   | 设置 | 值 |
-   | :--- | :--- |
-   | 用户名 | DebraB@ `<<your lab domain>>.onmicrosoft.com` |
-   | 密码 | 输入租户的管理员密码（请参阅“实验室资源”选项卡以检索租户管理员密码）。 |
+  | 设置 | 值 |
+  | :--- | :--- |
+  | 用户名 | DebraB@ `<<your lab domain>>.onmicrosoft.com` |
+  | 密码 | 输入租户的管理员密码（请参阅“实验室资源”选项卡以检索租户管理员密码）。 |
     
-4. 选择 Sway **** 图标以查看它是否正确加载。
+4. 绕过欢迎屏幕和简介屏幕。
+
+5. 打开“**应用**”页，然后在 **Sway** 图标上选择，查看它是否正确加载。
+
+6. 注销 Office 并关闭浏览器会话。
 
 #### 任务 2 - 创建条件访问策略
 
@@ -122,6 +128,7 @@ Microsoft Entra 条件访问是 Microsoft Entra ID 的一项高级功能，可�
 1. 选择“What if”。 将在磁贴底部为你提供一个关于“要应用的策略”和“将不会应用的策略”的报表 。
 
 通过该报表可在启用策略之前测试策略及其有效性。
+
 
 ### 练习 3 - 使用条件访问策略配置登录频率控制
 
