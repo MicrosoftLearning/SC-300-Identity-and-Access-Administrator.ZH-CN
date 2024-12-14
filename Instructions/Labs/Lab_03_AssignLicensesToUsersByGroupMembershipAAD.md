@@ -109,7 +109,7 @@ lab:
 
    ![Office.com 网站的屏幕图像，其中 Delia Dennis 已登录，并且办公应用程序可用，因为分配了许可证。](./media/delia-office-license.png)
     
-5. 关闭浏览器窗口。 
+5. 关闭浏览器窗口。
 
 ### 练习 2 - 在 Microsoft Entra ID 中创建 Microsoft 365 组
 
