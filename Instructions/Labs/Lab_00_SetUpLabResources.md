@@ -38,29 +38,3 @@ lab:
 1. 刷新浏览器，直到组织名称下显示“Azure AD Premium P2”。 这可能需要几分钟的时间。
 
 1. 如果遇到预期功能不可用的任何问题，则可能需要注销并重新登录 Microsoft Azure。
-
-#### 兑换 Azure Pass
-
-1. 打开浏览器并导航到： [www.microsoftazurepass.com](https://www.microsoftazurepass.com)。
-
-1. 建议关闭所有浏览器，然后打开新的私密模式浏览器会话。 在激活步骤中，其他登录可能会一直保持并导致错误。
-
-1. 选择“开始”按钮，以开始操作。
-
-1. 验证用户名是否与实验室提供商租户帐户相同。
-
-1. 在“输入促销代码”字段中输入 Azure Pass 优惠券代码。 如果请求，请进行人工验证。 
-
-1. 在“配置文件”字段中输入地址信息。
-    - **地址行 1**：1 Microsoft Way
-    - 城市：Redmond
-    - **状态**：华盛顿州
-    - **邮编**：98052
-
-1. 选中该框以同意订阅协议，然后选择“注册”。
-
-    ![同意订阅协议并注册](media/azurepassactivation.png)
-
-1. 浏览到 [https://portal.azure.com](https://portal.azure.com)，使用目录的全局管理员帐户登录。
-
-1. 导航到“订阅”并验证“Azure Pass - 赞助”是否显示“活动”状态  。 
