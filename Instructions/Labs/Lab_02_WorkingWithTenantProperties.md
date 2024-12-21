@@ -32,10 +32,10 @@ lab:
 1. 在“自定义域名”字段中，通过将 sales 放在 onmicrosoft.com 域名前面，为实验室租户创建一个自定义子域  。  格式如下所示：
 
     ```
-    mydomain.com
+    Sales.###onmicrosoft.com
     ```
 
-1. 注意**** - 系统将提示你打开 Microsoft 365 管理中心以完成此操作。
+注意**** - 系统将提示你打开 Microsoft 365 管理中心以完成此操作。
 
 1. 选择“添加域”以添加子域。
 
