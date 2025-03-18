@@ -5,7 +5,9 @@ lab:
   module: Module 04 - Plan and Implement and Identity Governance Strategy
 ---
 
-# 实验室 27 - 适用于 Microsoft Entra 数据源的 Microsoft Sentinel Kusto 查询
+# 实验室 27 可选 - 适用于 Microsoft Entra 数据源的 Microsoft Sentinel Kusto 查询
+
+**注意** - 此实验室目前无法在提供的训练实验室环境中完成。  我们将在此处退出实验室步骤，因此，你可以选择在“自带订阅” (BYOS) 环境中试用。  请阅读这些步骤，了解可能的情况。  我们积极努力更新此实验室，以在实验室环境中查找解决方法，并很快对其进行更新。
 
 ### 登录类型 = Azure 资源登录
 
