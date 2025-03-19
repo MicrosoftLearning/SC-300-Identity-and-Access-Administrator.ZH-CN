@@ -65,7 +65,14 @@ lab:
        (where <tenant name> is your tenant name)
    ```
 
-16. 选择“创建”。 复制你的客户端 ID 和客户端密码 。 你将在 Azure 门户中添加标识提供者时用到它们。
+**实验室提示** - 结果应该与此类似，包括租户 ID 和租户名称。
+| URI # | 链接。 |
+| :--- | :--- |
+| URI 1 | https://login.microsoftonline.com |
+| URI 2 | https://login.microsoftonline.com/te/aaaa1111bbbb2222cccc |
+| URI 3 | https://login.microsoftonline.com/te/MyTenantName.onmicrosoft.com/oauth |
+
+16. 选择**创建**。 复制你的客户端 ID 和客户端密码 。 你将在 Azure 门户中添加标识提供者时用到它们。
 
 17. 可以将项目保留为“测试”的发布状态。
 

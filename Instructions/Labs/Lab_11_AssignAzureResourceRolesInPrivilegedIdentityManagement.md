@@ -9,8 +9,6 @@ lab:
 
 ### 登录类型 = Azure 资源登录
 
-注意 - 此实验室需要 Azure Pass。 有关说明，请参阅实验室 00。
-
 ## 实验室方案
 
 Microsoft Entra Privileged Identity Management (PIM) 可以管理内置的 Azure 资源角色以及自定义角色，包括（但不限于）：
@@ -29,11 +27,13 @@ Microsoft Entra Privileged Identity Management (PIM) 可以管理内置的 Azure
 
 #### 任务 1 - 分配 Azure 资源角色
 
-1. 使用全局管理员帐户登录 [https://entra.microsoft.com](https://entra.microsoft.com)。
+1. 使用提供的管理员帐户登录到 [https://entra.microsoft.com](https://entra.microsoft.com)。
 
 2. 搜索并选择“Privileged Identity Management”****。
 
 3. 在“Privileged Identity Management”页的左侧导航窗格中选择“Azure 资源”。
+
+**实验室提示** - 为旧版 Azure 资源体验编写后续几个步骤。  你可以切换到屏幕顶部的旧体验。 或者，可以在新体验中完成练习，而无需分步完成。
 
 4. 在“订阅”下拉列表中，选择 MOC 订阅 ##### 项。 然后在屏幕底部，选择“**管理资源**”。
 
@@ -42,6 +42,8 @@ Microsoft Entra Privileged Identity Management (PIM) 可以管理内置的 Azure
 6. 在“概述”**** 页中，查看信息。
 
    ![显示最近添加的 Azure 资源的屏幕图像](./media/lp4-mod3-pim-az-resource-overview.png)
+
+   **实验室提示** - 由于实验室环境的性质，你看不到任何资源。 有关示例，请参阅图片。
 
 7. 在左侧导航菜单中，在“管理”下选择“角色”以查看适用于 Azure 资源的角色列表。
 
@@ -68,6 +70,8 @@ Microsoft Entra Privileged Identity Management (PIM) 可以管理内置的 Azure
 16. 创建新的角色分配后，会显示状态通知。
 
 #### 任务 2 - 更新或删除现有资源角色分配
+
+**备注** - 由于在此实验室环境中强制实施安全性，因此无法完成这些步骤。  请查看用户界面中的步骤，但无法应用更改。  我们正在积极研究解决这一问题的办法。
 
 按照以下步骤更新或删除现有的角色分配。
 
