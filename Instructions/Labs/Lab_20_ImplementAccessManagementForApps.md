@@ -19,9 +19,9 @@ lab:
 
 #### 任务 1 - 将应用添加到 Microsoft Entra 租户
 
-1. 使用全局管理员帐户登录  [https://entra.microsoft.com](https://entra.microsoft.com)  。
+1. 使用提供的管理员帐户登录到  [https://entra.microsoft.com](https://entra.microsoft.com) 。
 
-2. 打开门户菜单，然后选择“Microsoft Entra ID” ****。
+2. 查看屏幕左侧的菜单。
 
 3. 在“标识”菜单上的“应用程序”**** 下，选择“企业应用程序”****。
 

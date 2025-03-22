@@ -7,7 +7,7 @@ lab:
 
 # 实验室 02：使用租户属性
 
-### 登录类型 = Microsoft 365 管理
+### 登录类型 = Microsoft 365 + E5 租户登录
 
 ## 实验室方案
 
@@ -32,14 +32,14 @@ lab:
 1. 在“自定义域名”字段中，通过将 sales 放在 onmicrosoft.com 域名前面，为实验室租户创建一个自定义子域  。  格式如下所示：
 
     ```
-    Sales.###onmicrosoft.com
+    Sales.labTenantName.onmicrosoft.com
     ```
 
 注意**** - 系统将提示你打开 Microsoft 365 管理中心以完成此操作。
 
 1. 选择“添加域”以添加子域。
 
-1. 在对话框中输入子域名称 `sales.tenantname.onmicrosoft.com`。
+1. 在对话框中输入子域名称 `sales.tenantname.onmicrosoft.com`。 请记住将 *tenantname* 替换为租户名称。
 
 1. 选择屏幕底部的“**使用此域**”按钮。
 
@@ -87,6 +87,8 @@ Azure 订阅与 Microsoft Entra ID 存在信任关系。 Microsoft Entra ID 是�
 1. 在“租户属性”下，找到“租户 ID”。 这是你的唯一租户标识符。
 
     ![显示“租户属性”页的屏幕图像，其中突出显示了“租户 ID”框](./media/portal-tenant-id.png)
+
+**备注** - 如果记录租户 ID 记事本或其他位置以供将来的实验室使用，则非常有用。
 
 ### 练习 3 - 设置隐私信息
 
