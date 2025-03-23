@@ -7,7 +7,7 @@ lab:
 
 # 实验室 03：使用组成员身份分配许可证
 
-### 登录类型 = Microsoft 365 管理
+### 登录类型 = Microsoft 365 + E5 租户登录
 
 ## 实验室方案
 
@@ -23,10 +23,10 @@ lab:
 2. 连接到 [https://www.office.com](https://www.office.com)。
 3. 选择“登录”并以 Delia Dennis 的身份进行连接。
 
-   | **设置**| **值**|
+   | **设置** | **值** |
    | :--- | :--- |
-   | 用户名 | DeliaD@`your domain name.com`|
-   | 密码| 在“资源”中输入全局管理员的密码|
+   | 用户名 | DeliaD@`your domain name.com` |
+   | 密码| 输入为 DeliaD 提供的用户密码 |
 
 4. 你应会连接到 Office.com 网站，但会看到一条消息，该消息表示你没有许可证。
 
@@ -60,7 +60,7 @@ lab:
 
 #### 任务 3 - 将 Office 许可证添加到 sg-SC300-O365
 
-必须通过 Microsoft 365 管理中心添加和删除许可证。 这是一个相对较新的变化。
+**实验室提示** - 必须通过 Microsoft 365 管理中心添加和移除许可证。 这是一个相对较新的变化。
 
 1. 在浏览器中打开新的标签页。
 
@@ -74,11 +74,11 @@ lab:
 
 6. 选择许可屏幕上的“**组**”选项卡。
 
-7. 选择“**+ 添加许可证**”项。
+7. 选择“**+ 分配许可证**”项。
 
 8. 搜索 **sg-SC300-O365** 组，然后从列表中选择该组。
 
-8. 添加 Raul 后，选择“**分配**”。
+8. 添加组后，选择“**分配**”。
  
 9. 关闭确认消息。
 
@@ -86,7 +86,7 @@ lab:
 
 11. 导航回到左侧导航栏中的“**所有用户**”，在“**标识**”下，选择“**组**”
 
-12. 在“用户”页中，选择 **sg-SC300-O365**。
+12. 在“组”页中，选择 **sg-SC300-O365**。
 
 13. 在左侧导航栏中，选择“许可证”。
 
@@ -103,7 +103,7 @@ lab:
    | **设置**| **值**|
    | :--- | :--- |
    | 用户名 | DeliaD@`your domain name.com`|
-   | 密码| 在“资源”中输入全局管理员的密码|
+   | 密码| 输入提供的密码  |
 
 4. 你应连接到 Office.com 网站，然后未看见关于许可证的消息。 所有的 Office 应用程序都可在左侧获取。
 
@@ -143,7 +143,7 @@ lab:
 
 随着公司发展，手动组管理正在变得过于耗时。 由于对目录进行了标准化，现在可以利用动态组。 必须创建新的动态组以确保准备好在生产环境中创建动态组。
 
-1. 使用在租户中分配了全局管理员或用户管理员角色的帐户登录到 [https://entra.microsoft.com](https://entra.microsoft.com)。
+1. 使用提供的管理员帐户登录[https://entra.microsoft.com](https://entra.microsoft.com)。 租户中至少需要用户管理员角色。
 
 2. 选择“标识”。
 
@@ -164,10 +164,10 @@ lab:
 9. 在“编辑规则语法”窗格中的“规则语法”框中输入以下表达式：
 
    ```powershell
-   user.objectid -ne null
+   user.objectId -ne null
    ```
 
-   警告 - `user.objectid` 区分大小写。
+   警告 - `user.objectId` 区分大小写。
 
 10. 选择“确定”。 规则会出现在“规则语法”框中。
 
@@ -184,7 +184,7 @@ lab:
 1. 选择“主页”`Microsoft Entra admin center`。
 2. 启动“标识”****。
 3. 在“组”**** 菜单中，选择“所有组”****。
-4. 在筛选框中键入“SC300”，此时将列出新创建的组。
+4. 在筛选框中键入“**SC300**”，此时将列出新创建的组。
 5. 选择“SC300-myDynamicGroup”以打开组。
 6. 请注意，该组显示包含 30 多个直接成员。
 7. 在“管理”菜单中选择“成员” 。
@@ -194,8 +194,10 @@ lab:
 
 1. 尝试创建仅包含来宾用户的组：
 
-   - (user.objectid -ne null) 和 (user.userType -eq "Guest")
+   - (user.objectId -ne null) and (user.userType -eq "Guest")
 
 2. 尝试创建仅包含 Microsoft Entra 用户成员**** 的组。
 
-   - (user.objectid -ne null) 和 (user.userType -eq "Member")
+   - (user.objectId -ne null) and (user.userType -eq "Member")
+
+**实验室提示** - 如果收到“无法创建组”消息，提及“无效运算符”，请确认该运算符的拼写。  请注意，objectId 中的 I 和 userType 中的 T 是大写字母。

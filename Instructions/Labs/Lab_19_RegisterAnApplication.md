@@ -17,7 +17,7 @@ lab:
 
 注册应用程序会在应用与 Microsoft 标识平台之间建立信任关系。 信任是单向的：应用信任 Microsoft 标识平台，但标识平台并不信任应用。
 
-1. 使用全局管理员帐户登录 [https://entra.microsoft.com](https://entra.microsoft.com) 。
+1. 使用提供的管理员帐户登录[https://entra.microsoft.com](https://entra.microsoft.com) 。
 
 2. 打开门户菜单，然后选择“Microsoft Entra ID” ****。
 
