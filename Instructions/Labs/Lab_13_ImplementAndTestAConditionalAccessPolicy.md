@@ -29,7 +29,7 @@ lab:
   | 设置 | 值 |
   | :--- | :--- |
   | 用户名 | DebraB@ `<<your lab domain>>.onmicrosoft.com` |
-  | 密码 | 输入提供的密码 |
+  | 密码 | 输入租户的管理员密码（请参阅“实验室资源”选项卡以检索租户管理员密码）。 |
     
 4. 绕过欢迎屏幕和简介屏幕。
 
@@ -83,13 +83,13 @@ Microsoft Entra 条件访问是 Microsoft Entra ID 的一项高级功能，可�
 
 你应该测试条件访问策略，以确保它们按预期工作。
 
-1. 打开新的“InPrivate”浏览器标签页，然后浏览到 https://sway.cloud.microsoft[](https://sway.cloud.microsoft)。
+1. 打开新的“InPrivate”浏览器标签页，然后浏览到 https://sway.office.com[](https://sway.office.com)。
     - 出现提示时，以 DebraB 身份登录：
 
    | 设置 | 值 |
    | :--- | :--- |
    | 用户名 | DebraB@ `<<your lab domain>>.onmicrosoft.com` |
-   | 密码 | 输入提供的密码 |
+   | 密码 | 输入租户的管理员密码（请参阅“实验室资源”选项卡以检索租户管理员密码）。 |
      
 2. 验证是否已阻止你访问 Microsoft Sway。
 
