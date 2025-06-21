@@ -180,7 +180,7 @@ lab:
 
 #### 任务 2 - 使用 PowerShell 批量添加用户
 
-1. 以管理员身份打开 PowerShell。这可以通过在 Windows 中搜索 PowerShell 并选择“以管理员身份运行”来完成。 
+1. 打开 PowerShell。在 Windows 中搜索 PowerShell 就可以完成这项操作。 
 
 **备注** - 此实验室需要具有 PowerShell 版本 7.2 或更高版本才能正常运行。  当 PowerShell 打开时，将在屏幕顶部显示版本号，如果正在运行旧版本，请按照屏幕上的说明转到 https://aka.ms/PowerShell-Release?tag=7.3.9。 向下滚动到“资产”部分，然后选择“powershell-7.3.1-win-x64.msi”。 下载完成后，选择“打开文件”。 使用所有默认值进行安装。
 
@@ -189,7 +189,7 @@ lab:
 2. 如果以前未使用过 Microsoft.Graph PowerShell 模块，则需要安装该模块。  运行以下两个命令，并在系统提示确认时按 Y：
 
     ```
-    Install-Module Microsoft.Graph
+    Install-Module Microsoft.Graph -Scope CurrentUser -Verbose
     ```
 3. 确认已安装 Microsoft.Graph 模块：
 
@@ -211,7 +211,7 @@ lab:
     Get-MgUser 
     ```
     
-7. 若要向所有新用户分配一个通用临时密码，请运行以下命令，并将 <Enter a complex Password> 替换为要提供给用户的密码。  
+6. 若要向所有新用户分配一个通用临时密码，请运行以下命令，并将 <Enter a complex Password> 替换为要提供给用户的密码。  
 
     ``` 
     $PWProfile = @{
@@ -220,7 +220,7 @@ lab:
     }
     ```
 
-8. 现在便可以创建新用户了。  以下命令将填充用户信息并运行。  如果要添加多个用户，可以使用记事本 txt 文件添加用户信息并将其复制/粘贴到 PowerShell 中。 
+7. 现在便可以创建新用户了。  以下命令将填充用户信息并运行。  如果要添加多个用户，可以使用记事本 txt 文件添加用户信息并将其复制/粘贴到 PowerShell 中。 
 
     ```
     New-MgUser `
@@ -245,7 +245,7 @@ lab:
 
 可能出现已删除帐户，然后需要恢复此帐户的情况。 你需要验证是否可以恢复最近已删除的帐户。
 
-1. 浏览到 [https://entra.micrososft.com](Microsoft Entra admin center)。
+1. 浏览到 [https://entra.microsoft.com](Microsoft Entra admin center)。
 
 2. 在左侧导航栏的“标识”下，选择“用户”。********
 
