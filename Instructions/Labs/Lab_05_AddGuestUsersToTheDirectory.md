@@ -92,7 +92,7 @@ lab:
 
 #### 任务 2 - 使用 PowerShell 邀请来宾用户
 
-1. 以管理员身份打开 PowerShell。 这可以通过在 Windows 中搜索 PowerShell 并选择“以管理员身份运行”来完成。 
+1. 打开 PowerShell。 在 Windows 中搜索 PowerShell 就可以完成这项操作。
 
 **备注** - 此实验室需要具有 PowerShell 版本 7.2 或更高版本才能正常运行。  当 PowerShell 打开时，屏幕顶部会显示版本，如果正在运行的版本较旧，请更新，否则实验室的此部分将失败。
 
@@ -101,7 +101,7 @@ lab:
 2. 如果以前未使用过 Microsoft.Graph PowerShell 模块，则需要安装该模块。  运行以下两个命令，并在系统提示确认时按 Y：
 
     ```
-    Install-Module Microsoft.Graph
+    Install-Module Microsoft.Graph -Scope CurrentUser -Verbose
     ```
 3. 确认已安装 Microsoft.Graph 模块：
 
