@@ -63,7 +63,7 @@ lab:
 
 使用 Microsoft Entra ID，全局管理员可以创建永久 Microsoft Entra 管理员角色分配。 可以使用 Microsoft Entra 管理中心、Azure 门户或使用 PowerShell 命令创建这些角色分配。
 
-Privileged Identity Management (PIM) 服务还允许特权角色管理员进行永久管理员角色分配。 此外，特权角色管理员可将用户设置为 Microsoft Entra 管理员角色的合格用户。 符合条件的管理员可在需要时激活角色，在完成任务后，其权限随即失效。
+Privileged Identity Management (PIM) 服务还允许特权角色管理员进行永久管理员角色分配。 此外，特权角色管理员可使用户符合 Microsoft Entra 管理员角色的条件。 符合条件的管理员可在需要时激活角色，在完成任务后，其权限随即失效。
 
 按照以下步骤操作以使用户符合 Microsoft Entra 管理员角色的条件。
 

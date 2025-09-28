@@ -9,8 +9,6 @@ lab:
 
 ### 登录类型 = Azure 资源登录
 
-注意 - 此实验室需要 Azure Pass。 有关说明，请参阅实验室 00。
-
 ## 实验室方案
 
 Microsoft Entra Privileged Identity Management (PIM) 可以管理内置的 Azure 资源角色以及自定义角色，包括（但不限于）：
@@ -31,7 +29,7 @@ Microsoft Entra Privileged Identity Management (PIM) 可以管理内置的 Azure
 
 1. 使用提供的管理员帐户登录到 [https://entra.microsoft.com](https://entra.microsoft.com)。
 
-2. 搜索并选择“Privileged Identity Management”****。
+2. 搜索并选择“Microsoft Entra Privileged Identity Management”****。
 
 3. 在“Privileged Identity Management”页的左侧导航窗格中选择“Azure 资源”。
 
@@ -79,7 +77,7 @@ Microsoft Entra Privileged Identity Management (PIM) 可以管理内置的 Azure
 
 1. 打开 Microsoft Entra Privileged Identity Management。
 
-2. 选择“Azure 资源” 。
+2. 选择“Azure 资源”****。
 
 3. 选择要管理的订阅，打开其概述页。
 
