@@ -64,7 +64,7 @@ lab:
 
 1. 在浏览器中打开新的标签页。
 
-2. 连接到 Microsoft Entra 管理中心 (http://admin.microsoft.com)。
+2. 连接到 Microsoft 365 管理中心 (http://admin.microsoft.com)。
 
 3. 如果系统提示，请以管理员帐户身份登录。
 

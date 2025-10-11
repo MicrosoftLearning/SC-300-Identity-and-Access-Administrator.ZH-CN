@@ -30,9 +30,9 @@ lab:
 
 4. 在“新建项目”页上，为项目指定名称：+++MyB2BApp+++，然后选择“**创建**”。
 
-5. 通过选择“通知”消息框中的链接，或通过使用页面顶部的项目菜单，打开该新项目。
+5. 通过选择通知消息框中的链接，或通过使用页面顶部的项目菜单，打开该新项目。
 
-6. 在左侧菜单中，选择“API 和服务”，然后选择“OAuth 同意屏幕”。********
+6. 在左侧菜单中，选择 **API 和服务**，然后选择 **OAuth 许可屏幕**。
 
 7. 选择“入门”按钮****。
 
@@ -41,7 +41,7 @@ lab:
 | 部分 | 字段名称 | 值 |
 | :---    | :---    | :---  |
 | 1 应用信息 | | |
-|            | 应用名称 | +++Microsoft Entra ID+++ |
+|            | 应用程序名称 | +++Microsoft Entra ID+++ |
 |            | 用户支持电子邮件 | 从下拉列表中选择电子邮件名称 |
 | 2 受众 | | |
 |            | 内部/外部 | **外部** |
@@ -75,8 +75,8 @@ lab:
 | URI # | 链接。 |
 | :--- | :--- |
 | URI 1 | https://login.microsoftonline.com |
-| URI 2 | https://login.microsoftonline.com/te/aaaa1111bbbb2222cccc |
-| URI 3 | https://login.microsoftonline.com/te/MyTenantName.onmicrosoft.com/oauth |
+| URI 2 | https://login.microsoftonline.com/te/aaaa1111bbbb2222cccc/oauth2/authresp |
+| URI 3 | https://login.microsoftonline.com/te/MyTenantName.onmicrosoft.com/oauth2/authresp |
 
 16. 选择“创建”按钮。
 
