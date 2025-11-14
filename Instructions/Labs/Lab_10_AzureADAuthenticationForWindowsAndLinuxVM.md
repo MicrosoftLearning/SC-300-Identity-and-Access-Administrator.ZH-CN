@@ -19,15 +19,15 @@ lab:
 
 #### 任务 1 - 创建启用了 Microsoft Entra ID 登录的 Windows 虚拟机
 
-1. 浏览到 [https://portal.azure.com](https://portal.azure.com)
+1. 浏览到[https://portal.azure.com](https://portal.azure.com)
 
 实验室提示**** - 如果系统提示保存凭据，请选择“从不”。  取消演示，除非这是你第一次来到 Azure 门户中。
 
 1. 选择“+ 创建资源”****。
 
-1. 在“搜索市场”搜索栏中键入“**Windows 11**”，然后键入 **Enter**。
+1. 在“搜索市场”搜索栏中键入“**Windows 11**”，然后键入**Enter**。
 
-1. 找到“Microsoft Windows 11”框，然后选择“创建 v”，然后从打开的菜单中选择“Windows 11 企业版，版本 22H2”。************
+1. 找到“Microsoft Windows 11”框，然后选择“创建 v”，从打开的菜单中选择“Windows 11 企业版，版本 25H2”。************
 
 1. 在“**基本信息**”选项卡上使用以下值创建 VM：
 
@@ -56,7 +56,7 @@ lab:
 
 #### 任务 2 - 现有 Azure 虚拟机的 Microsoft Entra ID 登录
 
-1. 浏览到 [https://portal.azure.com](https://portal.azure.com) 中的**虚拟机**。
+1. 浏览到[https://portal.azure.com](https://portal.azure.com) 中的**虚拟机**。
 
 1. 选择“任务 1”中新创建的虚拟机。
 
@@ -67,7 +67,7 @@ lab:
 1. 分配以下设置：
   - **工作职能角色**
   - **角色**：虚拟机管理员登录
-  - **成员**：选择“用户、组或服务主体”。  然后使用“**+ 选择成员**”将 **User2** 添加为 VM 的特定用户。
+  - **成员**：选择“用户、组或服务主体”。  然后使用“**+ 选择成员**”将**User2** 添加为 VM 的特定用户。
 
 1. 选择“**查看+分配**”以完成该过程。
 
@@ -135,7 +135,7 @@ lab:
 1. 选择“确定”。
 
 1. 在登录对话框中输入以下信息：
-   - 用户名 = **AzureAD\User2@ 你的域名**
+   - 用户名 =**AzureAD\User2@ 你的域名**
    - 密码 = 输入实验室提供商提供的密码
 
    备注：User2 是我们在任务 1 期间授权其以管理员身份登录的用户。
@@ -150,13 +150,13 @@ lab:
 
 1. 打开“本地用户和组”，然后导航到“组、管理员” 。
 
-1. 应在列表中看到 **AzureUser2....**。
+1. 应在列表中看到**AzureUser2....**。
 
 1. 检查其他 Microsoft Entra ID 成员是否可以登录。
 
 1. 退出远程桌面会话。
 
-1. 再次启动 **<<server name>>-EntraID.RDP** 文件。
+1. 再次启动**<<server name>>-EntraID.RDP** 文件。
 
 1. 尝试以其他 Microsoft Entra ID 成员身份登录。
 
@@ -166,7 +166,7 @@ lab:
 
 #### 任务 1 - 创建具有系统分配的托管标识的 Linux VM
 
-1. 浏览到 [https://portal.azure.com](https://portal.azure.com)
+1. 浏览到[https://portal.azure.com](https://portal.azure.com)
 
 1. 选择“+ 创建资源”。
 
@@ -182,7 +182,7 @@ lab:
 
 #### 任务 2 - 现有 Azure 虚拟机的 Microsoft Entra ID 登录
 
-1. 浏览到 [https://portal.azure.com](https://portal.azure.com) 中的**虚拟机**。
+1. 浏览到[https://portal.azure.com](https://portal.azure.com) 中的**虚拟机**。
 
 1. 选择“访问控制 (IAM)”。
 
