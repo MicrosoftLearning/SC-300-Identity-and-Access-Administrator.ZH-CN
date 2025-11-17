@@ -1,3 +1,5 @@
+**⚠️ This GitHub repo will retire on 28th November 2025.**
+
 # SC-300：标识和访问管理员
 
 - [实验室的链接（HTML 格式）](https://microsoftlearning.github.io/SC-300-Identity-and-Access-Administrator/)
